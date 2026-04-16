@@ -12,7 +12,7 @@ const Contact = () => {
   const handleWhatsApp = () => {
     const text = message.trim()
       ? encodeURIComponent(message)
-      : encodeURIComponent("Hello, I have a question about your honey.");
+      : encodeURIComponent(t('contact.messagePlaceholder'));
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank');
   };
 
@@ -59,7 +59,7 @@ const Contact = () => {
                 rows={4}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="{t('contact.messagePlaceholder')}"
+                placeholder={t('contact.messagePlaceholder')}
                 className="w-full px-4 py-3 bg-white border border-[#E8E2D2] focus:border-[#25D366] focus:outline-none text-sm transition-colors resize-none"
               />
             </div>
