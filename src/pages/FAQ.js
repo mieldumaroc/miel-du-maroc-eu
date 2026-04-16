@@ -1,4 +1,4 @@
-import { FAQ } from '../data/products';
+import { FAQ as FAQ_DATA } from '../data/products';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
@@ -11,7 +11,7 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   useEffect(() => {
-    setFaqs(FAQ);
+    setFaqs(FAQ_DATA);
   }, []);
 
   const getQuestion = (faq) => {
