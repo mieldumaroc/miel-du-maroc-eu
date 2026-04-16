@@ -26,8 +26,8 @@ const Shipping = () => {
 
         <div className="grid sm:grid-cols-2 gap-8 mb-16">
           {[
-            { icon: Package, title: 'Careful Packaging', text: 'Each jar is individually wrapped and cushioned for safe transit.' },
-            { icon: Clock, title: '7-14 Business Days', text: 'Standard delivery to all European countries from Morocco.' },
+            { icon: Package, title: t('shipping.packaging'), text: t('shipping.packagingText') },
+            { icon: Clock, title: t('shipping.delivery'), text: t('shipping.deliveryText') },
           ].map((item, index) => (
             <motion.div
               key={index}
@@ -51,12 +51,12 @@ const Shipping = () => {
           viewport={{ once: true }}
           className="bg-[#F7F4EB] border border-[#E8E2D2] p-8 lg:p-12"
         >
-          <h2 className="font-heading text-2xl font-light text-[#1A1713] mb-6">Shipping Information</h2>
+          <h2 className="font-heading text-2xl font-light text-[#1A1713] mb-6">{t('shipping.infoTitle')}</h2>
           <div className="space-y-4 text-[#5C5449] text-sm leading-relaxed">
-            <p>We ship to all European countries including France, Germany, Netherlands, Belgium, UK, Spain, Italy, Switzerland, and more.</p>
-            <p>All orders are shipped via international tracked courier service. You will receive a tracking number once your order is dispatched.</p>
-            <p>Orders are typically processed within 1-2 business days. Delivery takes 7-14 business days to most European destinations.</p>
-            <p>For any shipping inquiries, please contact us via WhatsApp. We're happy to provide updates on your delivery.</p>
+            <p>{t('shipping.countries')}</p>
+            <p>{t('shipping.courier')}</p>
+            <p>{t('shipping.processing')}</p>
+            <p>{t('shipping.inquiries')}</p>
           </div>
         </motion.div>
       </div>
