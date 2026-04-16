@@ -1,3 +1,4 @@
+import { FAQ } from '../data/products';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
@@ -10,15 +11,7 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   useEffect(() => {
-    const fetchFAQ = async () => {
-      try {
-        const response = await axios.get(`${API}/faq`);
-        setFaqs(response.data);
-      } catch (error) {
-        console.error('Failed to fetch FAQ:', error);
-      }
-    };
-    fetchFAQ();
+    setFaqs(FAQ);
   }, []);
 
   const getQuestion = (faq) => {

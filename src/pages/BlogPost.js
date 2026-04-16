@@ -1,3 +1,4 @@
+import { BLOG_POSTS } from '../data/products';
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -12,17 +13,8 @@ const BlogPost = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchPost = async () => {
-      try {
-        const response = await axios.get(`${API}/posts/${slug}`);
-        setPost(response.data);
-      } catch (error) {
-        console.error('Failed to fetch post:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchPost();
+    const found = BLOG_POSTS.find(p => p.slug === slug);
+      setPost(found || null);
   }, [slug]);
 
   if (loading) {

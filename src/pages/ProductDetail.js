@@ -20,17 +20,9 @@ const ProductDetail = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchProduct = async () => {
-      try {
-        const response = await axios.get(`${API}/products/${id}`);
-        setProduct(response.data);
-      } catch (error) {
-        console.error('Failed to fetch product:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchProduct();
+    const found = PRODUCTS.find(p => p.id === id);
+    setProduct(found || null);
+    setLoading(false);
   }, [id]);
 
   if (loading) {

@@ -1,3 +1,4 @@
+import { BLOG_POSTS } from '../data/products';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -10,15 +11,7 @@ const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const fetchPosts = async () => {
-      try {
-        const response = await axios.get(`${API}/posts`);
-        setPosts(response.data);
-      } catch (error) {
-        console.error('Failed to fetch posts:', error);
-      }
-    };
-    fetchPosts();
+    setPosts(BLOG_POSTS);
   }, []);
 
   const getTitle = (post) => {
