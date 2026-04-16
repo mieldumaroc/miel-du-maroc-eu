@@ -53,13 +53,13 @@ const Contact = () => {
             {/* Optional message input */}
             <div className="mb-4">
               <label className="text-xs uppercase tracking-[0.15em] text-[#5C5449] font-medium mb-2 block">
-                Your message (optional)
+                {t('contact.messageLabel')}
               </label>
               <textarea
                 rows={4}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Tell us what you'd like to order or ask..."
+                placeholder="{t('contact.messagePlaceholder')}"
                 className="w-full px-4 py-3 bg-white border border-[#E8E2D2] focus:border-[#25D366] focus:outline-none text-sm transition-colors resize-none"
               />
             </div>
