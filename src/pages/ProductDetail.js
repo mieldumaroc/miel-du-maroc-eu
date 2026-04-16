@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import axios from 'axios';
 import { ArrowLeft, Check, ShoppingBag } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { PRODUCTS } from '../data/products';
 import { useCurrency } from '../context/CurrencyContext';
 import { useCart } from '../context/CartContext';
 import { toast } from 'sonner';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
 const WHATSAPP_LINK = "https://wa.me/212676050868?text=";
 
 const ProductDetail = () => {

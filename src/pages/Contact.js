@@ -3,10 +3,7 @@ import { motion } from 'framer-motion';
 import { MapPin, Mail } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { toast } from 'sonner';
-import axios from 'axios';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
 
 const Contact = () => {
   const { t } = useLanguage();

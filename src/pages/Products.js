@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import axios from 'axios';
 import { Search } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useCurrency } from '../context/CurrencyContext';
 import ProductCard from '../components/ProductCard';
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+import { PRODUCTS } from '../data/products';
 
 const Products = () => {
   const { t, getProductName } = useLanguage();
@@ -28,16 +25,10 @@ const Products = () => {
     filterProducts();
   }, [searchTerm, selectedTag, products]);
 
-  const fetchProducts = async () => {
-    try {
-      const response = await axios.get(`${API}/products`);
-      setProducts(response.data);
-      setFilteredProducts(response.data);
-    } catch (error) {
-      console.error('Failed to fetch products:', error);
-    } finally {
-      setLoading(false);
-    }
+  const fetchProducts = () => {
+    setProducts(PRODUCTS);
+    setFilteredProducts(PRODUCTS);
+    setLoading(false);
   };
 
   const filterProducts = () => {

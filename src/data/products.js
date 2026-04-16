@@ -1,0 +1,15 @@
+export const PRODUCTS = [
+  { id: 1, name: "Origan", nameEn: "Oregano", nameFr: "Origan", price: 400, weight: "1kg", image: "/honey-images/final-origan.png", description: "Rich, aromatic honey with powerful antibacterial properties." },
+  { id: 2, name: "Thym", nameEn: "Thyme", nameFr: "Thym", price: 380, weight: "1kg", image: "/honey-images/final-thym.png", description: "Golden honey with natural antiseptic qualities." },
+  { id: 3, name: "Fenouil", nameEn: "Fennel", nameFr: "Fenouil", price: 340, weight: "1kg", image: "/honey-images/final-fenouil.png", description: "Delicate honey with a subtle anise flavour." },
+  { id: 4, name: "Jujubier", nameEn: "Jujube", nameFr: "Jujubier", price: 400, weight: "1kg", image: "/honey-images/final-jujubier.png", description: "Rare Sidr honey, prized for its exceptional taste." },
+  { id: 5, name: "Caroubier", nameEn: "Carob", nameFr: "Caroubier", price: 320, weight: "1kg", image: "/honey-images/final-caroubier.png", description: "Dark, rich honey with a distinctive caramel note." },
+  { id: 6, name: "Plante de Montagne", nameEn: "Mountain Plants", nameFr: "Plante de Montagne", price: 400, weight: "1kg", image: "/honey-images/final-montagne.png", description: "Complex wildflower honey from the Atlas Mountains." },
+  { id: 7, name: "Plante de Prairie", nameEn: "Meadow Plants", nameFr: "Plante de Prairie", price: 350, weight: "1kg", image: "/honey-images/final-prairie.png", description: "Light floral honey from meadow blossoms." },
+  { id: 8, name: "Oranger", nameEn: "Orange Blossom", nameFr: "Oranger", price: 200, weight: "1kg", image: "/honey-images/final-oranger.png", description: "Fragrant honey with a fresh citrus aroma." },
+  { id: 9, name: "Eucalyptus", nameEn: "Eucalyptus", nameFr: "Eucalyptus", price: 200, weight: "1kg", image: "/honey-images/final-eucalyptus.png", description: "Refreshing honey known for respiratory benefits." },
+  { id: 10, name: "Nigelle", nameEn: "Black Seed", nameFr: "Nigelle", price: 450, weight: "1kg", image: "/honey-images/final-nigelle.png", description: "The blessed seed honey — powerful immune support." },
+  { id: 11, name: "Euphorbe de Montagne", nameEn: "Mountain Spurge", nameFr: "Euphorbe de Montagne", price: 400, weight: "1kg", image: "/honey-images/final-euphorbe.png", description: "Rare mountain honey with unique therapeutic benefits." },
+  { id: 12, name: "Câpre", nameEn: "Caper", nameFr: "Câpre", price: 600, weight: "1kg", image: "/honey-images/final-capre.png", description: "Exceptional honey with a bold, distinctive flavour." },
+  { id: 13, name: "Romarin Sauvage", nameEn: "Wild Rosemary", nameFr: "Romarin Sauvage", price: 600, weight: "1kg", image: "/honey-images/final-romarin.png", description: "Premium honey with herbal, woody notes." },
+];
