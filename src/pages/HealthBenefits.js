@@ -1,26 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { useCurrency } from '../context/CurrencyContext';
-
+import { PRODUCTS } from '../data/products';
 
 const HealthBenefits = () => {
   const { t, language, getProductName } = useLanguage();
   const { formatPrice } = useCurrency();
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get(`${API}/products`);
-        setProducts(response.data);
-      } catch (error) {
-        console.error('Failed to fetch products:', error);
-      }
-    };
-    fetchProducts();
-  }, []);
 
   const getBenefits = (product) => {
     const key = language === 'en' ? 'health_benefits' : `health_benefits_${language}`;
@@ -57,8 +44,14 @@ const HealthBenefits = () => {
               </tr>
             </thead>
             <tbody>
-              {products.map((product, index) => (
-                <tr key={product.id} className="border-b border-[#E8E2D2]/50 hover:bg-[#F7F4EB] transition-colors">
+              {PRODUCTS.map((product, index) => (
+                <motion.tr
+                  key={product.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.05 }}
+                  className="border-b border-[#E8E2D2]/50 hover:bg-[#F7F4EB] transition-colors"
+                >
                   <td className="px-6 py-4">
                     <Link to={`/products/${product.id}`} className="font-medium text-[#1A1713] hover:text-[#D4AF37] transition-colors text-sm">
                       {getProductName(product)}
@@ -71,7 +64,7 @@ const HealthBenefits = () => {
                     {getBenefits(product)?.slice(0, 2).join(', ')}
                   </td>
                   <td className="px-6 py-4 font-medium text-[#1A1713] text-sm">{formatPrice(product.price)}</td>
-                </tr>
+                </motion.tr>
               ))}
             </tbody>
           </table>
