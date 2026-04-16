@@ -1,0 +1,87 @@
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import axios from 'axios';
+import { useLanguage } from '../context/LanguageContext';
+import { useCurrency } from '../context/CurrencyContext';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
+
+const HealthBenefits = () => {
+  const { t, language, getProductName } = useLanguage();
+  const { formatPrice } = useCurrency();
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get(`${API}/products`);
+        setProducts(response.data);
+      } catch (error) {
+        console.error('Failed to fetch products:', error);
+      }
+    };
+    fetchProducts();
+  }, []);
+
+  const getBenefits = (product) => {
+    const key = language === 'en' ? 'health_benefits' : `health_benefits_${language}`;
+    return product[key] || product.health_benefits;
+  };
+
+  return (
+    <div className="min-h-screen pt-24 pb-16" data-testid="health-benefits-page">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">Wellness</p>
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
+            {t('benefits.title')}
+          </h1>
+          <p className="text-[#5C5449] text-base max-w-xl mx-auto">
+            {t('benefits.subtitle')}
+          </p>
+        </motion.div>
+
+        {/* Comparison Table */}
+        <div className="overflow-x-auto mb-16">
+          <table className="w-full" data-testid="benefits-table">
+            <thead>
+              <tr className="border-b border-[#E8E2D2]">
+                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">Honey</th>
+                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">Category</th>
+                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">Key Benefits</th>
+                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">Price (500g)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {products.map((product, index) => (
+                <tr key={product.id} className="border-b border-[#E8E2D2]/50 hover:bg-[#F7F4EB] transition-colors">
+                  <td className="px-6 py-4">
+                    <Link to={`/products/${product.id}`} className="font-medium text-[#1A1713] hover:text-[#D4AF37] transition-colors text-sm">
+                      {getProductName(product)}
+                    </Link>
+                  </td>
+                  <td className="px-6 py-4">
+                    <span className="text-xs uppercase tracking-wide text-[#D4AF37]">{product.tag}</span>
+                  </td>
+                  <td className="px-6 py-4 text-[#5C5449] text-sm">
+                    {getBenefits(product)?.slice(0, 2).join(', ')}
+                  </td>
+                  <td className="px-6 py-4 font-medium text-[#1A1713] text-sm">{formatPrice(product.price)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HealthBenefits;
