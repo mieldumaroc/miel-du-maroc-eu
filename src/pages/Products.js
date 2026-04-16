@@ -15,7 +15,7 @@ const Products = () => {
   const [selectedTag, setSelectedTag] = useState('All');
   const [loading, setLoading] = useState(true);
 
-  const tags = ['All', 'Immunity', 'Respiratory', 'Digestion', 'Energy', 'Calming', 'Rare', 'Liver Health', 'General Health', 'Wellness', 'Warming', 'Miracle Cure'];
+  const tags = ['All', 'Immunity', 'Respiratory', 'Digestion', 'Energy', 'Calming', 'Rare', 'Liver Health', 'General Health', 'Wellness', 'Warming'];
 
   useEffect(() => {
     fetchProducts();
