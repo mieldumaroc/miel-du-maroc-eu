@@ -350,10 +350,64 @@ export const TESTIMONIALS = [
 ];
 
 export const FAQ = [
-  { question: "How do I place an order?", question_fr: "Comment passer une commande?", answer: "Simply click the 'Order via WhatsApp' button on any product page or use the floating WhatsApp button. Our team will guide you through the process personally.", answer_fr: "Cliquez simplement sur le bouton 'Commander via WhatsApp' sur n'importe quelle page produit." },
-  { question: "What payment methods do you accept?", question_fr: "Quels modes de paiement acceptez-vous?", answer: "We accept Western Union, MoneyGram, Ria, WorldRemit, and Wise. Payment is processed securely before shipment.", answer_fr: "Nous acceptons Western Union, MoneyGram, Ria, WorldRemit et Wise." },
-  { question: "Do you ship to Europe?", question_fr: "Livrez-vous en Europe?", answer: "Yes! We ship to all European countries. Delivery typically takes 7-14 business days. Each order is carefully packaged to preserve the honey's quality.", answer_fr: "Oui! Nous livrons dans tous les pays europeens. La livraison prend generalement 7 a 14 jours ouvrables." },
-  { question: "Is your honey really pure?", question_fr: "Votre miel est-il vraiment pur?", answer: "Absolutely. Our honey is 100% raw and unprocessed. We harvest directly from our family hives in the Atlas Mountains with no additives or heat treatment.", answer_fr: "Absolument. Notre miel est 100% brut et non transforme." },
-  { question: "What sizes are available?", question_fr: "Quelles tailles sont disponibles?", answer: "All our honeys are available in 500g and 1kg jars. Contact us via WhatsApp for custom quantities or gift sets.", answer_fr: "Tous nos miels sont disponibles en pots de 500g et 1kg." },
-  { question: "How should I store the honey?", question_fr: "Comment conserver le miel?", answer: "Store in a cool, dry place away from direct sunlight. Keep at room temperature (15-25C). Never refrigerate. Crystallization is natural and does not affect quality.", answer_fr: "Conservez dans un endroit frais et sec a l'abri de la lumiere directe." }
+  {
+    question: "How do I place an order?",
+    question_fr: "Comment passer une commande?",
+    question_de: "Wie bestelle ich?",
+    question_nl: "Hoe plaats ik een bestelling?",
+    answer: "Simply click the 'Order via WhatsApp' button on any product page or use the floating WhatsApp button. Our team will guide you through the process personally.",
+    answer_fr: "Cliquez simplement sur le bouton 'Commander via WhatsApp' sur n'importe quelle page produit. Notre equipe vous guidera personnellement.",
+    answer_de: "Klicken Sie einfach auf den 'Uber WhatsApp bestellen' Button auf jeder Produktseite oder nutzen Sie den schwebenden WhatsApp-Button. Unser Team wird Sie personlich durch den Prozess fuhren.",
+    answer_nl: "Klik simpelweg op de 'Bestel via WhatsApp' knop op elke productpagina of gebruik de zwevende WhatsApp-knop. Ons team begeleidt u persoonlijk door het proces."
+  },
+  {
+    question: "What payment methods do you accept?",
+    question_fr: "Quels modes de paiement acceptez-vous?",
+    question_de: "Welche Zahlungsmethoden akzeptieren Sie?",
+    question_nl: "Welke betaalmethoden accepteert u?",
+    answer: "We accept Western Union, MoneyGram, Ria, WorldRemit, and Wise. Payment is processed securely before shipment.",
+    answer_fr: "Nous acceptons Western Union, MoneyGram, Ria, WorldRemit et Wise. Le paiement est traite de maniere securisee avant l'expedition.",
+    answer_de: "Wir akzeptieren Western Union, MoneyGram, Ria, WorldRemit und Wise. Die Zahlung wird sicher vor dem Versand abgewickelt.",
+    answer_nl: "Wij accepteren Western Union, MoneyGram, Ria, WorldRemit en Wise. De betaling wordt veilig verwerkt voor verzending."
+  },
+  {
+    question: "Do you ship to Europe?",
+    question_fr: "Livrez-vous en Europe?",
+    question_de: "Liefern Sie nach Europa?",
+    question_nl: "Levert u in Europa?",
+    answer: "Yes! We ship to all European countries. Delivery typically takes 7-14 business days. Each order is carefully packaged to preserve the honey's quality.",
+    answer_fr: "Oui! Nous livrons dans tous les pays europeens. La livraison prend generalement 7 a 14 jours ouvrables. Chaque commande est soigneusement emballee.",
+    answer_de: "Ja! Wir liefern in alle europaischen Lander. Die Lieferung dauert in der Regel 7-14 Werktage. Jede Bestellung wird sorgfaltig verpackt.",
+    answer_nl: "Ja! We leveren in alle Europese landen. Levering duurt doorgaans 7-14 werkdagen. Elke bestelling wordt zorgvuldig verpakt."
+  },
+  {
+    question: "Is your honey really pure?",
+    question_fr: "Votre miel est-il vraiment pur?",
+    question_de: "Ist Ihr Honig wirklich rein?",
+    question_nl: "Is uw honing echt puur?",
+    answer: "Absolutely. Our honey is 100% raw and unprocessed. We harvest directly from our family hives in the Atlas Mountains with no additives or heat treatment.",
+    answer_fr: "Absolument. Notre miel est 100% brut et non transforme. Nous recoltons directement de nos ruches familiales dans les montagnes de l'Atlas.",
+    answer_de: "Absolut. Unser Honig ist 100% roh und unverarbeitet. Wir ernten direkt aus unseren Familienbienenstocken im Atlasgebirge ohne Zusatzstoffe.",
+    answer_nl: "Absoluut. Onze honing is 100% rauw en onbewerkt. We oogsten rechtstreeks uit onze familiebijenkorven in het Atlasgebergte zonder toevoegingen."
+  },
+  {
+    question: "What sizes are available?",
+    question_fr: "Quelles tailles sont disponibles?",
+    question_de: "Welche Grossen sind verfugbar?",
+    question_nl: "Welke maten zijn beschikbaar?",
+    answer: "All our honeys are available in 500g and 1kg jars. Contact us via WhatsApp for custom quantities or gift sets.",
+    answer_fr: "Tous nos miels sont disponibles en pots de 500g et 1kg. Contactez-nous via WhatsApp pour des quantites personnalisees.",
+    answer_de: "Alle unsere Honige sind in 500g und 1kg Glasern erhaltlich. Kontaktieren Sie uns uber WhatsApp fur individuelle Mengen oder Geschenksets.",
+    answer_nl: "Al onze honingsoorten zijn verkrijgbaar in potten van 500g en 1kg. Neem contact met ons op via WhatsApp voor aangepaste hoeveelheden."
+  },
+  {
+    question: "How should I store the honey?",
+    question_fr: "Comment conserver le miel?",
+    question_de: "Wie soll ich den Honig aufbewahren?",
+    question_nl: "Hoe moet ik de honing bewaren?",
+    answer: "Store in a cool, dry place away from direct sunlight. Keep at room temperature (15-25C). Never refrigerate. Crystallization is natural and does not affect quality.",
+    answer_fr: "Conservez dans un endroit frais et sec a l'abri de la lumiere directe. Gardez a temperature ambiante (15-25C). Ne refrigerez jamais.",
+    answer_de: "Kuhl und trocken lagern, vor direkter Sonneneinstrahlung schutzen. Bei Raumtemperatur (15-25C) aufbewahren. Nie kuhlen. Kristallisation ist naturlich.",
+    answer_nl: "Bewaar op een koele, droge plaats uit direct zonlicht. Bewaar op kamertemperatuur (15-25C). Nooit koelen. Kristallisatie is natuurlijk."
+  }
 ];
