@@ -73,7 +73,7 @@ export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('fr');
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('mdm-lang') || 'en';
+    const savedLang = localStorage.getItem('mdm-lang') || 'fr';
     setLanguage(savedLang);
     document.documentElement.lang = savedLang;
   }, []);
