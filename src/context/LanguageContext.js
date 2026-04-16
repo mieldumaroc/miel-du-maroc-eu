@@ -70,7 +70,7 @@ const translations = {
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('fr');
 
   useEffect(() => {
     const savedLang = localStorage.getItem('mdm-lang') || 'en';
