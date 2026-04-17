@@ -254,7 +254,7 @@ export const PRODUCTS = [
   },
   {
     id: "euphorbe",
-    name_ar: "عسل الفرفيون الجبلي",
+    name_ar: "عسل الزقوم",
     description_ar: "عسل دافئ من نباتات الفرفيون في المناطق المرتفعة بالمغرب.",
     health_benefits_ar: ["تأثير مدفئ", "دعم الجهاز التنفسي", "مساعد هضمي", "الطب التقليدي"],
     name: "Mountain Spurge Honey",
