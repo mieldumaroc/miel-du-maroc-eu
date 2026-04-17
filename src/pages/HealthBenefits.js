@@ -29,7 +29,7 @@ const HealthBenefits = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('wellness')}</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('products.wellness')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('benefits.title')}
           </h1>
@@ -43,10 +43,10 @@ const HealthBenefits = () => {
           <table className="w-full" data-testid="benefits-table">
             <thead>
               <tr className="border-b border-[#E8E2D2]">
-                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('tableHoney')}</th>
-                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('tableCategory')}</th>
-                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('tableBenefits')}</th>
-                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('tablePrice')}</th>
+                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('products.colHoney')}</th>
+                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('products.colCategory')}</th>
+                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('products.colBenefits')}</th>
+                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('products.colPrice')}</th>
               </tr>
             </thead>
             <tbody>

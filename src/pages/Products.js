@@ -64,7 +64,7 @@ const Products = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('collection')}</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('products.collection')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('products.title')}
           </h1>
@@ -78,7 +78,7 @@ const Products = () => {
           <div className="relative w-full md:w-80">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-[#5C5449]" size={16} />
             <input
-              placeholder={t('searchPlaceholder')}
+              placeholder={t('products.searchPlaceholder')}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-10 pr-4 py-3 text-sm bg-transparent border border-[#E8E2D2] focus:border-[#D4AF37] focus:outline-none transition-colors"

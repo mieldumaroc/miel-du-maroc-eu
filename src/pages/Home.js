@@ -74,7 +74,7 @@ const Home = () => {
       <section className="py-24 lg:py-32 bg-[#F7F4EB]" data-testid="why-us-section">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center mb-16">
-            <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('excellence')}</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('products.excellence')}</p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight">{t('whyUs.title')}</h2>
           </motion.div>
           <div className="grid sm:grid-cols-3 gap-8">
