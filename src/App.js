@@ -17,6 +17,8 @@ import HealthBenefits from './pages/HealthBenefits';
 import Shipping from './pages/Shipping';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import './App.css';
 
 
@@ -56,6 +58,8 @@ function App() {
                   <Route path="/shipping" element={<Shipping />} />
                   <Route path="/faq" element={<FAQ />} />
                   <Route path="/contact" element={<Contact />} />
+                  <Route path="/blog" element={<Blog />} />
+                  <Route path="/blog/:slug" element={<BlogPost />} />
                 </Routes>
               </main>
               <Footer />
