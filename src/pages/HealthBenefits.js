@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
@@ -6,6 +6,12 @@ import { useCurrency } from '../context/CurrencyContext';
 import { PRODUCTS } from '../data/products';
 
 const HealthBenefits = () => {
+  useEffect(() => {
+    document.title = 'Bienfaits du Miel Marocain | Miel du Maroc';
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', 'Découvrez les bienfaits thérapeutiques de chaque variété de miel: immunitaire, respiratoire, digestif et plus.');
+  }, []);
+
   const { t, language, getProductName } = useLanguage();
   const { formatPriceWithMAD } = useCurrency();
 

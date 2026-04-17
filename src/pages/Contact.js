@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -6,6 +6,12 @@ import { useLanguage } from '../context/LanguageContext';
 const WHATSAPP_NUMBER = "212676050868";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = 'Contact | Miel du Maroc – Commandez via WhatsApp';
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', 'Contactez-nous sur WhatsApp pour commander votre miel pur du Maroc. Réponse rapide garantie.');
+  }, []);
+
   const { t } = useLanguage();
   const [message, setMessage] = useState('');
 

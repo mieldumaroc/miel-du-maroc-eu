@@ -7,6 +7,12 @@ import ProductCard from '../components/ProductCard';
 import { PRODUCTS } from '../data/products';
 
 const Products = () => {
+  useEffect(() => {
+    document.title = 'Notre Collection de Miels | Miel du Maroc';
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', 'Découvrez nos 13 variétés de miels purs du Maroc: Origan, Thym, Nigelle, Câpre, Romarin et plus. Livraison Europe.');
+  }, []);
+
   const { t, getProductName } = useLanguage();
   const { formatPrice } = useCurrency();
   const [products, setProducts] = useState([]);

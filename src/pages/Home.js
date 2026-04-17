@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Shield, Award, Users, ChevronRight } from 'lucide-react';
@@ -7,6 +7,12 @@ import ProductCard from '../components/ProductCard';
 import { PRODUCTS } from '../data/products';
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'Miel du Maroc | Miels Purs de l'Atlas – Achetez en Europe';
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', 'Miels purs artisanaux du Maroc. 13 variétés rares livrées en Europe en 7-14 jours.');
+  }, []);
+
   const { t } = useLanguage();
   const featuredProducts = PRODUCTS.slice(0, 6);
 

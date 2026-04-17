@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Package, Clock } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Shipping = () => {
+  useEffect(() => {
+    document.title = 'Livraison en Europe | Miel du Maroc';
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', 'Livraison sécurisée du Maroc vers toute l'Europe en 7-14 jours. Paiement via Western Union, Wise, MoneyGram.');
+  }, []);
+
   const { t } = useLanguage();
 
   return (

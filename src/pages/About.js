@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'À Propos | Miel du Maroc – Famille Apicultrice depuis 1995';
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', 'Notre famille récolte le miel pur dans les montagnes de l'Atlas depuis 1995. Découvrez notre histoire.');
+  }, []);
+
   const { t } = useLanguage();
 
   return (
