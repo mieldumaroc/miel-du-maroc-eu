@@ -49,7 +49,7 @@ const ProductDetail = () => {
   const selectedSizeData = product.sizes?.find(s => s.size === selectedSize) || product.sizes?.[0];
   const currentPrice = selectedSizeData?.price || product.price;
   const productName = getProductName(product);
-  const whatsappMessage = encodeURIComponent(`Hello, I would like to order: ${productName} (${selectedSize})`);
+  const whatsappMessage = encodeURIComponent(`${t('products.orderWhatsApp')}: ${productName} (${selectedSize})`);
 
   return (
     <div className="min-h-screen pt-24 pb-16" data-testid="product-detail-page">
@@ -142,7 +142,7 @@ const ProductDetail = () => {
                 data-testid="add-to-cart-button"
               >
                 <ShoppingBag size={16} />
-                {t('products.selectSize') === 'Select Size' ? 'Add to Cart' : t('products.selectSize') === 'Choisir Taille' ? 'Ajouter au Panier' : t('products.selectSize') === 'Grosse Wahlen' ? 'In den Warenkorb' : 'In Winkelwagen'}
+                {t('products.addToCart')}
               </button>
               <a
                 href={`${WHATSAPP_LINK}${whatsappMessage}`}

@@ -18,10 +18,13 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedTag, setSelectedTag] = useState('All');
+  const [selectedTag, setSelectedTag] = useState(t('tags.all'));
+  const [selectedTagEn, setSelectedTagEn] = useState('All');
   const [loading, setLoading] = useState(true);
 
-  const tags = ['All', 'Immunity', 'Respiratory', 'Digestion', 'Energy', 'Calming', 'Rare', 'Liver Health', 'General Health', 'Wellness', 'Warming'];
+  const tagKeys = ['all', 'immunity', 'respiratory', 'digestion', 'energy', 'calming', 'rare', 'liverHealth', 'generalHealth', 'wellness', 'warming'];
+  const tagEnglish = ['All', 'Immunity', 'Respiratory', 'Digestion', 'Energy', 'Calming', 'Rare', 'Liver Health', 'General Health', 'Wellness', 'Warming'];
+  const tags = tagKeys.map(k => t(`tags.${k}`));
 
   useEffect(() => {
     fetchProducts();
@@ -39,8 +42,8 @@ const Products = () => {
 
   const filterProducts = () => {
     let filtered = products;
-    if (selectedTag !== 'All') {
-      filtered = filtered.filter(p => p.tag === selectedTag);
+    if (selectedTagEn !== 'All') {
+      filtered = filtered.filter(p => p.tag === selectedTagEn);
     }
     if (searchTerm) {
       filtered = filtered.filter(p =>
@@ -61,7 +64,7 @@ const Products = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">Collection</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('collection')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('products.title')}
           </h1>
@@ -92,7 +95,7 @@ const Products = () => {
                     ? 'bg-[#1A1713] text-[#FDFBF7]'
                     : 'border border-[#E8E2D2] text-[#5C5449] hover:border-[#D4AF37] hover:text-[#D4AF37]'
                 }`}
-                onClick={() => setSelectedTag(tag)}
+                onClick={() => { setSelectedTag(tag); setSelectedTagEn(tagEnglish[tags.indexOf(tag)]); }}
                 data-testid={`filter-tag-${tag.toLowerCase().replace(' ', '-')}`}
               >
                 {tag}
