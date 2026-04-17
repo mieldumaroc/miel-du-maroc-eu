@@ -7,7 +7,7 @@ import { PRODUCTS } from '../data/products';
 
 const HealthBenefits = () => {
   const { t, language, getProductName } = useLanguage();
-  const { formatPrice } = useCurrency();
+  const { formatPriceWithMAD } = useCurrency();
 
   const getBenefits = (product) => {
     const key = language === 'en' ? 'health_benefits' : `health_benefits_${language}`;
@@ -63,7 +63,7 @@ const HealthBenefits = () => {
                   <td className="px-6 py-4 text-[#5C5449] text-sm">
                     {getBenefits(product)?.slice(0, 2).join(', ')}
                   </td>
-                  <td className="px-6 py-4 font-medium text-[#1A1713] text-sm">{formatPrice(product.price)}</td>
+                  <td className="px-6 py-4 font-medium text-[#1A1713] text-sm">{formatPriceWithMAD(product.price)}</td>
                 </motion.tr>
               ))}
             </tbody>

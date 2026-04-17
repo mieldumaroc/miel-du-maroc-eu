@@ -10,7 +10,7 @@ const WHATSAPP_NUMBER = '212676050868';
 const CartDrawer = () => {
   const { items, isOpen, closeCart, updateQuantity, removeItem, clearCart, totalPriceMAD } = useCart();
   const { language } = useLanguage();
-  const { formatPrice } = useCurrency();
+  const { formatPriceWithMAD, formatCartTotal } = useCurrency();
 
   const getItemName = (item) => {
     if (language === 'en') return item.name;
@@ -98,7 +98,7 @@ const CartDrawer = () => {
                       <div className="flex-1 min-w-0">
                         <h4 className="font-heading font-medium text-[#1A1713] text-sm truncate">{getItemName(item)}</h4>
                         <p className="text-xs text-[#5C5449] mt-0.5">{item.size}</p>
-                        <p className="text-sm font-medium text-[#1A1713] mt-1">{formatPrice(item.price)}</p>
+                        <p className="text-sm font-medium text-[#1A1713] mt-1">{formatPriceWithMAD(item.price)}</p>
 
                         {/* Quantity Controls */}
                         <div className="flex items-center gap-3 mt-2">
@@ -149,7 +149,7 @@ const CartDrawer = () => {
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-medium text-[#5C5449] uppercase tracking-wide">Total</span>
                   <span className="font-heading text-2xl font-medium text-[#1A1713]" data-testid="cart-total">
-                    {formatPrice(totalPriceMAD)}
+                    {formatCartTotal(totalPriceMAD)}
                   </span>
                 </div>
                 <button

@@ -1,14 +1,11 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 const CurrencyContext = createContext();
 
-
 const CURRENCY_SYMBOLS = {
   MAD: 'MAD',
-  EUR: '\u20ac',
-  GBP: '\u00a3',
-  USD: '$',
-  CHF: 'CHF',
+  EUR: '€',
+  GBP: '£',
 };
 
 const LANG_TO_CURRENCY = {
@@ -18,29 +15,13 @@ const LANG_TO_CURRENCY = {
   nl: 'EUR',
 };
 
+const RATES = {
+  EUR: 0.092,
+  GBP: 0.079,
+};
+
 export const CurrencyProvider = ({ children }) => {
   const [currency, setCurrency] = useState('EUR');
-  const [rates, setRates] = useState({
-    EUR: 0.092,
-    GBP: 0.079,
-    USD: 0.10,
-    CHF: 0.089,
-  });
-
-  useEffect(() => {
-    fetchRates();
-  }, []);
-
-  const fetchRates = async () => {
-    try {
-      const response = await axios.get(`${API}/currency/rates`);
-      if (response.data && response.data.rates) {
-        setRates(response.data.rates);
-      }
-    } catch (error) {
-      console.error('Failed to fetch currency rates:', error);
-    }
-  };
 
   const setCurrencyFromLanguage = (lang) => {
     const mapped = LANG_TO_CURRENCY[lang] || 'EUR';
@@ -48,26 +29,39 @@ export const CurrencyProvider = ({ children }) => {
   };
 
   const convertPrice = (priceInMAD) => {
-    if (currency === 'MAD') return priceInMAD;
-    const rate = rates[currency] || 0.1;
+    const rate = RATES[currency] || 0.092;
     return Math.round(priceInMAD * rate * 100) / 100;
   };
 
+  // Shows only the local currency (EUR/GBP)
   const formatPrice = (priceInMAD) => {
     const converted = convertPrice(priceInMAD);
     const symbol = CURRENCY_SYMBOLS[currency];
-    if (currency === 'MAD') return `${converted} ${symbol}`;
-    if (['EUR', 'GBP', 'USD'].includes(currency)) return `${symbol}${converted.toFixed(2)}`;
-    return `${converted.toFixed(2)} ${symbol}`;
+    return `${symbol}${converted.toFixed(2)}`;
+  };
+
+  // Shows MAD first, then local currency in brackets
+  const formatPriceWithMAD = (priceInMAD) => {
+    const converted = convertPrice(priceInMAD);
+    const symbol = CURRENCY_SYMBOLS[currency];
+    return `${priceInMAD} MAD (${symbol}${converted.toFixed(2)})`;
+  };
+
+  // Shows both MAD and local currency for cart total
+  const formatCartTotal = (priceInMAD) => {
+    const converted = convertPrice(priceInMAD);
+    const symbol = CURRENCY_SYMBOLS[currency];
+    return `${priceInMAD} MAD / ${symbol}${converted.toFixed(2)}`;
   };
 
   return (
     <CurrencyContext.Provider value={{
       currency,
-      rates,
       setCurrencyFromLanguage,
       convertPrice,
       formatPrice,
+      formatPriceWithMAD,
+      formatCartTotal,
       currencySymbols: CURRENCY_SYMBOLS,
     }}>
       {children}

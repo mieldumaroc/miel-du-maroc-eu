@@ -7,7 +7,7 @@ import { useCurrency } from '../context/CurrencyContext';
 
 const ProductCard = ({ product, index = 0 }) => {
   const { getProductName, t } = useLanguage();
-  const { formatPrice } = useCurrency();
+  const { formatPriceWithMAD } = useCurrency();
 
   return (
     <motion.div
@@ -44,7 +44,7 @@ const ProductCard = ({ product, index = 0 }) => {
           </h3>
           <div className="flex items-center justify-between">
             <p className="text-[#5C5449] text-sm">
-              {t('products.from')} <span className="font-medium text-[#1A1713]">{formatPrice(product.price)}</span>
+              {t('products.from')} <span className="font-medium text-[#1A1713]">{formatPriceWithMAD(product.price)}</span>
             </p>
             <ArrowRight size={16} className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>

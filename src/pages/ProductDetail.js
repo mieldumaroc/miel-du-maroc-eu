@@ -13,7 +13,7 @@ const WHATSAPP_LINK = "https://wa.me/212676050868?text=";
 const ProductDetail = () => {
   const { id } = useParams();
   const { t, getProductName, getProductDescription, getProductBenefits } = useLanguage();
-  const { formatPrice } = useCurrency();
+  const { formatPriceWithMAD } = useCurrency();
   const { addItem, openCart } = useCart();
   const [product, setProduct] = useState(null);
   const [selectedSize, setSelectedSize] = useState('500g');
@@ -113,7 +113,7 @@ const ProductDetail = () => {
                     }`}
                     data-testid={`size-${size.size}`}
                   >
-                    {size.size} — {formatPrice(size.price)}
+                    {size.size} — {formatPriceWithMAD(size.price)}
                   </button>
                 ))}
               </div>
@@ -122,7 +122,7 @@ const ProductDetail = () => {
             {/* Price */}
             <div>
               <p className="text-3xl font-light tracking-wide text-[#1A1713]" data-testid="product-detail-price">
-                {formatPrice(currentPrice)}
+                {formatPriceWithMAD(currentPrice)}
               </p>
             </div>
 
