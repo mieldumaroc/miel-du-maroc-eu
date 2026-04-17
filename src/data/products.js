@@ -47,7 +47,7 @@ export const PRODUCTS = [
   },
   {
     id: "fenouil",
-    name_ar: "عسل الشمر",
+    name_ar: "عسل نافع",
     description_ar: "عسل الشمر اللطيف بنكهات اليانسون الخفية، يُستخدم تقليدياً لتهدئة اضطرابات الجهاز الهضمي.",
     health_benefits_ar: ["مساعد هضمي", "مضاد للانتفاخ", "تأثير مهدئ", "نفس منعش"],
     name: "Fennel Honey",
@@ -185,8 +185,8 @@ export const PRODUCTS = [
   },
   {
     id: "eucalyptus",
-    name_ar: "عسل الكافور",
-    description_ar: "عسل الكافور المنعش بنكهات المنثول. حليف قوي لصحة الجهاز التنفسي.",
+    name_ar: "عسل الأوكالبتوس",
+    description_ar: "عسل الأوكالبتوس المنعش بنكهات المنثول. حليف قوي لصحة الجهاز التنفسي.",
     health_benefits_ar: ["يفتح مجاري الهواء", "يخفف نزلات البرد", "مضاد للبكتيريا", "مزيل الاحتقان"],
     name: "Eucalyptus Honey",
     name_fr: "Miel d'Eucalyptus",
