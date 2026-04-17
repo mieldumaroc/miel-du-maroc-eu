@@ -1,10 +1,10 @@
 import { BLOG_POSTS } from '../data/products';
-import { useLanguage } from '../context/LanguageContext';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { BLOG_POSTS } from '../data/products';
 
 
 const Blog = () => {

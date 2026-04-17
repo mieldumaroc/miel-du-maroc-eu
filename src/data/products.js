@@ -338,50 +338,11 @@ export const BLOG_POSTS = [
     excerpt_de: "Oregano-Honig ist eines der kraftvollsten natürlichen Antibiotika. Entdecken Sie, warum dieser seltene Atlashonig in Europa so geschätzt wird.",
     excerpt_nl: "Oregano honing is een van de krachtigste natuurlijke antibiotica. Ontdek waarom deze zeldzame Atlashoning in Europa zo gewaardeerd wordt.",
     excerpt_ar: "عسل الأوريغانو من أقوى المضادات الحيوية الطبيعية. اكتشف لماذا يُقدَّر هذا العسل النادر من جبال الأطلس في أوروبا.",
-    content: "Oregano honey from Morocco's Atlas Mountains is unlike any honey you will find in a supermarket. Harvested from wild oregano flowers that grow at high altitude, this honey contains unique compounds that give it extraordinary healing properties.
-
-1. Powerful Natural Antibiotic
-Oregano honey contains high levels of thymol and carvacrol, two compounds scientifically proven to fight bacteria. Studies show it can be effective against strains that resist conventional antibiotics.
-
-2. Boosts Immunity
-Rich in antioxidants and enzymes, regular consumption of oregano honey strengthens the immune system. A teaspoon each morning on an empty stomach can help protect your body through winter months.
-
-3. Soothes Sore Throats
-Oregano honey's antibacterial properties make it particularly effective for throat infections. Mix a tablespoon with warm water and lemon for immediate relief.
-
-4. Aids Digestion
-The natural enzymes in raw oregano honey help break down food and reduce bloating. It can also help restore healthy gut bacteria after illness.
-
-5. Skin Healing
-Applied directly to minor cuts, burns, or skin irritations, oregano honey creates a protective barrier and accelerates healing.
-
-How to Use Oregano Honey
-- Take 1 teaspoon daily on an empty stomach
-- Mix with warm water to preserve enzymes
-- Apply directly to skin for wound care
-- Add to herbal teas for respiratory support
-
-Our oregano honey is harvested once a year by hand from wild mountain oregano, never heated or processed. Order yours via WhatsApp today.",
-    content_fr: "Le miel d'origan des montagnes de l'Atlas est un vrai trésor thérapeutique. Voici ses 5 bienfaits principaux: antibiotique naturel, renforce l'immunité, apaise la gorge, aide la digestion et guérit la peau.
-
-Comment l'utiliser: une cuillère à café le matin à jeun, mélangé avec de l'eau tiède et du citron, ou appliqué directement sur la peau.
-
-Notre miel d'origan est récolté une fois par an à la main depuis l'origan sauvage de montagne, jamais chauffé ni transformé.",
-    content_de: "Oregano-Honig aus dem Atlasgebirge Marokkos ist ein echtes therapeutisches Schatz mit 5 Hauptvorteilen: natürliches Antibiotikum, stärkt die Immunität, beruhigt den Hals, hilft der Verdauung und heilt die Haut.
-
-Anwendung: Ein Teelöffel täglich auf nüchternen Magen, mit warmem Wasser gemischt oder direkt auf die Haut aufgetragen.
-
-Unser Oregano-Honig wird einmal im Jahr von Hand geerntet, niemals erhitzt oder verarbeitet.",
-    content_nl: "Oregano honing uit het Atlasgebergte van Marokko heeft 5 hoofdvoordelen: natuurlijk antibioticum, versterkt immuniteit, kalmeert de keel, helpt spijsvertering en geneest de huid.
-
-Gebruik: één theelepel dagelijks op een lege maag, gemengd met warm water of direct op de huid aangebracht.
-
-Onze oregano honing wordt eenmaal per jaar met de hand geoogst, nooit verhit of bewerkt.",
-    content_ar: "عسل الأوريغانو من جبال الأطلس المغربية له ٥ فوائد رئيسية: مضاد حيوي طبيعي، يعزز المناعة، يهدئ الحلق، يساعد الهضم ويعالج الجلد.
-
-طريقة الاستخدام: ملعقة صغيرة يومياً على الريق، مخلوطة بماء دافئ وليمون، أو تطبيقها مباشرة على الجلد.
-
-عسل الأوريغانو لدينا يُحصد مرة واحدة في السنة يدوياً من الأوريغانو البري الجبلي، ولا يُسخَّن أو يُعالَج أبداً.",
+    content: "Oregano honey from Morocco's Atlas Mountains is unlike any honey you will find in a supermarket. Harvested from wild oregano flowers that grow at high altitude, this honey contains unique compounds that give it extraordinary healing properties.\n\n1. Powerful Natural Antibiotic\nOregano honey contains high levels of thymol and carvacrol, two compounds scientifically proven to fight bacteria. Studies show it can be effective against strains that resist conventional antibiotics.\n\n2. Boosts Immunity\nRich in antioxidants and enzymes, regular consumption of oregano honey strengthens the immune system. A teaspoon each morning on an empty stomach can help protect your body through winter months.\n\n3. Soothes Sore Throats\nOregano honey's antibacterial properties make it particularly effective for throat infections. Mix a tablespoon with warm water and lemon for immediate relief.\n\n4. Aids Digestion\nThe natural enzymes in raw oregano honey help break down food and reduce bloating. It can also help restore healthy gut bacteria after illness.\n\n5. Skin Healing\nApplied directly to minor cuts, burns, or skin irritations, oregano honey creates a protective barrier and accelerates healing.\n\nHow to Use Oregano Honey\n- Take 1 teaspoon daily on an empty stomach\n- Mix with warm water to preserve enzymes\n- Apply directly to skin for wound care\n- Add to herbal teas for respiratory support\n\nOur oregano honey is harvested once a year by hand from wild mountain oregano, never heated or processed. Order yours via WhatsApp today.",
+    content_fr: "Le miel d'origan des montagnes de l'Atlas est un vrai trésor thérapeutique. Voici ses 5 bienfaits principaux: antibiotique naturel, renforce l'immunité, apaise la gorge, aide la digestion et guérit la peau.\n\nComment l'utiliser: une cuillère à café le matin à jeun, mélangé avec de l'eau tiède et du citron, ou appliqué directement sur la peau.\n\nNotre miel d'origan est récolté une fois par an à la main depuis l'origan sauvage de montagne, jamais chauffé ni transformé.",
+    content_de: "Oregano-Honig aus dem Atlasgebirge Marokkos ist ein echtes therapeutisches Schatz mit 5 Hauptvorteilen: natürliches Antibiotikum, stärkt die Immunität, beruhigt den Hals, hilft der Verdauung und heilt die Haut.\n\nAnwendung: Ein Teelöffel täglich auf nüchternen Magen, mit warmem Wasser gemischt oder direkt auf die Haut aufgetragen.\n\nUnser Oregano-Honig wird einmal im Jahr von Hand geerntet, niemals erhitzt oder verarbeitet.",
+    content_nl: "Oregano honing uit het Atlasgebergte van Marokko heeft 5 hoofdvoordelen: natuurlijk antibioticum, versterkt immuniteit, kalmeert de keel, helpt spijsvertering en geneest de huid.\n\nGebruik: één theelepel dagelijks op een lege maag, gemengd met warm water of direct op de huid aangebracht.\n\nOnze oregano honing wordt eenmaal per jaar met de hand geoogst, nooit verhit of bewerkt.",
+    content_ar: "عسل الأوريغانو من جبال الأطلس المغربية له ٥ فوائد رئيسية: مضاد حيوي طبيعي، يعزز المناعة، يهدئ الحلق، يساعد الهضم ويعالج الجلد.\n\nطريقة الاستخدام: ملعقة صغيرة يومياً على الريق، مخلوطة بماء دافئ وليمون، أو تطبيقها مباشرة على الجلد.\n\nعسل الأوريغانو لدينا يُحصد مرة واحدة في السنة يدوياً من الأوريغانو البري الجبلي، ولا يُسخَّن أو يُعالَج أبداً.",
     image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
     published_at: "2024-12-15T10:00:00Z"
   },
@@ -399,46 +360,11 @@ Onze oregano honing wordt eenmaal per jaar met de hand geoogst, nooit verhit of 
     excerpt_de: "Thymianhonig wird seit Jahrhunderten in der marokkanischen Medizin für die Atemwegsgesundheit verwendet.",
     excerpt_nl: "Tijmhoning wordt al eeuwen gebruikt in de Marokkaanse geneeskunde voor de luchtwegengezondheid.",
     excerpt_ar: "يُستخدم عسل الزعتر منذ قرون في الطب المغربي التقليدي لصحة الجهاز التنفسي وشفاء الجروح.",
-    content: "Thyme honey is one of nature's most powerful healing gifts. Rich in antioxidants and antibacterial compounds, it has been a cornerstone of Moroccan traditional medicine for generations.
-
-The unique therapeutic properties come from thymol and carvacrol, two powerful compounds found in thyme flowers collected from the sun-drenched hillsides of Morocco.
-
-Respiratory Health
-Thyme honey is particularly effective for respiratory conditions. It soothes sore throats and reduces inflammation, calms persistent coughs naturally, helps clear congestion and blocked sinuses, and supports recovery from bronchitis.
-
-Wound Healing
-Applied topically, thyme honey creates a moist healing environment that accelerates wound closure and prevents infection.
-
-Antibacterial Action
-Clinical studies have shown thyme honey to be effective against a range of bacteria including Staphylococcus aureus.
-
-How to Use Thyme Honey
-- Take 1 tablespoon in the morning on an empty stomach
-- Mix with warm water and lemon for sore throats
-- Add to herbal tea with ginger for colds
-- Apply directly to minor cuts and burns
-
-Our thyme honey is harvested from wild thyme growing at altitude in the Atlas Mountains, giving it a superior concentration of beneficial compounds compared to cultivated thyme honey.",
-    content_fr: "Le miel de thym des montagnes de l'Atlas est exceptionnel pour la santé respiratoire, la guérison des plaies et ses propriétés antibactériennes.
-
-Santé respiratoire: apaise les maux de gorge, calme la toux persistante, aide à dégager les sinus, soutient la récupération après une bronchite.
-
-Comment l'utiliser: une cuillère à soupe le matin à jeun, avec de l'eau tiède et du citron pour les maux de gorge, ou appliqué directement sur les plaies.",
-    content_de: "Thymianhonig aus dem Atlasgebirge ist außergewöhnlich für die Atemwegsgesundheit, Wundheilung und antibakteriellen Eigenschaften.
-
-Atemwegsgesundheit: lindert Halsschmerzen, beruhigt anhaltenden Husten, hilft bei der Befreiung der Nasennebenhöhlen.
-
-Anwendung: ein Esslöffel morgens auf nüchternen Magen, mit warmem Wasser und Zitrone bei Halsschmerzen.",
-    content_nl: "Tijmhoning uit het Atlasgebergte is uitzonderlijk voor de luchtwegengezondheid, wondgenezing en antibacteriële eigenschappen.
-
-Luchtweggezondheid: verzacht keelpijn, stilt aanhoudende hoest, helpt bij het vrijmaken van de neusbijholten.
-
-Gebruik: een eetlepel 's ochtends op een lege maag, met warm water en citroen bij keelpijn.",
-    content_ar: "عسل الزعتر من جبال الأطلس استثنائي لصحة الجهاز التنفسي والتئام الجروح وخصائصه المضادة للبكتيريا.
-
-صحة الجهاز التنفسي: يخفف التهاب الحلق، يهدئ السعال المستمر، يساعد على فتح الجيوب الأنفية.
-
-طريقة الاستخدام: ملعقة كبيرة في الصباح على الريق، مع ماء دافئ وليمون لالتهاب الحلق.",
+    content: "Thyme honey is one of nature's most powerful healing gifts. Rich in antioxidants and antibacterial compounds, it has been a cornerstone of Moroccan traditional medicine for generations.\n\nThe unique therapeutic properties come from thymol and carvacrol, two powerful compounds found in thyme flowers collected from the sun-drenched hillsides of Morocco.\n\nRespiratory Health\nThyme honey is particularly effective for respiratory conditions. It soothes sore throats and reduces inflammation, calms persistent coughs naturally, helps clear congestion and blocked sinuses, and supports recovery from bronchitis.\n\nWound Healing\nApplied topically, thyme honey creates a moist healing environment that accelerates wound closure and prevents infection.\n\nAntibacterial Action\nClinical studies have shown thyme honey to be effective against a range of bacteria including Staphylococcus aureus.\n\nHow to Use Thyme Honey\n- Take 1 tablespoon in the morning on an empty stomach\n- Mix with warm water and lemon for sore throats\n- Add to herbal tea with ginger for colds\n- Apply directly to minor cuts and burns\n\nOur thyme honey is harvested from wild thyme growing at altitude in the Atlas Mountains, giving it a superior concentration of beneficial compounds compared to cultivated thyme honey.",
+    content_fr: "Le miel de thym des montagnes de l'Atlas est exceptionnel pour la santé respiratoire, la guérison des plaies et ses propriétés antibactériennes.\n\nSanté respiratoire: apaise les maux de gorge, calme la toux persistante, aide à dégager les sinus, soutient la récupération après une bronchite.\n\nComment l'utiliser: une cuillère à soupe le matin à jeun, avec de l'eau tiède et du citron pour les maux de gorge, ou appliqué directement sur les plaies.",
+    content_de: "Thymianhonig aus dem Atlasgebirge ist außergewöhnlich für die Atemwegsgesundheit, Wundheilung und antibakteriellen Eigenschaften.\n\nAtemwegsgesundheit: lindert Halsschmerzen, beruhigt anhaltenden Husten, hilft bei der Befreiung der Nasennebenhöhlen.\n\nAnwendung: ein Esslöffel morgens auf nüchternen Magen, mit warmem Wasser und Zitrone bei Halsschmerzen.",
+    content_nl: "Tijmhoning uit het Atlasgebergte is uitzonderlijk voor de luchtwegengezondheid, wondgenezing en antibacteriële eigenschappen.\n\nLuchtweggezondheid: verzacht keelpijn, stilt aanhoudende hoest, helpt bij het vrijmaken van de neusbijholten.\n\nGebruik: een eetlepel 's ochtends op een lege maag, met warm water en citroen bij keelpijn.",
+    content_ar: "عسل الزعتر من جبال الأطلس استثنائي لصحة الجهاز التنفسي والتئام الجروح وخصائصه المضادة للبكتيريا.\n\nصحة الجهاز التنفسي: يخفف التهاب الحلق، يهدئ السعال المستمر، يساعد على فتح الجيوب الأنفية.\n\nطريقة الاستخدام: ملعقة كبيرة في الصباح على الريق، مع ماء دافئ وليمون لالتهاب الحلق.",
     image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
     published_at: "2024-12-10T10:00:00Z"
   },
@@ -456,46 +382,11 @@ Gebruik: een eetlepel 's ochtends op een lege maag, met warm water en citroen bi
     excerpt_de: "Seit Jahrtausenden praktizieren marokkanische Imker eine Imkerei in Harmonie mit der Natur.",
     excerpt_nl: "Al duizenden jaren beoefenen Marokkaanse imkers een bijenteelt in harmonie met de natuur.",
     excerpt_ar: "منذ آلاف السنين يمارس مربو النحل المغاربة تربية النحل بتناغم مع الطبيعة. اكتشف التقاليد العريقة وراء كل برطمان.",
-    content: "Our family has been keeping bees in the Atlas Mountains for generations. The methods we use today are not very different from those used by our great-grandparents — and that is precisely what makes our honey special.
-
-Traditional Hive Construction
-Traditional Moroccan hives are made from natural materials — hollowed logs, clay pots, or woven reed baskets. These materials regulate temperature and humidity naturally, creating ideal conditions without synthetic materials.
-
-The Harvest
-Honey is harvested only once or twice a year, always leaving enough for the bees to survive winter. This patience produces concentrated, potent honey with exceptional flavour.
-
-The harvest follows natural cycles:
-- Spring honey from mountain wildflowers
-- Summer honey from aromatic herbs like oregano and thyme
-- Autumn honey from late-blooming plants including wild rosemary and caper
-
-No Chemicals, No Shortcuts
-We never use pesticides, antibiotics, or synthetic treatments. Our bees forage freely in unpolluted mountain meadows, far from agricultural chemicals.
-
-Why This Matters for You
-When you buy our honey, you are supporting a family tradition that has maintained biodiversity in the Atlas Mountains for generations, and receiving a product that cannot be replicated by industrial beekeeping.
-
-Every jar tells the story of a place, a season, and a plant. That is something no supermarket honey can ever offer.",
-    content_fr: "Notre famille élève des abeilles dans les montagnes de l'Atlas depuis des générations. Nos méthodes traditionnelles sans produits chimiques produisent un miel que l'apiculture industrielle ne peut pas reproduire.
-
-La récolte suit les cycles naturels: miel de printemps des fleurs sauvages, miel d'été des herbes aromatiques comme l'origan et le thym, miel d'automne du romarin sauvage et du câpre.
-
-Chaque pot raconte l'histoire d'un lieu, d'une saison et d'une plante. C'est quelque chose qu'aucun miel industriel ne peut offrir.",
-    content_de: "Unsere Familie hält seit Generationen Bienen im Atlasgebirge. Unsere traditionellen Methoden ohne Chemikalien produzieren einen Honig, den die industrielle Imkerei nicht reproduzieren kann.
-
-Die Ernte folgt natürlichen Zyklen: Frühlingshonig von Wildblumen, Sommerhonig von Kräutern wie Oregano und Thymian, Herbsthonig von wildem Rosmarin und Kaper.
-
-Jedes Glas erzählt die Geschichte eines Ortes, einer Jahreszeit und einer Pflanze.",
-    content_nl: "Onze familie houdt al generaties lang bijen in het Atlasgebergte. Onze traditionele methoden zonder chemicaliën produceren een honing die de industriële bijenteelt niet kan reproduceren.
-
-De oogst volgt natuurlijke cycli: lentehoning van wilde bloemen, zomerhoning van kruiden zoals oregano en tijm, herfstgoning van wilde rozemarijn en kappers.
-
-Elke pot vertelt het verhaal van een plek, een seizoen en een plant.",
-    content_ar: "عائلتنا تربي النحل في جبال الأطلس منذ أجيال. أساليبنا التقليدية بدون مواد كيميائية تنتج عسلاً لا تستطيع تربية النحل الصناعية إنتاجه.
-
-الحصاد يتبع الدورات الطبيعية: عسل الربيع من الأزهار البرية، عسل الصيف من الأعشاب العطرية كالأوريغانو والزعتر، عسل الخريف من الرومان البري والكبار.
-
-كل برطمان يحكي قصة مكان وموسم ونبات. هذا ما لا يستطيع أي عسل صناعي تقديمه.",
+    content: "Our family has been keeping bees in the Atlas Mountains for generations. The methods we use today are not very different from those used by our great-grandparents — and that is precisely what makes our honey special.\n\nTraditional Hive Construction\nTraditional Moroccan hives are made from natural materials — hollowed logs, clay pots, or woven reed baskets. These materials regulate temperature and humidity naturally, creating ideal conditions without synthetic materials.\n\nThe Harvest\nHoney is harvested only once or twice a year, always leaving enough for the bees to survive winter. This patience produces concentrated, potent honey with exceptional flavour.\n\nThe harvest follows natural cycles:\n- Spring honey from mountain wildflowers\n- Summer honey from aromatic herbs like oregano and thyme\n- Autumn honey from late-blooming plants including wild rosemary and caper\n\nNo Chemicals, No Shortcuts\nWe never use pesticides, antibiotics, or synthetic treatments. Our bees forage freely in unpolluted mountain meadows, far from agricultural chemicals.\n\nWhy This Matters for You\nWhen you buy our honey, you are supporting a family tradition that has maintained biodiversity in the Atlas Mountains for generations, and receiving a product that cannot be replicated by industrial beekeeping.\n\nEvery jar tells the story of a place, a season, and a plant. That is something no supermarket honey can ever offer.",
+    content_fr: "Notre famille élève des abeilles dans les montagnes de l'Atlas depuis des générations. Nos méthodes traditionnelles sans produits chimiques produisent un miel que l'apiculture industrielle ne peut pas reproduire.\n\nLa récolte suit les cycles naturels: miel de printemps des fleurs sauvages, miel d'été des herbes aromatiques comme l'origan et le thym, miel d'automne du romarin sauvage et du câpre.\n\nChaque pot raconte l'histoire d'un lieu, d'une saison et d'une plante. C'est quelque chose qu'aucun miel industriel ne peut offrir.",
+    content_de: "Unsere Familie hält seit Generationen Bienen im Atlasgebirge. Unsere traditionellen Methoden ohne Chemikalien produzieren einen Honig, den die industrielle Imkerei nicht reproduzieren kann.\n\nDie Ernte folgt natürlichen Zyklen: Frühlingshonig von Wildblumen, Sommerhonig von Kräutern wie Oregano und Thymian, Herbsthonig von wildem Rosmarin und Kaper.\n\nJedes Glas erzählt die Geschichte eines Ortes, einer Jahreszeit und einer Pflanze.",
+    content_nl: "Onze familie houdt al generaties lang bijen in het Atlasgebergte. Onze traditionele methoden zonder chemicaliën produceren een honing die de industriële bijenteelt niet kan reproduceren.\n\nDe oogst volgt natuurlijke cycli: lentehoning van wilde bloemen, zomerhoning van kruiden zoals oregano en tijm, herfstgoning van wilde rozemarijn en kappers.\n\nElke pot vertelt het verhaal van een plek, een seizoen en een plant.",
+    content_ar: "عائلتنا تربي النحل في جبال الأطلس منذ أجيال. أساليبنا التقليدية بدون مواد كيميائية تنتج عسلاً لا تستطيع تربية النحل الصناعية إنتاجه.\n\nالحصاد يتبع الدورات الطبيعية: عسل الربيع من الأزهار البرية، عسل الصيف من الأعشاب العطرية كالأوريغانو والزعتر، عسل الخريف من الرومان البري والكبار.\n\nكل برطمان يحكي قصة مكان وموسم ونبات. هذا ما لا يستطيع أي عسل صناعي تقديمه.",
     image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
     published_at: "2024-11-20T10:00:00Z"
   },
@@ -513,42 +404,11 @@ Elke pot vertelt het verhaal van een plek, een seizoen en een plant.",
     excerpt_de: "Echten reinen marokkanischen Honig in Europa zu finden ist schwierig. Hier erfahren Sie, wie Sie ihn direkt nach Hause geliefert bekommen.",
     excerpt_nl: "Echte pure Marokkaanse honing vinden in Europa is moeilijk. Hier leest u hoe u het echte product thuis bezorgd krijgt.",
     excerpt_ar: "إيجاد عسل مغربي طبيعي حقيقي في أوروبا أمر صعب. إليك كيفية الحصول على العسل الأصيل مباشرة إلى بابك.",
-    content: "If you are Moroccan living in Europe, or simply a health-conscious European who appreciates quality honey, you have probably noticed that the honey in supermarkets bears little resemblance to real Moroccan honey.
-
-Why Supermarket Honey is Not the Same
-Most honey sold in European supermarkets is blended from multiple countries, heated to make it easier to bottle which destroys natural enzymes, and stored for months before reaching shelves.
-
-What Makes Real Moroccan Honey Different
-Moroccan honey from the Atlas Mountains is harvested by hand from wild mountain flowers, never heated or processed, bottled immediately after extraction, and rich in natural enzymes, pollen, and propolis.
-
-How to Order from Miel du Maroc
-1. Browse our collection — choose from 13 varieties including Oregano, Thyme, Caper, Wild Rosemary, Jujube and more
-2. Contact us via WhatsApp — send us your order and we will give you a personalised quote
-3. Pay via international transfer — Western Union, MoneyGram, Ria, WorldRemit, or Wise
-4. Receive your honey — carefully packaged and delivered in 7-14 business days
-
-Which Honey Should I Choose?
-- For immunity: Oregano honey
-- For respiratory health: Thyme or Eucalyptus honey
-- For relaxation: Orange Blossom or Lavender honey
-- For energy: Jujube Sidr honey
-- For liver health: Wild Rosemary honey
-- For the rare and exceptional: Caper honey
-- For digestion: Fennel or Carob honey
-
-We ship to France, Belgium, Netherlands, Germany, UK, Spain, Italy, Switzerland and all European countries.",
-    content_fr: "Le vrai miel marocain est difficile à trouver en Europe. Découvrez comment commander directement depuis le Maroc: nos 13 variétés, commande simple via WhatsApp, livraison 7-14 jours partout en Europe.
-
-Quel miel choisir? Origan pour l'immunité, Thym pour la respiration, Fleur d'oranger pour la relaxation, Jujubier pour l'énergie, Romarin pour le foie, Câpre pour le rare et exceptionnel.",
-    content_de: "Echter marokkanischer Honig ist in Europa schwer zu finden. Bestellen Sie direkt aus Marokko: 13 Sorten, einfache Bestellung per WhatsApp, Lieferung in 7-14 Tagen nach ganz Europa.
-
-Welcher Honig für was? Oregano für Immunität, Thymian für Atemwege, Orangenblüte zum Entspannen, Jujube für Energie, Rosmarin für die Leber, Kaper für das Seltene.",
-    content_nl: "Echte Marokkaanse honing is moeilijk te vinden in Europa. Bestel direct uit Marokko: 13 soorten, eenvoudig bestellen via WhatsApp, levering in 7-14 dagen naar heel Europa.
-
-Welke honing waarvoor? Oregano voor immuniteit, tijm voor luchtwegen, sinaasappelbloesem voor ontspanning, jujube voor energie, rozemarijn voor de lever, kappers voor het zeldzame.",
-    content_ar: "العسل المغربي الحقيقي نادر في أوروبا. اطلب مباشرة من المغرب: ١٣ نوعاً، طلب بسيط عبر واتساب، توصيل ٧-١٤ يوم لجميع دول أوروبا.
-
-أي عسل تختار؟ الأوريغانو للمناعة، الزعتر للجهاز التنفسي، زهر البرتقال للاسترخاء، السدر للطاقة، الرومان لصحة الكبد، الكبار للنادر الاستثنائي.",
+    content: "If you are Moroccan living in Europe, or simply a health-conscious European who appreciates quality honey, you have probably noticed that the honey in supermarkets bears little resemblance to real Moroccan honey.\n\nWhy Supermarket Honey is Not the Same\nMost honey sold in European supermarkets is blended from multiple countries, heated to make it easier to bottle which destroys natural enzymes, and stored for months before reaching shelves.\n\nWhat Makes Real Moroccan Honey Different\nMoroccan honey from the Atlas Mountains is harvested by hand from wild mountain flowers, never heated or processed, bottled immediately after extraction, and rich in natural enzymes, pollen, and propolis.\n\nHow to Order from Miel du Maroc\n1. Browse our collection — choose from 13 varieties including Oregano, Thyme, Caper, Wild Rosemary, Jujube and more\n2. Contact us via WhatsApp — send us your order and we will give you a personalised quote\n3. Pay via international transfer — Western Union, MoneyGram, Ria, WorldRemit, or Wise\n4. Receive your honey — carefully packaged and delivered in 7-14 business days\n\nWhich Honey Should I Choose?\n- For immunity: Oregano honey\n- For respiratory health: Thyme or Eucalyptus honey\n- For relaxation: Orange Blossom or Lavender honey\n- For energy: Jujube Sidr honey\n- For liver health: Wild Rosemary honey\n- For the rare and exceptional: Caper honey\n- For digestion: Fennel or Carob honey\n\nWe ship to France, Belgium, Netherlands, Germany, UK, Spain, Italy, Switzerland and all European countries.",
+    content_fr: "Le vrai miel marocain est difficile à trouver en Europe. Découvrez comment commander directement depuis le Maroc: nos 13 variétés, commande simple via WhatsApp, livraison 7-14 jours partout en Europe.\n\nQuel miel choisir? Origan pour l'immunité, Thym pour la respiration, Fleur d'oranger pour la relaxation, Jujubier pour l'énergie, Romarin pour le foie, Câpre pour le rare et exceptionnel.",
+    content_de: "Echter marokkanischer Honig ist in Europa schwer zu finden. Bestellen Sie direkt aus Marokko: 13 Sorten, einfache Bestellung per WhatsApp, Lieferung in 7-14 Tagen nach ganz Europa.\n\nWelcher Honig für was? Oregano für Immunität, Thymian für Atemwege, Orangenblüte zum Entspannen, Jujube für Energie, Rosmarin für die Leber, Kaper für das Seltene.",
+    content_nl: "Echte Marokkaanse honing is moeilijk te vinden in Europa. Bestel direct uit Marokko: 13 soorten, eenvoudig bestellen via WhatsApp, levering in 7-14 dagen naar heel Europa.\n\nWelke honing waarvoor? Oregano voor immuniteit, tijm voor luchtwegen, sinaasappelbloesem voor ontspanning, jujube voor energie, rozemarijn voor de lever, kappers voor het zeldzame.",
+    content_ar: "العسل المغربي الحقيقي نادر في أوروبا. اطلب مباشرة من المغرب: ١٣ نوعاً، طلب بسيط عبر واتساب، توصيل ٧-١٤ يوم لجميع دول أوروبا.\n\nأي عسل تختار؟ الأوريغانو للمناعة، الزعتر للجهاز التنفسي، زهر البرتقال للاسترخاء، السدر للطاقة، الرومان لصحة الكبد، الكبار للنادر الاستثنائي.",
     image: "https://images.unsplash.com/photo-1568657704598-602700bd9694?w=800",
     published_at: "2024-12-05T10:00:00Z"
   },
@@ -566,42 +426,11 @@ Welke honing waarvoor? Oregano voor immuniteit, tijm voor luchtwegen, sinaasappe
     excerpt_de: "Kapernhonig ist vielleicht der seltenste Honig Marokkos. In kleinen Mengen produziert, hat er einen einzigartigen Geschmack und therapeutische Eigenschaften.",
     excerpt_nl: "Kapperhoning is misschien de zeldzaamste honing van Marokko. In kleine hoeveelheden geproduceerd, heeft het een unieke smaak en therapeutische eigenschappen.",
     excerpt_ar: "عسل الكبار ربما أندر عسل في المغرب. يُنتج بكميات صغيرة جداً من أزهار الكبار البرية، وله طعم فريد وخصائص علاجية استثنائية.",
-    content: "Of all the honey varieties we produce in the Atlas Mountains, caper honey is the one that surprises people the most. Unlike the sweet floral honeys most people are familiar with, caper honey has a complex, slightly savory profile that is unlike anything else.
-
-Why Caper Honey is So Rare
-The caper plant blooms for only a very short period each year in the rocky, arid regions of Morocco. The flowers open before sunrise and close by mid-morning, giving bees just a few hours to collect nectar. This narrow window combined with the remote locations where caper grows wild means that caper honey is produced in extremely limited quantities.
-
-The Unique Flavour
-Caper honey has a bold, distinctive taste — earthy, slightly herbal, with a natural sweetness that is less cloying than most honeys. It pairs exceptionally well with cheese, and is used in Moroccan traditional cuisine as a condiment and sweetener.
-
-Therapeutic Properties
-Caper honey is exceptionally rich in antioxidants, anti-inflammatory compounds, and liver-protective substances. Traditional Moroccan medicine has long used caper in various forms for liver health, and the honey concentrates these beneficial properties.
-
-Key benefits include powerful antioxidant protection, anti-inflammatory action, liver support and detoxification, and digestive health.
-
-How to Enjoy Caper Honey
-- Take a teaspoon daily as a health supplement
-- Pair with aged cheese and bread
-- Add to salad dressings for a unique flavour
-- Use as a glaze for roasted vegetables
-
-Due to its rarity, our caper honey is available in limited quantities each year. Contact us via WhatsApp to check current availability.",
-    content_fr: "Le miel de câpre est notre variété la plus rare et la plus précieuse. La plante câpre ne fleurit que brièvement chaque année dans les régions arides et rocheuses du Maroc, donnant aux abeilles peu de temps pour collecter le nectar.
-
-Son goût unique — terreux, légèrement herbacé, moins sucré que la plupart des miels — en fait un produit gastronomique exceptionnel. Il est particulièrement riche en antioxydants et en substances protectrices du foie.
-
-En raison de sa rareté, notre miel de câpre est disponible en quantités limitées chaque année.",
-    content_de: "Kapernhonig ist unsere seltenste und wertvollste Sorte. Die Kapernpflanze blüht nur kurz jedes Jahr in den trockenen Regionen Marokkos, was den Bienen wenig Zeit zum Sammeln gibt.
-
-Sein einzigartiger Geschmack — erdig, leicht kräuterartig, weniger süß als die meisten Honige — macht ihn zu einem außergewöhnlichen gastronomischen Produkt. Er ist besonders reich an Antioxidantien und leberschützenden Stoffen.",
-    content_nl: "Kapperhoning is onze zeldzaamste en meest waardevolle soort. De kapperplant bloeit slechts kort elk jaar in de droge gebieden van Marokko, wat de bijen weinig tijd geeft om nectar te verzamelen.
-
-Zijn unieke smaak — aards, licht kruidig, minder zoet dan de meeste honingsoorten — maakt het een uitzonderlijk gastronomisch product. Het is bijzonder rijk aan antioxidanten en leverschermende stoffen.",
-    content_ar: "عسل الكبار هو أندر وأثمن أنواعنا. نبات الكبار يزهر فقط لفترة قصيرة كل عام في المناطق الجافة الصخرية بالمغرب، مما يعطي النحل وقتاً قليلاً لجمع الرحيق.
-
-طعمه الفريد — ترابي، عشبي قليلاً، أقل حلاوة من معظم العسل — يجعله منتجاً استثنائياً. وهو غني جداً بمضادات الأكسدة والمواد الواقية للكبد.
-
-نظراً لندرته، يتوفر عسل الكبار لدينا بكميات محدودة كل عام.",
+    content: "Of all the honey varieties we produce in the Atlas Mountains, caper honey is the one that surprises people the most. Unlike the sweet floral honeys most people are familiar with, caper honey has a complex, slightly savory profile that is unlike anything else.\n\nWhy Caper Honey is So Rare\nThe caper plant blooms for only a very short period each year in the rocky, arid regions of Morocco. The flowers open before sunrise and close by mid-morning, giving bees just a few hours to collect nectar. This narrow window combined with the remote locations where caper grows wild means that caper honey is produced in extremely limited quantities.\n\nThe Unique Flavour\nCaper honey has a bold, distinctive taste — earthy, slightly herbal, with a natural sweetness that is less cloying than most honeys. It pairs exceptionally well with cheese, and is used in Moroccan traditional cuisine as a condiment and sweetener.\n\nTherapeutic Properties\nCaper honey is exceptionally rich in antioxidants, anti-inflammatory compounds, and liver-protective substances. Traditional Moroccan medicine has long used caper in various forms for liver health, and the honey concentrates these beneficial properties.\n\nKey benefits include powerful antioxidant protection, anti-inflammatory action, liver support and detoxification, and digestive health.\n\nHow to Enjoy Caper Honey\n- Take a teaspoon daily as a health supplement\n- Pair with aged cheese and bread\n- Add to salad dressings for a unique flavour\n- Use as a glaze for roasted vegetables\n\nDue to its rarity, our caper honey is available in limited quantities each year. Contact us via WhatsApp to check current availability.",
+    content_fr: "Le miel de câpre est notre variété la plus rare et la plus précieuse. La plante câpre ne fleurit que brièvement chaque année dans les régions arides et rocheuses du Maroc, donnant aux abeilles peu de temps pour collecter le nectar.\n\nSon goût unique — terreux, légèrement herbacé, moins sucré que la plupart des miels — en fait un produit gastronomique exceptionnel. Il est particulièrement riche en antioxydants et en substances protectrices du foie.\n\nEn raison de sa rareté, notre miel de câpre est disponible en quantités limitées chaque année.",
+    content_de: "Kapernhonig ist unsere seltenste und wertvollste Sorte. Die Kapernpflanze blüht nur kurz jedes Jahr in den trockenen Regionen Marokkos, was den Bienen wenig Zeit zum Sammeln gibt.\n\nSein einzigartiger Geschmack — erdig, leicht kräuterartig, weniger süß als die meisten Honige — macht ihn zu einem außergewöhnlichen gastronomischen Produkt. Er ist besonders reich an Antioxidantien und leberschützenden Stoffen.",
+    content_nl: "Kapperhoning is onze zeldzaamste en meest waardevolle soort. De kapperplant bloeit slechts kort elk jaar in de droge gebieden van Marokko, wat de bijen weinig tijd geeft om nectar te verzamelen.\n\nZijn unieke smaak — aards, licht kruidig, minder zoet dan de meeste honingsoorten — maakt het een uitzonderlijk gastronomisch product. Het is bijzonder rijk aan antioxidanten en leverschermende stoffen.",
+    content_ar: "عسل الكبار هو أندر وأثمن أنواعنا. نبات الكبار يزهر فقط لفترة قصيرة كل عام في المناطق الجافة الصخرية بالمغرب، مما يعطي النحل وقتاً قليلاً لجمع الرحيق.\n\nطعمه الفريد — ترابي، عشبي قليلاً، أقل حلاوة من معظم العسل — يجعله منتجاً استثنائياً. وهو غني جداً بمضادات الأكسدة والمواد الواقية للكبد.\n\nنظراً لندرته، يتوفر عسل الكبار لدينا بكميات محدودة كل عام.",
     image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
     published_at: "2024-11-15T10:00:00Z"
   },
@@ -619,47 +448,11 @@ Zijn unieke smaak — aards, licht kruidig, minder zoet dan de meeste honingsoor
     excerpt_de: "Wilder Rosmarin-Honig aus den abgelegenen Bergen Marokkos wird seit Generationen zur Unterstützung der Lebergesundheit verwendet.",
     excerpt_nl: "Wilde rozemarijnhoning uit de afgelegen bergen van Marokko wordt al generaties lang gebruikt ter ondersteuning van de leversgezondheid.",
     excerpt_ar: "يُستخدم عسل إكليل الجبل البري من الجبال النائية في المغرب منذ أجيال لدعم صحة الكبد وإزالة السموم.",
-    content: "In the most remote valleys of Morocco's Atlas Mountains, far from roads and agricultural activity, wild rosemary grows abundantly on rocky hillsides. The honey produced from these wild plants is something very special.
-
-Why Wild Rosemary Honey is Unique
-Cultivated rosemary honey, while pleasant, lacks the complexity of honey made from truly wild plants. Wild rosemary contains higher concentrations of rosmarinic acid and carnosic acid, powerful antioxidants that give this honey its distinctive properties.
-
-Liver Health and Detoxification
-Rosemary has been studied extensively for its liver-protective effects. Rosmarinic acid helps stimulate bile production, which aids fat digestion and removes toxins from the body. Regular consumption of wild rosemary honey may help support liver function, aid natural detoxification, reduce oxidative stress on liver cells, and support recovery after illness or medication.
-
-Memory and Circulation
-Rosemary has long been associated with memory. The compounds in wild rosemary honey improve blood circulation to the brain and may help maintain cognitive function as we age.
-
-Anti-aging Properties
-The high antioxidant content of wild rosemary honey makes it one of the best natural anti-aging foods available. It neutralizes free radicals that cause cellular aging.
-
-How to Use Wild Rosemary Honey
-- Take 1 teaspoon each morning before breakfast
-- Mix with warm water for a daily liver support drink
-- Add to herbal teas
-- Use as a natural sweetener in cooking
-
-Our wild rosemary honey is harvested from plants growing at altitude in unpolluted mountain areas, ensuring maximum purity and potency.",
-    content_fr: "Le miel de romarin sauvage des montagnes de l'Atlas est récolté dans les zones les plus reculées, loin de toute activité agricole. Sa richesse en acide rosmarinique lui confère des propriétés exceptionnelles pour la santé du foie.
-
-Bienfaits principaux: soutient la fonction hépatique, aide la détoxification naturelle, améliore la circulation sanguine vers le cerveau, propriétés anti-âge puissantes.
-
-Comment l'utiliser: une cuillère à café chaque matin avant le petit-déjeuner, mélangée avec de l'eau tiède pour une boisson de soutien hépatique quotidienne.",
-    content_de: "Wilder Rosmarin-Honig aus den abgelegensten Tälern des Atlasgebirges wird aus wirklich wilden Pflanzen hergestellt und enthält höhere Konzentrationen an Rosmarinsäure.
-
-Hauptvorteile: unterstützt die Leberfunktion, hilft bei der natürlichen Entgiftung, verbessert die Durchblutung des Gehirns, starke Anti-Aging-Eigenschaften.
-
-Anwendung: ein Teelöffel jeden Morgen vor dem Frühstück.",
-    content_nl: "Wilde rozemarijnhoning uit de meest afgelegen valleien van het Atlasgebergte wordt gemaakt van echt wilde planten en bevat hogere concentraties rozemarijnzuur.
-
-Hoofdeigenschappen: ondersteunt leverfunctie, helpt bij natuurlijke detox, verbetert bloeddoorstroming naar de hersenen, krachtige anti-verouderingseigenschappen.
-
-Gebruik: één theelepel elke ochtend voor het ontbijt.",
-    content_ar: "عسل إكليل الجبل البري من أنائي وديان جبال الأطلس غني بحمض الروزمارينيك الذي يمنحه خصائص استثنائية لصحة الكبد.
-
-الفوائد الرئيسية: يدعم وظيفة الكبد، يساعد التطهير الطبيعي، يحسن الدورة الدموية في الدماغ، خصائص قوية لمكافحة الشيخوخة.
-
-طريقة الاستخدام: ملعقة صغيرة كل صباح قبل الإفطار.",
+    content: "In the most remote valleys of Morocco's Atlas Mountains, far from roads and agricultural activity, wild rosemary grows abundantly on rocky hillsides. The honey produced from these wild plants is something very special.\n\nWhy Wild Rosemary Honey is Unique\nCultivated rosemary honey, while pleasant, lacks the complexity of honey made from truly wild plants. Wild rosemary contains higher concentrations of rosmarinic acid and carnosic acid, powerful antioxidants that give this honey its distinctive properties.\n\nLiver Health and Detoxification\nRosemary has been studied extensively for its liver-protective effects. Rosmarinic acid helps stimulate bile production, which aids fat digestion and removes toxins from the body. Regular consumption of wild rosemary honey may help support liver function, aid natural detoxification, reduce oxidative stress on liver cells, and support recovery after illness or medication.\n\nMemory and Circulation\nRosemary has long been associated with memory. The compounds in wild rosemary honey improve blood circulation to the brain and may help maintain cognitive function as we age.\n\nAnti-aging Properties\nThe high antioxidant content of wild rosemary honey makes it one of the best natural anti-aging foods available. It neutralizes free radicals that cause cellular aging.\n\nHow to Use Wild Rosemary Honey\n- Take 1 teaspoon each morning before breakfast\n- Mix with warm water for a daily liver support drink\n- Add to herbal teas\n- Use as a natural sweetener in cooking\n\nOur wild rosemary honey is harvested from plants growing at altitude in unpolluted mountain areas, ensuring maximum purity and potency.",
+    content_fr: "Le miel de romarin sauvage des montagnes de l'Atlas est récolté dans les zones les plus reculées, loin de toute activité agricole. Sa richesse en acide rosmarinique lui confère des propriétés exceptionnelles pour la santé du foie.\n\nBienfaits principaux: soutient la fonction hépatique, aide la détoxification naturelle, améliore la circulation sanguine vers le cerveau, propriétés anti-âge puissantes.\n\nComment l'utiliser: une cuillère à café chaque matin avant le petit-déjeuner, mélangée avec de l'eau tiède pour une boisson de soutien hépatique quotidienne.",
+    content_de: "Wilder Rosmarin-Honig aus den abgelegensten Tälern des Atlasgebirges wird aus wirklich wilden Pflanzen hergestellt und enthält höhere Konzentrationen an Rosmarinsäure.\n\nHauptvorteile: unterstützt die Leberfunktion, hilft bei der natürlichen Entgiftung, verbessert die Durchblutung des Gehirns, starke Anti-Aging-Eigenschaften.\n\nAnwendung: ein Teelöffel jeden Morgen vor dem Frühstück.",
+    content_nl: "Wilde rozemarijnhoning uit de meest afgelegen valleien van het Atlasgebergte wordt gemaakt van echt wilde planten en bevat hogere concentraties rozemarijnzuur.\n\nHoofdeigenschappen: ondersteunt leverfunctie, helpt bij natuurlijke detox, verbetert bloeddoorstroming naar de hersenen, krachtige anti-verouderingseigenschappen.\n\nGebruik: één theelepel elke ochtend voor het ontbijt.",
+    content_ar: "عسل إكليل الجبل البري من أنائي وديان جبال الأطلس غني بحمض الروزمارينيك الذي يمنحه خصائص استثنائية لصحة الكبد.\n\nالفوائد الرئيسية: يدعم وظيفة الكبد، يساعد التطهير الطبيعي، يحسن الدورة الدموية في الدماغ، خصائص قوية لمكافحة الشيخوخة.\n\nطريقة الاستخدام: ملعقة صغيرة كل صباح قبل الإفطار.",
     image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
     published_at: "2024-11-10T10:00:00Z"
   }
