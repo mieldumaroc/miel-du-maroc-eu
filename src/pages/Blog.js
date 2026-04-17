@@ -8,9 +8,9 @@ import { useLanguage } from '../context/LanguageContext';
 
 const Blog = () => {
   useEffect(() => {
-    document.title = 'Blog | Miel du Maroc – Conseils et Bienfaits du Miel';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Articles sur les bienfaits du miel marocain, les traditions apicoles et conseils d'utilisation.');
+    document.title = `Blog | Miel du Maroc - Conseils et Bienfaits du Miel`;
+    const m = document.querySelector('meta[name="description"]');
+    if (m) m.setAttribute('content', `Articles sur les bienfaits du miel marocain, les traditions apicoles et conseils d'utilisation.`);
   }, []);
 
   const { t, language } = useLanguage();

@@ -7,9 +7,9 @@ import { PRODUCTS } from '../data/products';
 
 const HealthBenefits = () => {
   useEffect(() => {
-    document.title = 'Bienfaits du Miel Marocain | Miel du Maroc';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Découvrez les bienfaits thérapeutiques de chaque variété de miel: immunitaire, respiratoire, digestif et plus.');
+    document.title = `Bienfaits du Miel Marocain | Miel du Maroc`;
+    const m = document.querySelector('meta[name="description"]');
+    if (m) m.setAttribute('content', `Decouvrez les bienfaits therapeutiques de chaque variete de miel: immunitaire, respiratoire, digestif.`);
   }, []);
 
   const { t, language, getProductName } = useLanguage();

@@ -8,9 +8,9 @@ import { PRODUCTS } from '../data/products';
 
 const Products = () => {
   useEffect(() => {
-    document.title = 'Notre Collection de Miels | Miel du Maroc';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Découvrez nos 13 variétés de miels purs du Maroc: Origan, Thym, Nigelle, Câpre, Romarin et plus. Livraison Europe.');
+    document.title = `Notre Collection de Miels | Miel du Maroc`;
+    const m = document.querySelector('meta[name="description"]');
+    if (m) m.setAttribute('content', `Decouvrez nos 13 varietes de miels purs du Maroc: Origan, Thym, Nigelle, Capre, Romarin et plus.`);
   }, []);
 
   const { t, getProductName } = useLanguage();

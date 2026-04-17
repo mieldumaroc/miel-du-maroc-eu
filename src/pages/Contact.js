@@ -7,9 +7,9 @@ const WHATSAPP_NUMBER = "212676050868";
 
 const Contact = () => {
   useEffect(() => {
-    document.title = 'Contact | Miel du Maroc – Commandez via WhatsApp';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Contactez-nous sur WhatsApp pour commander votre miel pur du Maroc. Réponse rapide garantie.');
+    document.title = `Contact | Miel du Maroc - Commandez via WhatsApp`;
+    const m = document.querySelector('meta[name="description"]');
+    if (m) m.setAttribute('content', `Contactez-nous sur WhatsApp pour commander votre miel pur du Maroc.`);
   }, []);
 
   const { t } = useLanguage();

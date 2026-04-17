@@ -5,9 +5,9 @@ import { useLanguage } from '../context/LanguageContext';
 
 const Shipping = () => {
   useEffect(() => {
-    document.title = 'Livraison en Europe | Miel du Maroc';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Livraison sécurisée du Maroc vers toute l'Europe en 7-14 jours. Paiement via Western Union, Wise, MoneyGram.');
+    document.title = `Livraison en Europe | Miel du Maroc`;
+    const m = document.querySelector('meta[name="description"]');
+    if (m) m.setAttribute('content', `Livraison securisee du Maroc vers toute l'Europe en 7-14 jours.`);
   }, []);
 
   const { t } = useLanguage();

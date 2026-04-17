@@ -7,9 +7,9 @@ import { useLanguage } from '../context/LanguageContext';
 
 const FAQ = () => {
   useEffect(() => {
-    document.title = 'Questions Fréquentes | Miel du Maroc';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Toutes les réponses sur nos miels, la livraison, les paiements et la conservation du miel pur marocain.');
+    document.title = `Questions Frequentes | Miel du Maroc`;
+    const m = document.querySelector('meta[name="description"]');
+    if (m) m.setAttribute('content', `Toutes les reponses sur nos miels, la livraison, les paiements et la conservation.`);
   }, []);
 
   const { t, language } = useLanguage();

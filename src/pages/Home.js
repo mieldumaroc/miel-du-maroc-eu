@@ -8,9 +8,9 @@ import { PRODUCTS } from '../data/products';
 
 const Home = () => {
   useEffect(() => {
-    document.title = 'Miel du Maroc | Miels Purs de l'Atlas – Achetez en Europe';
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', 'Miels purs artisanaux du Maroc. 13 variétés rares livrées en Europe en 7-14 jours.');
+    document.title = `Miel du Maroc | Miels Purs de l'Atlas`;
+    const m = document.querySelector('meta[name="description"]');
+    if (m) m.setAttribute('content', `Miels purs artisanaux du Maroc. 13 varietes rares livrees en Europe en 7-14 jours.`);
   }, []);
 
   const { t } = useLanguage();
