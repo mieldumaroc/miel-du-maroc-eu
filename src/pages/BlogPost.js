@@ -14,7 +14,8 @@ const BlogPost = () => {
 
   useEffect(() => {
     const found = BLOG_POSTS.find(p => p.slug === slug);
-      setPost(found || null);
+    setPost(found || null);
+    setLoading(false);
   }, [slug]);
 
   if (loading) {
