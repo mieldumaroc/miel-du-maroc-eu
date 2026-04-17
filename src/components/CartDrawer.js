@@ -15,7 +15,7 @@ const CartDrawer = () => {
   const getItemName = (item) => {
     if (language === 'en') return item.name;
     const key = `name_${language}`;
-    return item[key] || item.name;
+    return item[key] || item.name_fr || item.name;
   };
 
   const buildWhatsAppMessage = () => {

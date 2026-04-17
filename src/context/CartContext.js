@@ -33,6 +33,7 @@ export const CartProvider = ({ children }) => {
         name_fr: product.name_fr,
         name_de: product.name_de,
         name_nl: product.name_nl,
+        name_ar: product.name_ar,
         size,
         price,
         quantity: 1,
