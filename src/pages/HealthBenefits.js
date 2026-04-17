@@ -64,7 +64,7 @@ const HealthBenefits = () => {
                     </Link>
                   </td>
                   <td className="px-6 py-4">
-                    <span className="text-xs uppercase tracking-wide text-[#D4AF37]">{product.tag}</span>
+                    <span className="text-xs uppercase tracking-wide text-[#D4AF37]">{t(`tags.${product.tag === 'Liver Health' ? 'liverHealth' : product.tag === 'General Health' ? 'generalHealth' : product.tag.toLowerCase()}`)}</span>
                   </td>
                   <td className="px-6 py-4 text-[#5C5449] text-sm">
                     {getBenefits(product)?.slice(0, 2).join(', ')}

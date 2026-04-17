@@ -17,7 +17,7 @@ const translations = {
     common: { learnMore: 'Learn More', orderNow: 'Order Now', viewAll: 'View All', price: 'Price' },
     benefits: { title: 'Health Benefits of Moroccan Honey', subtitle: 'Nature\'s most powerful remedy' },
     collection: 'Collection',
-    tags: { all: 'All', immunity: 'Immunity', respiratory: 'Respiratory', digestion: 'Digestion', energy: 'Energy', calming: 'Calming', rare: 'Rare', liverHealth: 'Liver Health', generalHealth: 'General Health', wellness: 'Wellness', warming: 'Warming' },
+    tags: { all: 'All', immunity: 'Immunity', respiratory: 'Respiratory', digestion: 'Digestion', energy: 'Energy', calming: 'Calming', rare: 'Rare', liverHealth: 'Liver Health', generalHealth: 'General Health', wellness: 'Wellness', warming: 'Warming', powerful: 'Powerful' },
   },
   fr: {
     nav: { home: 'Accueil', products: 'Nos Miels', about: 'A Propos', healthBenefits: 'Bienfaits', shipping: 'Livraison', faq: 'FAQ', contact: 'Contact', blog: 'Blog' },
@@ -35,7 +35,7 @@ const translations = {
     common: { learnMore: 'En Savoir Plus', orderNow: 'Commander', viewAll: 'Voir Tout', price: 'Prix' },
     benefits: { title: 'Bienfaits du Miel Marocain pour la Sante', subtitle: 'Le remede le plus puissant de la nature' },
     collection: 'Collection',
-    tags: { all: 'Tous', immunity: 'Immunite', respiratory: 'Respiratoire', digestion: 'Digestion', energy: 'Energie', calming: 'Calmant', rare: 'Rare', liverHealth: 'Sante du Foie', generalHealth: 'Sante Generale', wellness: 'Bien-etre', warming: 'Rechauffant' },
+    tags: { all: 'Tous', immunity: 'Immunite', respiratory: 'Respiratoire', digestion: 'Digestion', energy: 'Energie', calming: 'Calmant', rare: 'Rare', liverHealth: 'Sante du Foie', generalHealth: 'Sante Generale', wellness: 'Bien-etre', warming: 'Rechauffant', powerful: 'Puissant' },
   },
   de: {
     nav: { home: 'Startseite', products: 'Unsere Honige', about: 'Uber Uns', healthBenefits: 'Vorteile', shipping: 'Versand', faq: 'FAQ', contact: 'Kontakt', blog: 'Blog' },
@@ -53,7 +53,7 @@ const translations = {
     common: { learnMore: 'Mehr Erfahren', orderNow: 'Bestellen', viewAll: 'Alle Ansehen', price: 'Preis' },
     benefits: { title: 'Gesundheitsvorteile von Marokkanischem Honig', subtitle: 'Das machtigste Heilmittel der Natur' },
     collection: 'Kollektion',
-    tags: { all: 'Alle', immunity: 'Immunitat', respiratory: 'Atemwege', digestion: 'Verdauung', energy: 'Energie', calming: 'Beruhigend', rare: 'Selten', liverHealth: 'Lebergesundheit', generalHealth: 'Allgemeine Gesundheit', wellness: 'Wohlbefinden', warming: 'Warmend' },
+    tags: { all: 'Alle', immunity: 'Immunitat', respiratory: 'Atemwege', digestion: 'Verdauung', energy: 'Energie', calming: 'Beruhigend', rare: 'Selten', liverHealth: 'Lebergesundheit', generalHealth: 'Allgemeine Gesundheit', wellness: 'Wohlbefinden', warming: 'Warmend', powerful: 'Kraftvoll' },
   },
   ar: {
     nav: { home: 'الرئيسية', products: 'أعسالنا', about: 'من نحن', healthBenefits: 'الفوائد', shipping: 'الشحن', faq: 'الأسئلة', contact: 'اتصل بنا', blog: 'المدونة' },
@@ -71,7 +71,7 @@ const translations = {
     common: { learnMore: 'اعرف المزيد', orderNow: 'اطلب الآن', viewAll: 'عرض الكل', price: 'السعر' },
     benefits: { title: 'فوائد العسل المغربي الصحية', subtitle: 'أقوى علاج طبيعي' },
     collection: 'المجموعة',
-    tags: { all: 'الكل', immunity: 'المناعة', respiratory: 'الجهاز التنفسي', digestion: 'الهضم', energy: 'الطاقة', calming: 'مهدئ', rare: 'نادر', liverHealth: 'صحة الكبد', generalHealth: 'الصحة العامة', wellness: 'العافية', warming: 'مدفئ' },
+    tags: { all: 'الكل', immunity: 'المناعة', respiratory: 'الجهاز التنفسي', digestion: 'الهضم', energy: 'الطاقة', calming: 'مهدئ', rare: 'نادر', liverHealth: 'صحة الكبد', generalHealth: 'الصحة العامة', wellness: 'العافية', warming: 'مدفئ', powerful: 'قوي' },
   },
   nl: {
     nav: { home: 'Home', products: 'Onze Honing', about: 'Over Ons', healthBenefits: 'Voordelen', shipping: 'Verzending', faq: 'FAQ', contact: 'Contact', blog: 'Blog' },
@@ -89,7 +89,7 @@ const translations = {
     common: { learnMore: 'Meer Leren', orderNow: 'Bestellen', viewAll: 'Alles Bekijken', price: 'Prijs' },
     benefits: { title: 'Gezondheidsvoordelen van Marokkaanse Honing', subtitle: 'Het krachtigste geneesmiddel van de natuur' },
     collection: 'Collectie',
-    tags: { all: 'Alle', immunity: 'Immuniteit', respiratory: 'Luchtwegen', digestion: 'Spijsvertering', energy: 'Energie', calming: 'Kalmerend', rare: 'Zeldzaam', liverHealth: 'Leversgezondheid', generalHealth: 'Algemene Gezondheid', wellness: 'Welzijn', warming: 'Verwarmend' },
+    tags: { all: 'Alle', immunity: 'Immuniteit', respiratory: 'Luchtwegen', digestion: 'Spijsvertering', energy: 'Energie', calming: 'Kalmerend', rare: 'Zeldzaam', liverHealth: 'Leversgezondheid', generalHealth: 'Algemene Gezondheid', wellness: 'Welzijn', warming: 'Verwarmend', powerful: 'Krachtig' },
   },
 };
 
