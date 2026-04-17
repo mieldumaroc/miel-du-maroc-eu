@@ -39,7 +39,7 @@ const FAQ = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">Support</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('faq.support')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('faq.title')}
           </h1>
