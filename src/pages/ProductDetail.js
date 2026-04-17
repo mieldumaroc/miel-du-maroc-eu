@@ -23,6 +23,11 @@ const ProductDetail = () => {
     const found = PRODUCTS.find(p => p.id === id);
     setProduct(found || null);
     setLoading(false);
+    if (found) {
+      document.title = `${found.name} | Acheter Miel Pur du Maroc | Miel du Maroc`;
+      const m = document.querySelector('meta[name="description"]');
+      if (m) m.setAttribute('content', `${found.description} Commander via WhatsApp, livraison Europe 7-14 jours.`);
+    }
   }, [id]);
 
   if (loading) {

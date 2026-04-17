@@ -1,6 +1,9 @@
 export const PRODUCTS = [
   {
     id: "origan",
+    name_ar: "عسل الأوريغانو",
+    description_ar: "عسل نادر وثمين مُحصد من أزهار الأوريغانو البري في جبال الأطلس. معروف بخصائصه المضادة للبكتيريا القوية.",
+    health_benefits_ar: ["يعزز المناعة", "مضاد حيوي طبيعي", "يساعد الهضم", "يهدئ التهاب الحلق"],
     name: "Oregano Honey",
     name_fr: "Miel d'Origan",
     name_de: "Oregano-Honig",
@@ -21,6 +24,9 @@ export const PRODUCTS = [
   },
   {
     id: "thym",
+    name_ar: "عسل الزعتر",
+    description_ar: "عسل الزعتر العطري المُحصد من تلال المغرب المشمسة. طعمه المميز وفوائده للجهاز التنفسي تجعله علاجاً نفيساً.",
+    health_benefits_ar: ["صحة الجهاز التنفسي", "مضاد للالتهابات", "يساعد التئام الجروح", "يخفف السعال"],
     name: "Thyme Honey",
     name_fr: "Miel de Thym",
     name_de: "Thymian-Honig",
@@ -41,6 +47,9 @@ export const PRODUCTS = [
   },
   {
     id: "fenouil",
+    name_ar: "عسل الشمر",
+    description_ar: "عسل الشمر اللطيف بنكهات اليانسون الخفية، يُستخدم تقليدياً لتهدئة اضطرابات الجهاز الهضمي.",
+    health_benefits_ar: ["مساعد هضمي", "مضاد للانتفاخ", "تأثير مهدئ", "نفس منعش"],
     name: "Fennel Honey",
     name_fr: "Miel de Fenouil",
     name_de: "Fenchel-Honig",
@@ -61,6 +70,9 @@ export const PRODUCTS = [
   },
   {
     id: "jujubier",
+    name_ar: "عسل السدر",
+    description_ar: "عسل السدر الأسطوري المُحصد من أشجار النبق القديمة. مُقدَّر في الشرق الأوسط لخصائصه الشفائية الاستثنائية.",
+    health_benefits_ar: ["تعزيز الطاقة الطبيعية", "صحة الكبد", "تجديد الجلد", "غني بمضادات الأكسدة"],
     name: "Jujube Honey",
     name_fr: "Miel de Jujubier",
     name_de: "Jujube-Honig",
@@ -81,6 +93,9 @@ export const PRODUCTS = [
   },
   {
     id: "caroubier",
+    name_ar: "عسل الخروب",
+    description_ar: "عسل الخروب الغني بنكهات تشبه دبس السكر. علاج تقليدي لصحة الجهاز الهضمي.",
+    health_benefits_ar: ["توازن سكر الدم", "صحة الجهاز الهضمي", "غني بالحديد", "محلي طبيعي"],
     name: "Carob Honey",
     name_fr: "Miel de Caroubier",
     name_de: "Johannisbrot-Honig",
@@ -101,6 +116,9 @@ export const PRODUCTS = [
   },
   {
     id: "montagne",
+    name_ar: "عسل نباتات الجبل",
+    description_ar: "عسل متعدد الأزهار من جبال الأطلس العالية، يلتقط جوهر الزهور البرية الجبلية.",
+    health_benefits_ar: ["العافية العامة", "دعم المناعة", "تخفيف الحساسية", "فيتامينات طبيعية"],
     name: "Mountain Plants Honey",
     name_fr: "Miel de Plantes de Montagne",
     name_de: "Bergpflanzen-Honig",
@@ -121,6 +139,9 @@ export const PRODUCTS = [
   },
   {
     id: "prairie",
+    name_ar: "عسل نباتات المروج",
+    description_ar: "عسل المروج الخفيف والزهري من الوديان الخصبة في المغرب.",
+    health_benefits_ar: ["العافية اليومية", "طاقة طبيعية", "لطيف على المعدة", "جرعة فيتامينات"],
     name: "Meadow Plants Honey",
     name_fr: "Miel de Plantes de Prairie",
     name_de: "Wiesenpflanzen-Honig",
@@ -141,6 +162,9 @@ export const PRODUCTS = [
   },
   {
     id: "oranger",
+    name_ar: "عسل زهر البرتقال",
+    description_ar: "عسل زهر البرتقال العطري اللطيف من بساتين الحمضيات المغربية. خصائصه المهدئة تجعله مثالياً للاسترخاء.",
+    health_benefits_ar: ["يعزز النوم", "يهدئ القلق", "يريح الأعصاب", "ترطيب البشرة"],
     name: "Orange Blossom Honey",
     name_fr: "Miel d'Oranger",
     name_de: "Orangenbluten-Honig",
@@ -161,6 +185,9 @@ export const PRODUCTS = [
   },
   {
     id: "eucalyptus",
+    name_ar: "عسل الكافور",
+    description_ar: "عسل الكافور المنعش بنكهات المنثول. حليف قوي لصحة الجهاز التنفسي.",
+    health_benefits_ar: ["يفتح مجاري الهواء", "يخفف نزلات البرد", "مضاد للبكتيريا", "مزيل الاحتقان"],
     name: "Eucalyptus Honey",
     name_fr: "Miel d'Eucalyptus",
     name_de: "Eukalyptus-Honig",
@@ -181,6 +208,9 @@ export const PRODUCTS = [
   },
   {
     id: "daghmous",
+    name_ar: "عسل الدغموس",
+    description_ar: "عسل قوي ونادر من صبار الدغموس الأصلي في المناطق الجافة بالمغرب. معروف بطعمه الحاد وخصائصه العلاجية.",
+    health_benefits_ar: ["راحة الجهاز التنفسي", "صحة الجهاز الهضمي", "معزز طاقة طبيعي", "تخفيف آلام المفاصل"],
     name: "Daghmous Honey",
     name_fr: "Miel de Daghmous",
     name_de: "Daghmous-Honig",
@@ -201,6 +231,9 @@ export const PRODUCTS = [
   },
   {
     id: "lavande",
+    name_ar: "عسل الخزامى",
+    description_ar: "عسل لطيف وعطري مُحصد من حقول الخزامى البرية في جبال الأطلس.",
+    health_benefits_ar: ["تخفيف التوتر", "نوم أفضل", "تجديد الجلد", "مضاد للقلق"],
     name: "Lavender Honey",
     name_fr: "Miel de Lavande",
     name_de: "Lavendel-Honig",
@@ -221,6 +254,9 @@ export const PRODUCTS = [
   },
   {
     id: "euphorbe",
+    name_ar: "عسل الفرفيون الجبلي",
+    description_ar: "عسل دافئ من نباتات الفرفيون في المناطق المرتفعة بالمغرب.",
+    health_benefits_ar: ["تأثير مدفئ", "دعم الجهاز التنفسي", "مساعد هضمي", "الطب التقليدي"],
     name: "Mountain Spurge Honey",
     name_fr: "Miel d'Euphorbe de Montagne",
     name_de: "Berg-Wolfsmilch-Honig",
@@ -241,6 +277,9 @@ export const PRODUCTS = [
   },
   {
     id: "capre",
+    name_ar: "عسل الكبار",
+    description_ar: "عسل نادر جداً من أزهار الكبار البري. يُقدَّر هذا العسل النادر لمذاقه الفريد.",
+    health_benefits_ar: ["مصدر قوي لمضادات الأكسدة", "مضاد للالتهابات", "حماية الكبد", "علاجي نادر"],
     name: "Caper Honey",
     name_fr: "Miel de Capre",
     name_de: "Kapern-Honig",
@@ -261,6 +300,9 @@ export const PRODUCTS = [
   },
   {
     id: "romarin",
+    name_ar: "عسل إكليل الجبل البري",
+    description_ar: "عسل إكليل الجبل البري المُحصد من منحدرات الجبال النائية. معروف بخصائصه الاستثنائية لدعم صحة الكبد.",
+    health_benefits_ar: ["تطهير الكبد", "تحسين الذاكرة", "تعزيز الدورة الدموية", "مضاد للشيخوخة"],
     name: "Wild Rosemary Honey",
     name_fr: "Miel de Romarin Sauvage",
     name_de: "Wilder Rosmarin-Honig",
@@ -283,61 +325,235 @@ export const PRODUCTS = [
 
 export const BLOG_POSTS = [
   {
+    id: "benefits-oregano-honey",
+    slug: "benefits-oregano-honey",
+    category: "Health Benefits",
+    title: "5 Proven Benefits of Pure Oregano Honey from Morocco",
+    title_fr: "5 Bienfaits Prouvés du Miel d'Origan Pur du Maroc",
+    title_de: "5 Bewiesene Vorteile von Reinem Oregano-Honig aus Marokko",
+    title_nl: "5 Bewezen Voordelen van Pure Oregano Honing uit Marokko",
+    title_ar: "٥ فوائد مثبتة لعسل الأوريغانو الطبيعي من المغرب",
+    excerpt: "Oregano honey is one of nature's most powerful natural antibiotics. Discover why this rare Atlas Mountain honey is prized across Europe for its extraordinary health benefits.",
+    excerpt_fr: "Le miel d'origan est l'un des antibiotiques naturels les plus puissants. Découvrez pourquoi ce miel rare des montagnes de l'Atlas est prisé en Europe.",
+    excerpt_de: "Oregano-Honig ist eines der kraftvollsten natürlichen Antibiotika. Entdecken Sie, warum dieser seltene Atlashonig in Europa geschätzt wird.",
+    excerpt_nl: "Oregano honing is een van de krachtigste natuurlijke antibiotica. Ontdek waarom deze zeldzame Atlashoning in Europa gewaardeerd wordt.",
+    excerpt_ar: "عسل الأوريغانو من أقوى المضادات الحيوية الطبيعية. اكتشف لماذا يُقدَّر هذا العسل النادر من جبال الأطلس في أوروبا.",
+    content: "Oregano honey from Morocco's Atlas Mountains is unlike any honey you will find in a supermarket. Harvested from wild oregano flowers that grow at high altitude, this honey contains unique compounds that give it extraordinary healing properties.
+
+**1. Powerful Natural Antibiotic**
+Oregano honey contains high levels of thymol and carvacrol, two compounds scientifically proven to fight bacteria. Studies show it can be effective against strains that resist conventional antibiotics.
+
+**2. Boosts Immunity**
+Rich in antioxidants and enzymes, regular consumption of oregano honey strengthens the immune system. A teaspoon each morning on an empty stomach can help protect your body through winter months.
+
+**3. Soothes Sore Throats**
+Oregano honey's antibacterial properties make it particularly effective for throat infections. Mix a tablespoon with warm water and lemon for immediate relief.
+
+**4. Aids Digestion**
+The natural enzymes in raw oregano honey help break down food and reduce bloating. It can also help restore healthy gut bacteria after illness.
+
+**5. Skin Healing**
+Applied directly to minor cuts, burns, or skin irritations, oregano honey creates a protective barrier and accelerates healing.
+
+**How to Use Oregano Honey**
+- Take 1 teaspoon daily on an empty stomach
+- Mix with warm (not hot) water to preserve enzymes
+- Apply directly to skin for wound care
+- Add to herbal teas for respiratory support
+
+Our oregano honey is harvested once a year by hand from wild mountain oregano, never heated or processed. Order yours via WhatsApp today.",
+    content_fr: "Le miel d'origan des montagnes de l'Atlas est un vrai trésor thérapeutique. Voici ses 5 bienfaits principaux: antibiotique naturel, renforce l'immunité, apaise la gorge, aide la digestion et guérit la peau.",
+    content_de: "Oregano-Honig aus dem Atlasgebirge Marokkos ist ein echtes therapeutisches Schatz. Hier sind seine 5 Hauptvorteile: natürliches Antibiotikum, stärkt die Immunität, beruhigt den Hals, hilft der Verdauung und heilt die Haut.",
+    content_nl: "Oregano honing uit het Atlasgebergte van Marokko is een echte therapeutische schat. Hier zijn de 5 hoofdvoordelen: natuurlijk antibioticum, versterkt immuniteit, kalmeert de keel, helpt spijsvertering en geneest de huid.",
+    content_ar: "عسل الأوريغانو من جبال الأطلس المغربية كنز علاجي حقيقي. إليك فوائده الخمس الرئيسية: مضاد حيوي طبيعي، يعزز المناعة، يهدئ الحلق، يساعد الهضم ويعالج الجلد.",
+    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
+    published_at: "2024-12-15T10:00:00Z"
+  },
+  {
+    id: "nigella-honey-benefits",
+    slug: "nigella-honey-benefits",
+    category: "Health Benefits",
+    title: "Nigella Honey: The Blessed Seed Honey and Its Remarkable Benefits",
+    title_fr: "Miel de Nigelle: Le Miel de la Graine Bénie et Ses Bienfaits Remarquables",
+    title_de: "Nigella-Honig: Der Segen-Samen-Honig und Seine Bemerkenswerten Vorteile",
+    title_nl: "Nigella Honing: De Gezegende Zaad Honing en Zijn Opmerkelijke Voordelen",
+    title_ar: "عسل الحبة السوداء: فوائد مذهلة للعسل المبارك",
+    excerpt: "Nigella honey combines the power of black seed with pure raw honey, creating one of the most potent natural remedies known to traditional medicine. Learn why health-conscious Europeans are ordering it from Morocco.",
+    excerpt_fr: "Le miel de nigelle combine la puissance de la graine noire avec du miel pur, créant l'un des remèdes naturels les plus puissants. Découvrez pourquoi les Européens l'achètent au Maroc.",
+    excerpt_de: "Nigella-Honig kombiniert die Kraft des schwarzen Samens mit reinem Honig und schafft eines der wirksamsten Naturheilmittel. Erfahren Sie, warum Europäer ihn aus Marokko bestellen.",
+    excerpt_nl: "Nigella honing combineert de kracht van zwart zaad met pure rauwe honing, wat een van de krachtigste natuurlijke remedies creëert.",
+    excerpt_ar: "عسل الحبة السوداء يجمع قوة الحبة السوداء مع العسل الخام النقي، مما يخلق أحد أقوى العلاجات الطبيعية المعروفة.",
+    content: "In Islamic tradition, the Prophet Muhammad (peace be upon him) said that black seed is a cure for everything except death. When combined with pure raw honey, its healing properties are amplified even further.
+
+**What Makes Nigella Honey Special?**
+Our nigella honey is made by bees that feed exclusively on black seed (Nigella sativa) flowers in the Moroccan countryside. The resulting honey absorbs the powerful compounds from the plant, including thymoquinone — one of the most studied natural compounds for its health effects.
+
+**Key Benefits:**
+
+**Immune System Support**
+Nigella honey is exceptionally rich in antioxidants and has been shown in studies to modulate immune response, making it valuable for both boosting weak immunity and calming overactive immune responses.
+
+**Respiratory Health**
+Traditionally used for asthma, allergies, and respiratory infections. Many customers report significant improvement in breathing after regular use.
+
+**Anti-inflammatory Properties**
+Thymoquinone in nigella has documented anti-inflammatory effects that can help with joint pain, skin conditions, and digestive inflammation.
+
+**Blood Sugar Balance**
+Studies suggest nigella can help regulate blood sugar levels, making this honey particularly interesting for those managing their glucose.
+
+**How to Take It**
+- 1 teaspoon each morning before breakfast
+- Mixed with warm water and lemon
+- With herbal tea before bed for better sleep
+
+This is our most popular honey among Moroccan diaspora communities in France, Belgium and the Netherlands.",
+    content_fr: "L'association du miel pur avec la nigelle crée un remède exceptionnel: renforce l'immunité, aide la respiration, anti-inflammatoire, régule la glycémie. Notre miel de nigelle est le plus populaire auprès de la diaspora marocaine en Europe.",
+    content_de: "Die Kombination von reinem Honig mit Nigella schafft ein außergewöhnliches Heilmittel: stärkt die Immunität, hilft der Atmung, entzündungshemmend, reguliert den Blutzucker.",
+    content_nl: "De combinatie van pure honing met nigella creëert een uitzonderlijk remedie: versterkt immuniteit, helpt ademhaling, ontstekingsremmend, reguleert bloedsuiker.",
+    content_ar: "عسل الحبة السوداء من أكثر أنواع العسل المغربي مبيعاً في أوروبا. يجمع قوة الحبة السوداء مع العسل الخام: يعزز المناعة، يساعد التنفس، مضاد للالتهابات، ينظم سكر الدم.",
+    image: "https://images.unsplash.com/photo-1568657704598-602700bd9694?w=800",
+    published_at: "2024-12-10T10:00:00Z"
+  },
+  {
+    id: "buy-moroccan-honey-europe",
+    slug: "buy-moroccan-honey-europe",
+    category: "Ordering Guide",
+    title: "How to Buy Pure Moroccan Honey in Europe: Complete Guide",
+    title_fr: "Comment Acheter du Vrai Miel Marocain en Europe: Guide Complet",
+    title_de: "So Kaufen Sie Echten Marokkanischen Honig in Europa: Vollständiger Leitfaden",
+    title_nl: "Hoe Koop je Echte Marokkaanse Honing in Europa: Volledige Gids",
+    title_ar: "كيف تشتري عسلاً مغربياً طبيعياً في أوروبا: دليل شامل",
+    excerpt: "Finding genuine pure Moroccan honey in Europe is difficult. Most honey sold in European shops is blended, heated, or imported from countries that mislabel their products. Here is how to get the real thing delivered to your door.",
+    excerpt_fr: "Trouver du vrai miel marocain pur en Europe est difficile. La plupart est mélangé ou chauffé. Voici comment recevoir le vrai miel directement chez vous.",
+    excerpt_de: "Echten reinen marokkanischen Honig in Europa zu finden ist schwierig. Hier erfahren Sie, wie Sie das echte Produkt direkt nach Hause geliefert bekommen.",
+    excerpt_nl: "Echte pure Marokkaanse honing vinden in Europa is moeilijk. Hier leest u hoe u het echte product thuis bezorgd krijgt.",
+    excerpt_ar: "إيجاد عسل مغربي طبيعي حقيقي في أوروبا أمر صعب. إليك كيفية الحصول على العسل الأصيل مباشرة إلى بابك.",
+    content: "If you are Moroccan living in Europe, or simply a health-conscious European who appreciates quality honey, you have probably noticed that the honey available in supermarkets bears little resemblance to real Moroccan honey.
+
+**Why Supermarket Honey is Not the Same**
+Most honey sold in European supermarkets is:
+- Blended from multiple countries
+- Heated to make it easier to bottle (destroying natural enzymes)
+- Sometimes adulterated with sugar syrup
+- Stored for months before reaching shelves
+
+**What Makes Real Moroccan Honey Different?**
+Moroccan honey from the Atlas Mountains is:
+- Harvested by hand from wild mountain flowers
+- Never heated or processed
+- Bottled immediately after extraction
+- Rich in natural enzymes, pollen, and propolis
+- Deeply aromatic with complex flavour profiles
+
+**How to Order from Miel du Maroc**
+
+1. **Browse our collection** — choose from 13 varieties including Oregano, Thyme, Nigella, Caper, and Wild Rosemary
+2. **Contact us via WhatsApp** — send us your order and we will give you a personalised quote including shipping
+3. **Pay via international transfer** — Western Union, MoneyGram, Ria, WorldRemit, or Wise
+4. **Receive your honey** — carefully packaged and delivered to your door in 7-14 business days
+
+**Which Honey Should I Choose?**
+- For immunity: Oregano or Nigella honey
+- For respiratory health: Thyme or Eucalyptus honey
+- For relaxation: Orange Blossom or Lavender honey
+- For energy: Jujube (Sidr) honey
+- For liver health: Wild Rosemary honey
+- For the rare and exceptional: Caper honey
+
+We ship to France, Belgium, Netherlands, Germany, UK, Spain, Italy, Switzerland and all European countries.",
+    content_fr: "Le vrai miel marocain est difficile à trouver en Europe. Découvrez comment commander directement depuis le Maroc: nos 13 variétés, notre processus de commande simple via WhatsApp, et pourquoi notre miel est différent de celui des supermarchés.",
+    content_de: "Echter marokkanischer Honig ist in Europa schwer zu finden. Erfahren Sie, wie Sie direkt aus Marokko bestellen können.",
+    content_nl: "Echte Marokkaanse honing is moeilijk te vinden in Europa. Leer hoe u direct uit Marokko kunt bestellen.",
+    content_ar: "العسل المغربي الحقيقي نادر في أوروبا. اكتشف كيف تطلب مباشرة من المغرب: ١٣ نوعاً من العسل، طلب بسيط عبر واتساب، توصيل ٧-١٤ يوم لجميع دول أوروبا.",
+    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
+    published_at: "2024-12-05T10:00:00Z"
+  },
+  {
     id: "health-benefits-thyme",
     slug: "health-benefits-thyme-honey",
     category: "Health Benefits",
-    title: "The Healing Power of Thyme Honey",
-    title_fr: "Le Pouvoir Guerisseur du Miel de Thym",
-    title_de: "Die Heilkraft von Thymianhonig",
-    title_nl: "De Helende Kracht van Tijmhoning",
-    excerpt: "Discover why thyme honey has been used for centuries in traditional Moroccan medicine for respiratory health and wound healing.",
-    excerpt_fr: "Decouvrez pourquoi le miel de thym est utilise depuis des siecles dans la medecine traditionnelle marocaine.",
-    excerpt_de: "Entdecken Sie, warum Thymianhonig seit Jahrhunderten in der traditionellen marokkanischen Medizin verwendet wird.",
-    excerpt_nl: "Ontdek waarom tijmhoning al eeuwen wordt gebruikt in de traditionele Marokkaanse geneeskunde.",
-    content: "Thyme honey is one of nature's most powerful healing gifts. Rich in antioxidants and antibacterial compounds, it has been a cornerstone of Moroccan traditional medicine for generations.\n\nThe unique therapeutic properties of thyme honey come from thymol and carvacrol, two powerful compounds found in thyme flowers.\n\nRespiratory Health Benefits: Thyme honey is particularly effective for respiratory conditions. It helps soothe sore throats, calm persistent coughs, and clear congestion.\n\nHow to Use Thyme Honey:\n- Take one tablespoon in the morning on an empty stomach\n- Mix with warm water and lemon for sore throats\n- Apply directly to minor cuts and burns",
-    content_fr: "Le miel de thym est l'un des cadeaux de guerison les plus puissants de la nature. Riche en antioxydants et en composes antibacteriens.",
-    content_de: "Thymianhonig ist eines der kraftvollsten Heilgeschenke der Natur. Reich an Antioxidantien und antibakteriellen Verbindungen.",
-    content_nl: "Tijmhoning is een van de krachtigste genezende geschenken van de natuur. Rijk aan antioxidanten en antibacteriele verbindingen.",
+    title: "The Healing Power of Thyme Honey from the Atlas Mountains",
+    title_fr: "Le Pouvoir Guérisseur du Miel de Thym des Montagnes de l'Atlas",
+    title_de: "Die Heilkraft von Thymianhonig aus dem Atlasgebergte",
+    title_nl: "De Helende Kracht van Tijmhoning uit het Atlasgebergte",
+    title_ar: "القوة الشفائية لعسل الزعتر من جبال الأطلس",
+    excerpt: "Thyme honey has been used for centuries in traditional Moroccan medicine for respiratory health and wound healing. Discover its remarkable benefits and why it's becoming popular across Europe.",
+    excerpt_fr: "Le miel de thym est utilisé depuis des siècles dans la médecine marocaine pour la santé respiratoire. Découvrez ses bienfaits remarquables.",
+    excerpt_de: "Thymianhonig wird seit Jahrhunderten in der marokkanischen Medizin für die Atemwegsgesundheit verwendet.",
+    excerpt_nl: "Tijmhoning wordt al eeuwen gebruikt in de Marokkaanse geneeskunde voor de luchtwegengezondheid.",
+    excerpt_ar: "يُستخدم عسل الزعتر منذ قرون في الطب المغربي التقليدي لصحة الجهاز التنفسي.",
+    content: "Thyme honey is one of nature's most powerful healing gifts. Rich in antioxidants and antibacterial compounds, it has been a cornerstone of Moroccan traditional medicine for generations.
+
+The unique therapeutic properties of thyme honey come from thymol and carvacrol, two powerful compounds found in thyme flowers that bees collect from the sun-drenched hillsides of Morocco.
+
+**Respiratory Health Benefits**
+Thyme honey is particularly effective for respiratory conditions:
+- Soothes sore throats and reduces inflammation
+- Calms persistent coughs naturally
+- Helps clear congestion and blocked sinuses
+- Supports recovery from bronchitis
+
+**Wound Healing**
+Applied topically, thyme honey creates a moist healing environment that accelerates wound closure and prevents infection.
+
+**Antibacterial Action**
+Clinical studies have shown thyme honey to be effective against a range of bacteria including Staphylococcus aureus and E. coli.
+
+**How to Use Thyme Honey**
+- Take 1 tablespoon in the morning on an empty stomach
+- Mix with warm water and lemon for sore throats
+- Add to herbal tea with ginger for colds
+- Apply directly to minor cuts and burns
+
+Our thyme honey is harvested from wild thyme growing at altitude in the Atlas Mountains, giving it a superior concentration of beneficial compounds compared to cultivated thyme honey.",
+    content_fr: "Le miel de thym des montagnes de l'Atlas est exceptionnel pour la santé respiratoire, la guérison des plaies et ses propriétés antibactériennes. Découvrez comment l'utiliser au quotidien.",
+    content_de: "Thymianhonig aus dem Atlasgebirge ist außergewöhnlich für die Atemwegsgesundheit, Wundheilung und seine antibakteriellen Eigenschaften.",
+    content_nl: "Tijmhoning uit het Atlasgebergte is uitzonderlijk voor de luchtwegengezondheid, wondgenezing en zijn antibacteriële eigenschappen.",
+    content_ar: "عسل الزعتر من جبال الأطلس استثنائي لصحة الجهاز التنفسي والتئام الجروح وخصائصه المضادة للبكتيريا. اكتشف كيف تستخدمه يومياً.",
     image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
     published_at: "2024-12-01T10:00:00Z"
   },
   {
-    id: "moroccan-traditions",
+    id: "moroccan-honey-traditions",
     slug: "moroccan-honey-traditions",
     category: "Traditional Uses",
-    title: "Moroccan Honey Traditions: From Atlas to Table",
-    title_fr: "Traditions du Miel Marocain: De l'Atlas a la Table",
-    title_de: "Marokkanische Honigtraditionen: Vom Atlas zum Tisch",
-    title_nl: "Marokkaanse Honingtradities: Van Atlas tot Tafel",
-    excerpt: "Explore the rich history of beekeeping in Morocco and the sacred traditions passed down through generations.",
-    excerpt_fr: "Explorez la riche histoire de l'apiculture au Maroc et les traditions sacrees.",
-    excerpt_de: "Entdecken Sie die reiche Geschichte der Imkerei in Marokko und die heiligen Traditionen.",
-    excerpt_nl: "Ontdek de rijke geschiedenis van bijenteelt in Marokko en de heilige tradities.",
-    content: "For centuries, Moroccan beekeepers have harvested honey using methods passed down through generations.\n\nTraditional Harvesting Methods:\n- Hives are smoked gently with natural herbs\n- Honey is extracted by hand, never heated\n- Only surplus honey is taken\n\nSacred Traditions: In Moroccan culture, honey is more than food - it's medicine, celebration, and blessing.",
-    content_fr: "Depuis des siecles, les apiculteurs marocains recoltent le miel selon des methodes transmises de generation en generation.",
-    content_de: "Seit Jahrhunderten ernten marokkanische Imker Honig mit Methoden, die von Generation zu Generation weitergegeben werden.",
-    content_nl: "Eeuwenlang hebben Marokkaanse imkers honing geoogst met methoden die van generatie op generatie zijn doorgegeven.",
+    title: "Moroccan Honey Traditions: Ancient Beekeeping in the Atlas Mountains",
+    title_fr: "Traditions du Miel Marocain: L'Apiculture Ancestrale dans les Montagnes de l'Atlas",
+    title_de: "Marokkanische Honigtraditionen: Alte Imkerei im Atlasgebirge",
+    title_nl: "Marokkaanse Honingtradities: Oude Bijenteelt in het Atlasgebergte",
+    title_ar: "تقاليد العسل المغربي: تربية النحل القديمة في جبال الأطلس",
+    excerpt: "For thousands of years, Moroccan beekeepers have practiced a form of beekeeping that is in perfect harmony with nature. Discover the ancient traditions behind every jar of Miel du Maroc.",
+    excerpt_fr: "Depuis des millénaires, les apiculteurs marocains pratiquent une apiculture en harmonie avec la nature. Découvrez les traditions ancestrales derrière chaque pot.",
+    excerpt_de: "Seit Jahrtausenden praktizieren marokkanische Imker eine Imkerei in Harmonie mit der Natur.",
+    excerpt_nl: "Al duizenden jaren beoefenen Marokkaanse imkers een bijenteelt in harmonie met de natuur.",
+    excerpt_ar: "منذ آلاف السنين، يمارس مربو النحل المغاربة تربية النحل بتناغم مع الطبيعة. اكتشف التقاليد العريقة وراء كل برطمان.",
+    content: "Our family has been keeping bees in the Atlas Mountains for generations. The methods we use today are not very different from those used by our great-grandparents — and that is precisely what makes our honey special.
+
+**Traditional Hive Construction**
+Traditional Moroccan hives are made from natural materials — hollowed logs, clay pots, or woven reed baskets. These materials regulate temperature and humidity naturally, creating ideal conditions for the bees without synthetic materials.
+
+**The Harvest**
+Honey is harvested only once or twice a year, always leaving enough for the bees to survive winter. This patience is what produces concentrated, potent honey with exceptional flavour.
+
+The harvest follows natural cycles:
+- Spring honey from mountain wildflowers
+- Summer honey from aromatic herbs like oregano and thyme
+- Autumn honey from late-blooming plants
+
+**No Chemicals, No Shortcuts**
+We never use pesticides, antibiotics, or synthetic treatments. Our bees forage freely in unpolluted mountain meadows, far from agricultural chemicals.
+
+**Why This Matters for You**
+When you buy our honey, you are not just buying a food product. You are supporting a family tradition that has maintained biodiversity in the Atlas Mountains for generations, and receiving a product that cannot be replicated by industrial beekeeping.
+
+Every jar tells the story of a place, a season, and a plant. That is something no supermarket honey can offer.",
+    content_fr: "Notre famille élève des abeilles dans les montagnes de l'Atlas depuis des générations. Nos méthodes traditionnelles, sans produits chimiques ni raccourcis, produisent un miel que l'apiculture industrielle ne peut pas reproduire.",
+    content_de: "Unsere Familie hält seit Generationen Bienen im Atlasgebirge. Unsere traditionellen Methoden ohne Chemikalien produzieren einen Honig, den die industrielle Imkerei nicht reproduzieren kann.",
+    content_nl: "Onze familie houdt al generaties lang bijen in het Atlasgebergte. Onze traditionele methoden zonder chemicaliën produceren een honing die de industriële bijenteelt niet kan reproduceren.",
+    content_ar: "عائلتنا تربي النحل في جبال الأطلس منذ أجيال. أساليبنا التقليدية بدون مواد كيميائية تنتج عسلاً لا تستطيع تربية النحل الصناعية إنتاجه.",
     image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
-    published_at: "2024-10-20T10:00:00Z"
-  },
-  {
-    id: "honey-immune-system",
-    slug: "boost-immune-system-with-honey",
-    category: "Health Benefits",
-    title: "Boost Your Immune System Naturally with Honey",
-    title_fr: "Renforcez Votre Systeme Immunitaire Naturellement avec le Miel",
-    title_de: "Starken Sie Ihr Immunsystem Naturlich mit Honig",
-    title_nl: "Versterk Je Immuunsysteem Natuurlijk met Honing",
-    excerpt: "Learn how different honey varieties can strengthen your body's natural defenses throughout the year.",
-    excerpt_fr: "Decouvrez comment differentes varietes de miel peuvent renforcer les defenses naturelles de votre corps.",
-    excerpt_de: "Erfahren Sie, wie verschiedene Honigsorten die naturlichen Abwehrkrafte Ihres Korpers starken konnen.",
-    excerpt_nl: "Leer hoe verschillende honingsoorten de natuurlijke afweer van je lichaam kunnen versterken.",
-    content: "Raw honey is packed with enzymes, antioxidants, and antibacterial compounds.\n\nBest Honeys for Immunity:\n1. Oregano Honey - Powerful natural antibiotic\n2. Thyme Honey - Respiratory health champion\n3. Daghmous Honey - Natural energy and respiratory support\n4. Eucalyptus Honey - Cold and flu fighter",
-    content_fr: "Le miel brut est rempli d'enzymes, d'antioxydants et de composes antibacteriens.",
-    content_de: "Roher Honig ist voller Enzyme, Antioxidantien und antibakterieller Verbindungen.",
-    content_nl: "Rauwe honing zit vol enzymen, antioxidanten en antibacteriele verbindingen.",
-    image: "https://images.unsplash.com/photo-1568657704598-602700bd9694?w=800",
-    published_at: "2024-10-05T10:00:00Z"
+    published_at: "2024-11-20T10:00:00Z"
   }
 ];
 
@@ -355,59 +571,71 @@ export const FAQ = [
     question_fr: "Comment passer une commande?",
     question_de: "Wie bestelle ich?",
     question_nl: "Hoe plaats ik een bestelling?",
+    question_ar: "كيف أطلب؟",
     answer: "Simply click the 'Order via WhatsApp' button on any product page or use the floating WhatsApp button. Our team will guide you through the process personally.",
     answer_fr: "Cliquez simplement sur le bouton 'Commander via WhatsApp' sur n'importe quelle page produit. Notre equipe vous guidera personnellement.",
-    answer_de: "Klicken Sie einfach auf den 'Uber WhatsApp bestellen' Button auf jeder Produktseite oder nutzen Sie den schwebenden WhatsApp-Button. Unser Team wird Sie personlich durch den Prozess fuhren.",
-    answer_nl: "Klik simpelweg op de 'Bestel via WhatsApp' knop op elke productpagina of gebruik de zwevende WhatsApp-knop. Ons team begeleidt u persoonlijk door het proces."
+    answer_de: "Klicken Sie einfach auf den 'Uber WhatsApp bestellen' Button auf jeder Produktseite. Unser Team wird Sie personlich durch den Prozess fuhren.",
+    answer_nl: "Klik simpelweg op de 'Bestel via WhatsApp' knop op elke productpagina. Ons team begeleidt u persoonlijk door het proces.",
+    answer_ar: "انقر على زر 'اطلب عبر واتساب' في أي صفحة منتج أو استخدم زر واتساب العائم. سيرشدك فريقنا شخصياً خلال العملية."
   },
   {
     question: "What payment methods do you accept?",
     question_fr: "Quels modes de paiement acceptez-vous?",
     question_de: "Welche Zahlungsmethoden akzeptieren Sie?",
     question_nl: "Welke betaalmethoden accepteert u?",
+    question_ar: "ما طرق الدفع المقبولة؟",
     answer: "We accept Western Union, MoneyGram, Ria, WorldRemit, and Wise. Payment is processed securely before shipment.",
     answer_fr: "Nous acceptons Western Union, MoneyGram, Ria, WorldRemit et Wise. Le paiement est traite de maniere securisee avant l'expedition.",
     answer_de: "Wir akzeptieren Western Union, MoneyGram, Ria, WorldRemit und Wise. Die Zahlung wird sicher vor dem Versand abgewickelt.",
-    answer_nl: "Wij accepteren Western Union, MoneyGram, Ria, WorldRemit en Wise. De betaling wordt veilig verwerkt voor verzending."
+    answer_nl: "Wij accepteren Western Union, MoneyGram, Ria, WorldRemit en Wise. De betaling wordt veilig verwerkt voor verzending.",
+    answer_ar: "نقبل Western Union وMoneyGram وRia وWorldRemit وWise. يتم معالجة الدفع بأمان قبل الشحن."
   },
   {
     question: "Do you ship to Europe?",
     question_fr: "Livrez-vous en Europe?",
     question_de: "Liefern Sie nach Europa?",
     question_nl: "Levert u in Europa?",
+    question_ar: "هل تشحنون إلى أوروبا؟",
     answer: "Yes! We ship to all European countries. Delivery typically takes 7-14 business days. Each order is carefully packaged to preserve the honey's quality.",
     answer_fr: "Oui! Nous livrons dans tous les pays europeens. La livraison prend generalement 7 a 14 jours ouvrables. Chaque commande est soigneusement emballee.",
     answer_de: "Ja! Wir liefern in alle europaischen Lander. Die Lieferung dauert in der Regel 7-14 Werktage. Jede Bestellung wird sorgfaltig verpackt.",
-    answer_nl: "Ja! We leveren in alle Europese landen. Levering duurt doorgaans 7-14 werkdagen. Elke bestelling wordt zorgvuldig verpakt."
+    answer_nl: "Ja! We leveren in alle Europese landen. Levering duurt doorgaans 7-14 werkdagen. Elke bestelling wordt zorgvuldig verpakt.",
+    answer_ar: "نعم! نشحن لجميع الدول الأوروبية. يستغرق التوصيل عادةً ٧-١٤ يوم عمل. كل طلب يُعبأ بعناية للحفاظ على جودة العسل."
   },
   {
     question: "Is your honey really pure?",
     question_fr: "Votre miel est-il vraiment pur?",
     question_de: "Ist Ihr Honig wirklich rein?",
     question_nl: "Is uw honing echt puur?",
+    question_ar: "هل عسلكم طبيعي حقاً؟",
     answer: "Absolutely. Our honey is 100% raw and unprocessed. We harvest directly from our family hives in the Atlas Mountains with no additives or heat treatment.",
-    answer_fr: "Absolument. Notre miel est 100% brut et non transforme. Nous recoltons directement de nos ruches familiales dans les montagnes de l'Atlas.",
+    answer_fr: "Absolument. Notre miel est 100% brut et non transforme. Nous recoltons directement de nos ruches familiales dans les montagnes de l'Atlas sans additifs.",
     answer_de: "Absolut. Unser Honig ist 100% roh und unverarbeitet. Wir ernten direkt aus unseren Familienbienenstocken im Atlasgebirge ohne Zusatzstoffe.",
-    answer_nl: "Absoluut. Onze honing is 100% rauw en onbewerkt. We oogsten rechtstreeks uit onze familiebijenkorven in het Atlasgebergte zonder toevoegingen."
+    answer_nl: "Absoluut. Onze honing is 100% rauw en onbewerkt. We oogsten rechtstreeks uit onze familiebijenkorven in het Atlasgebergte zonder toevoegingen.",
+    answer_ar: "بالتأكيد. عسلنا ١٠٠٪ خام وغير معالج. نحصده مباشرة من خلايا عائلتنا في جبال الأطلس بدون أي إضافات أو معالجة حرارية."
   },
   {
     question: "What sizes are available?",
     question_fr: "Quelles tailles sont disponibles?",
     question_de: "Welche Grossen sind verfugbar?",
     question_nl: "Welke maten zijn beschikbaar?",
+    question_ar: "ما الأحجام المتوفرة؟",
     answer: "All our honeys are available in 500g and 1kg jars. Contact us via WhatsApp for custom quantities or gift sets.",
     answer_fr: "Tous nos miels sont disponibles en pots de 500g et 1kg. Contactez-nous via WhatsApp pour des quantites personnalisees.",
     answer_de: "Alle unsere Honige sind in 500g und 1kg Glasern erhaltlich. Kontaktieren Sie uns uber WhatsApp fur individuelle Mengen oder Geschenksets.",
-    answer_nl: "Al onze honingsoorten zijn verkrijgbaar in potten van 500g en 1kg. Neem contact met ons op via WhatsApp voor aangepaste hoeveelheden."
+    answer_nl: "Al onze honingsoorten zijn verkrijgbaar in potten van 500g en 1kg. Neem contact met ons op via WhatsApp voor aangepaste hoeveelheden.",
+    answer_ar: "جميع عسلنا متوفر في برطمانات ٥٠٠ غ و١ كغ. تواصل معنا عبر واتساب لكميات مخصصة أو طقم هدايا."
   },
   {
     question: "How should I store the honey?",
     question_fr: "Comment conserver le miel?",
     question_de: "Wie soll ich den Honig aufbewahren?",
     question_nl: "Hoe moet ik de honing bewaren?",
+    question_ar: "كيف أحفظ العسل؟",
     answer: "Store in a cool, dry place away from direct sunlight. Keep at room temperature (15-25C). Never refrigerate. Crystallization is natural and does not affect quality.",
-    answer_fr: "Conservez dans un endroit frais et sec a l'abri de la lumiere directe. Gardez a temperature ambiante (15-25C). Ne refrigerez jamais.",
+    answer_fr: "Conservez dans un endroit frais et sec a l'abri de la lumiere directe. Gardez a temperature ambiante (15-25C). Ne refrigerez jamais. La cristallisation est naturelle.",
     answer_de: "Kuhl und trocken lagern, vor direkter Sonneneinstrahlung schutzen. Bei Raumtemperatur (15-25C) aufbewahren. Nie kuhlen. Kristallisation ist naturlich.",
-    answer_nl: "Bewaar op een koele, droge plaats uit direct zonlicht. Bewaar op kamertemperatuur (15-25C). Nooit koelen. Kristallisatie is natuurlijk."
+    answer_nl: "Bewaar op een koele, droge plaats uit direct zonlicht. Bewaar op kamertemperatuur (15-25C). Nooit koelen. Kristallisatie is natuurlijk.",
+    answer_ar: "احفظه في مكان بارد وجاف بعيداً عن ضوء الشمس المباشر. احتفظ به في درجة حرارة الغرفة (١٥-٢٥ درجة). لا تضعه في الثلاجة أبداً. التبلور طبيعي ولا يؤثر على الجودة."
   }
 ];

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import { LanguageProvider } from './context/LanguageContext';
+import { useLanguage } from './context/LanguageContext';
 import { CurrencyProvider } from './context/CurrencyContext';
 import { CartProvider } from './context/CartContext';
 import Header from './components/Header';
@@ -18,6 +19,17 @@ import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import './App.css';
 
+
+function RTLHandler() {
+  const { language } = useLanguage();
+  React.useEffect(() => {
+    const isRTL = language === 'ar';
+    document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+    document.documentElement.lang = language;
+  }, [language]);
+  return null;
+}
+
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
@@ -31,6 +43,7 @@ function App() {
         <CartProvider>
           <BrowserRouter>
             <ScrollToTop />
+        <RTLHandler />
             <div className="App min-h-screen" style={{ backgroundColor: '#FDFBF7' }}>
               <Header />
               <main>

@@ -35,12 +35,12 @@ const BlogPost = () => {
 
   const getTitle = () => {
     const key = language === 'en' ? 'title' : `title_${language}`;
-    return post[key] || post.title;
+    return post[key] || post[`title_${language}`] || post.title;
   };
 
   const getContent = () => {
     const key = language === 'en' ? 'content' : `content_${language}`;
-    return post[key] || post.content;
+    return post[key] || post[`content_${language}`] || post.content;
   };
 
   return (

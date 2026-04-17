@@ -1,4 +1,5 @@
 import { BLOG_POSTS } from '../data/products';
+import { useLanguage } from '../context/LanguageContext';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -22,12 +23,12 @@ const Blog = () => {
 
   const getTitle = (post) => {
     const key = language === 'en' ? 'title' : `title_${language}`;
-    return post[key] || post.title;
+    return post[key] || post[`title_${language}`] || post.title;
   };
 
   const getExcerpt = (post) => {
     const key = language === 'en' ? 'excerpt' : `excerpt_${language}`;
-    return post[key] || post.excerpt;
+    return post[key] || post[`excerpt_${language}`] || post.excerpt;
   };
 
   return (

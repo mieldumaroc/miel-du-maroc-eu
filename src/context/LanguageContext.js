@@ -49,6 +49,22 @@ const translations = {
     common: { learnMore: 'Mehr Erfahren', orderNow: 'Bestellen', viewAll: 'Alle Ansehen', price: 'Preis' },
     benefits: { title: 'Gesundheitsvorteile von Marokkanischem Honig', subtitle: 'Das machtigste Heilmittel der Natur' },
   },
+  ar: {
+    nav: { home: 'الرئيسية', products: 'أعسالنا', about: 'من نحن', healthBenefits: 'الفوائد', shipping: 'الشحن', faq: 'الأسئلة', contact: 'اتصل بنا', blog: 'المدونة' },
+    hero: { tagline: 'عسل مغربي طبيعي ١٠٠٪', title: 'من جبال الأطلس إلى مائدتكم', subtitle: 'عسل طبيعي وعلاجي تحصده عائلتنا في المغرب منذ عام ١٩٩٥', cta: 'اكتشف مجموعتنا' },
+    products: { title: 'مجموعة عسلنا', subtitle: 'كل برطمان يحمل جوهر مناطق المغرب النقية', viewDetails: 'عرض التفاصيل', inquire: 'اطلب عبر واتساب', from: 'من', perKg: 'لكل ٥٠٠ غ', healthBenefits: 'الفوائد الصحية', selectSize: 'اختر الحجم' },
+    about: { title: 'عن مِيل دو مارو', subtitle: 'تقليد عائلي منذ عام ١٩٩٥', story: 'عمل عائلي', tradition: 'أساليب تقليدية', traditionText: 'نحصد العسل بتقنيات متوارثة تحافظ على الإنزيمات الطبيعية والخصائص العلاجية.', purity: '١٠٠٪ نقي', purityText: 'بدون إضافات أو معالجة. عسل نقي طبيعي كما أرادت الطبيعة.', direct: 'مباشرة من المصدر', directText: 'من خلايا النحل في جبال الأطلس مباشرة إلى مائدتكم.' },
+    whyUs: { title: 'لماذا تختار مِيل دو مارو', subtitle: 'الفرق في كل قطرة', authenticity: 'أصالة مضمونة', authenticityText: 'كل برطمان يمكن تتبعه إلى خلايا عائلتنا في الأطلس', therapeutic: 'جودة علاجية', therapeuticText: 'يُحصد في ذروة قوته للحصول على أقصى فوائد صحية', familyBusiness: 'عمل عائلي', familyBusinessText: 'اهتمام شخصي بكل طلب وتواصل مباشر' },
+    testimonials: { title: 'ماذا يقول عملاؤنا', subtitle: 'ثقة العائلات عبر أوروبا' },
+    contact: { title: 'تواصل معنا', subtitle: 'يسعدنا سماعكم', whatsapp: 'راسلنا على واتساب', whatsappText: 'التواصل الرئيسي للطلبات والاستفسارات', email: 'البريد الإلكتروني', emailText: 'للأسئلة التفصيلية', location: 'الموقع', locationText: 'مراكش، المغرب', messageLabel: 'رسالتك (اختياري)', messagePlaceholder: 'أخبرنا بما تريد طلبه أو استفساره...', form: { name: 'اسمك', email: 'البريد الإلكتروني', message: 'رسالتك', send: 'إرسال الرسالة' } },
+    shipping: { title: 'الشحن والتوصيل', subtitle: 'نوصل بعناية إلى أوروبا', info: 'جميع الطلبات تُعبأ بعناية وترسل من المغرب. التوصيل المعتاد إلى أوروبا يستغرق ٧-١٤ يوم عمل.', packaging: 'تغليف دقيق', packagingText: 'كل برطمان يُلف بشكل فردي ومبطن لنقل آمن.', delivery: '٧-١٤ يوم عمل', deliveryText: 'توصيل قياسي لجميع دول أوروبا من المغرب.', infoTitle: 'معلومات الشحن', countries: 'نشحن لجميع الدول الأوروبية بما فيها فرنسا وألمانيا وهولندا وبلجيكا والمملكة المتحدة وإسبانيا وإيطاليا وسويسرا وغيرها.', courier: 'جميع الطلبات ترسل عبر خدمة بريد دولي مع تتبع. ستتلقى رقم التتبع عند شحن طلبك.', processing: 'تُعالج الطلبات عادةً خلال ١-٢ يوم عمل. يستغرق التوصيل ٧-١٤ يوم عمل لمعظم الوجهات الأوروبية.', inquiries: 'لأي استفسارات حول الشحن، تواصل معنا عبر واتساب. يسعدنا تزويدكم بتحديثات التوصيل.' },
+    faq: { title: 'الأسئلة الشائعة', subtitle: 'كل ما تحتاج معرفته' },
+    blog: { title: 'مدونتنا', subtitle: 'اكتشف عالم العسل المغربي', readMore: 'اقرأ المزيد', backToBlog: 'العودة للمدونة' },
+    payment: { title: 'كيفية الطلب', subtitle: 'بسيط وآمن وشخصي', secure: 'دفع آمن', methodsText: 'نقبل التحويلات الدولية لراحتكم', stepTitle1: 'تصفح واختر', stepTitle2: 'احصل على عرضك', stepTitle3: 'أرسل الدفع', stepTitle4: 'تتبع التوصيل', step1: 'تصفح مجموعة عسلنا واختر مفضلاتك', step2: 'احصل على عرض مخصص مع تفاصيل الدفع', step3: 'أرسل الدفع عبر طريقة التحويل المفضلة لديك', step4: 'احصل على رقم التتبع وتحديثات التوصيل' },
+    footer: { quickLinks: 'روابط سريعة', support: 'الدعم', followUs: 'تابعنا', copyright: '© ٢٠٢٤ ميل دو مارو. جميع الحقوق محفوظة.', tagline: 'عسل مغربي فاخر، يُحصد بحب من جبال الأطلس منذ ١٩٩٥.' },
+    common: { learnMore: 'اعرف المزيد', orderNow: 'اطلب الآن', viewAll: 'عرض الكل', price: 'السعر' },
+    benefits: { title: 'فوائد العسل المغربي الصحية', subtitle: 'أقوى علاج طبيعي' },
+  },
   nl: {
     nav: { home: 'Home', products: 'Onze Honing', about: 'Over Ons', healthBenefits: 'Voordelen', shipping: 'Verzending', faq: 'FAQ', contact: 'Contact', blog: 'Blog' },
     hero: { tagline: 'Pure Marokkaanse Honing', title: 'Van het Atlasgebergte naar Uw Tafel', subtitle: 'Authentieke, therapeutische honing geoogst door onze familie in Marokko sinds 1995', cta: 'Ontdek Onze Collectie' },
@@ -121,9 +137,11 @@ export const useLanguage = () => {
   return context;
 };
 
+export { RTL_LANGUAGES };
 export const LANGUAGES = [
   { code: 'en', name: 'English', flag: '\ud83c\uddec\ud83c\udde7' },
   { code: 'fr', name: 'Fran\u00e7ais', flag: '\ud83c\uddeb\ud83c\uddf7' },
   { code: 'de', name: 'Deutsch', flag: '\ud83c\udde9\ud83c\uddea' },
   { code: 'nl', name: 'Nederlands', flag: '\ud83c\uddf3\ud83c\uddf1' },
+  { code: 'ar', name: '\u0639\u0631\u0628\u064a', flag: '\ud83c\uddf2\ud83c\udde6' },
 ];
