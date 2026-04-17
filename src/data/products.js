@@ -338,30 +338,7 @@ export const BLOG_POSTS = [
     excerpt_de: "Oregano-Honig ist eines der kraftvollsten natürlichen Antibiotika. Entdecken Sie, warum dieser seltene Atlashonig in Europa geschätzt wird.",
     excerpt_nl: "Oregano honing is een van de krachtigste natuurlijke antibiotica. Ontdek waarom deze zeldzame Atlashoning in Europa gewaardeerd wordt.",
     excerpt_ar: "عسل الأوريغانو من أقوى المضادات الحيوية الطبيعية. اكتشف لماذا يُقدَّر هذا العسل النادر من جبال الأطلس في أوروبا.",
-    content: "Oregano honey from Morocco's Atlas Mountains is unlike any honey you will find in a supermarket. Harvested from wild oregano flowers that grow at high altitude, this honey contains unique compounds that give it extraordinary healing properties.
-
-**1. Powerful Natural Antibiotic**
-Oregano honey contains high levels of thymol and carvacrol, two compounds scientifically proven to fight bacteria. Studies show it can be effective against strains that resist conventional antibiotics.
-
-**2. Boosts Immunity**
-Rich in antioxidants and enzymes, regular consumption of oregano honey strengthens the immune system. A teaspoon each morning on an empty stomach can help protect your body through winter months.
-
-**3. Soothes Sore Throats**
-Oregano honey's antibacterial properties make it particularly effective for throat infections. Mix a tablespoon with warm water and lemon for immediate relief.
-
-**4. Aids Digestion**
-The natural enzymes in raw oregano honey help break down food and reduce bloating. It can also help restore healthy gut bacteria after illness.
-
-**5. Skin Healing**
-Applied directly to minor cuts, burns, or skin irritations, oregano honey creates a protective barrier and accelerates healing.
-
-**How to Use Oregano Honey**
-- Take 1 teaspoon daily on an empty stomach
-- Mix with warm (not hot) water to preserve enzymes
-- Apply directly to skin for wound care
-- Add to herbal teas for respiratory support
-
-Our oregano honey is harvested once a year by hand from wild mountain oregano, never heated or processed. Order yours via WhatsApp today.",
+    content: "Oregano honey from Morocco's Atlas Mountains is unlike any honey you will find in a supermarket. Harvested from wild oregano flowers that grow at high altitude, this honey contains unique compounds that give it extraordinary healing properties.\n\n**1. Powerful Natural Antibiotic**\nOregano honey contains high levels of thymol and carvacrol, two compounds scientifically proven to fight bacteria. Studies show it can be effective against strains that resist conventional antibiotics.\n\n**2. Boosts Immunity**\nRich in antioxidants and enzymes, regular consumption of oregano honey strengthens the immune system. A teaspoon each morning on an empty stomach can help protect your body through winter months.\n\n**3. Soothes Sore Throats**\nOregano honey's antibacterial properties make it particularly effective for throat infections. Mix a tablespoon with warm water and lemon for immediate relief.\n\n**4. Aids Digestion**\nThe natural enzymes in raw oregano honey help break down food and reduce bloating. It can also help restore healthy gut bacteria after illness.\n\n**5. Skin Healing**\nApplied directly to minor cuts, burns, or skin irritations, oregano honey creates a protective barrier and accelerates healing.\n\n**How to Use Oregano Honey**\n- Take 1 teaspoon daily on an empty stomach\n- Mix with warm (not hot) water to preserve enzymes\n- Apply directly to skin for wound care\n- Add to herbal teas for respiratory support\n\nOur oregano honey is harvested once a year by hand from wild mountain oregano, never heated or processed. Order yours via WhatsApp today.",
     content_fr: "Le miel d'origan des montagnes de l'Atlas est un vrai trésor thérapeutique. Voici ses 5 bienfaits principaux: antibiotique naturel, renforce l'immunité, apaise la gorge, aide la digestion et guérit la peau.",
     content_de: "Oregano-Honig aus dem Atlasgebirge Marokkos ist ein echtes therapeutisches Schatz. Hier sind seine 5 Hauptvorteile: natürliches Antibiotikum, stärkt die Immunität, beruhigt den Hals, hilft der Verdauung und heilt die Haut.",
     content_nl: "Oregano honing uit het Atlasgebergte van Marokko is een echte therapeutische schat. Hier zijn de 5 hoofdvoordelen: natuurlijk antibioticum, versterkt immuniteit, kalmeert de keel, helpt spijsvertering en geneest de huid.",
@@ -383,31 +360,7 @@ Our oregano honey is harvested once a year by hand from wild mountain oregano, n
     excerpt_de: "Nigella-Honig kombiniert die Kraft des schwarzen Samens mit reinem Honig und schafft eines der wirksamsten Naturheilmittel. Erfahren Sie, warum Europäer ihn aus Marokko bestellen.",
     excerpt_nl: "Nigella honing combineert de kracht van zwart zaad met pure rauwe honing, wat een van de krachtigste natuurlijke remedies creëert.",
     excerpt_ar: "عسل الحبة السوداء يجمع قوة الحبة السوداء مع العسل الخام النقي، مما يخلق أحد أقوى العلاجات الطبيعية المعروفة.",
-    content: "In Islamic tradition, the Prophet Muhammad (peace be upon him) said that black seed is a cure for everything except death. When combined with pure raw honey, its healing properties are amplified even further.
-
-**What Makes Nigella Honey Special?**
-Our nigella honey is made by bees that feed exclusively on black seed (Nigella sativa) flowers in the Moroccan countryside. The resulting honey absorbs the powerful compounds from the plant, including thymoquinone — one of the most studied natural compounds for its health effects.
-
-**Key Benefits:**
-
-**Immune System Support**
-Nigella honey is exceptionally rich in antioxidants and has been shown in studies to modulate immune response, making it valuable for both boosting weak immunity and calming overactive immune responses.
-
-**Respiratory Health**
-Traditionally used for asthma, allergies, and respiratory infections. Many customers report significant improvement in breathing after regular use.
-
-**Anti-inflammatory Properties**
-Thymoquinone in nigella has documented anti-inflammatory effects that can help with joint pain, skin conditions, and digestive inflammation.
-
-**Blood Sugar Balance**
-Studies suggest nigella can help regulate blood sugar levels, making this honey particularly interesting for those managing their glucose.
-
-**How to Take It**
-- 1 teaspoon each morning before breakfast
-- Mixed with warm water and lemon
-- With herbal tea before bed for better sleep
-
-This is our most popular honey among Moroccan diaspora communities in France, Belgium and the Netherlands.",
+    content: "In Islamic tradition, the Prophet Muhammad (peace be upon him) said that black seed is a cure for everything except death. When combined with pure raw honey, its healing properties are amplified even further.\n\n**What Makes Nigella Honey Special?**\nOur nigella honey is made by bees that feed exclusively on black seed (Nigella sativa) flowers in the Moroccan countryside. The resulting honey absorbs the powerful compounds from the plant, including thymoquinone — one of the most studied natural compounds for its health effects.\n\n**Key Benefits:**\n\n**Immune System Support**\nNigella honey is exceptionally rich in antioxidants and has been shown in studies to modulate immune response, making it valuable for both boosting weak immunity and calming overactive immune responses.\n\n**Respiratory Health**\nTraditionally used for asthma, allergies, and respiratory infections. Many customers report significant improvement in breathing after regular use.\n\n**Anti-inflammatory Properties**\nThymoquinone in nigella has documented anti-inflammatory effects that can help with joint pain, skin conditions, and digestive inflammation.\n\n**Blood Sugar Balance**\nStudies suggest nigella can help regulate blood sugar levels, making this honey particularly interesting for those managing their glucose.\n\n**How to Take It**\n- 1 teaspoon each morning before breakfast\n- Mixed with warm water and lemon\n- With herbal tea before bed for better sleep\n\nThis is our most popular honey among Moroccan diaspora communities in France, Belgium and the Netherlands.",
     content_fr: "L'association du miel pur avec la nigelle crée un remède exceptionnel: renforce l'immunité, aide la respiration, anti-inflammatoire, régule la glycémie. Notre miel de nigelle est le plus populaire auprès de la diaspora marocaine en Europe.",
     content_de: "Die Kombination von reinem Honig mit Nigella schafft ein außergewöhnliches Heilmittel: stärkt die Immunität, hilft der Atmung, entzündungshemmend, reguliert den Blutzucker.",
     content_nl: "De combinatie van pure honing met nigella creëert een uitzonderlijk remedie: versterkt immuniteit, helpt ademhaling, ontstekingsremmend, reguleert bloedsuiker.",
@@ -429,39 +382,7 @@ This is our most popular honey among Moroccan diaspora communities in France, Be
     excerpt_de: "Echten reinen marokkanischen Honig in Europa zu finden ist schwierig. Hier erfahren Sie, wie Sie das echte Produkt direkt nach Hause geliefert bekommen.",
     excerpt_nl: "Echte pure Marokkaanse honing vinden in Europa is moeilijk. Hier leest u hoe u het echte product thuis bezorgd krijgt.",
     excerpt_ar: "إيجاد عسل مغربي طبيعي حقيقي في أوروبا أمر صعب. إليك كيفية الحصول على العسل الأصيل مباشرة إلى بابك.",
-    content: "If you are Moroccan living in Europe, or simply a health-conscious European who appreciates quality honey, you have probably noticed that the honey available in supermarkets bears little resemblance to real Moroccan honey.
-
-**Why Supermarket Honey is Not the Same**
-Most honey sold in European supermarkets is:
-- Blended from multiple countries
-- Heated to make it easier to bottle (destroying natural enzymes)
-- Sometimes adulterated with sugar syrup
-- Stored for months before reaching shelves
-
-**What Makes Real Moroccan Honey Different?**
-Moroccan honey from the Atlas Mountains is:
-- Harvested by hand from wild mountain flowers
-- Never heated or processed
-- Bottled immediately after extraction
-- Rich in natural enzymes, pollen, and propolis
-- Deeply aromatic with complex flavour profiles
-
-**How to Order from Miel du Maroc**
-
-1. **Browse our collection** — choose from 13 varieties including Oregano, Thyme, Nigella, Caper, and Wild Rosemary
-2. **Contact us via WhatsApp** — send us your order and we will give you a personalised quote including shipping
-3. **Pay via international transfer** — Western Union, MoneyGram, Ria, WorldRemit, or Wise
-4. **Receive your honey** — carefully packaged and delivered to your door in 7-14 business days
-
-**Which Honey Should I Choose?**
-- For immunity: Oregano or Nigella honey
-- For respiratory health: Thyme or Eucalyptus honey
-- For relaxation: Orange Blossom or Lavender honey
-- For energy: Jujube (Sidr) honey
-- For liver health: Wild Rosemary honey
-- For the rare and exceptional: Caper honey
-
-We ship to France, Belgium, Netherlands, Germany, UK, Spain, Italy, Switzerland and all European countries.",
+    content: "If you are Moroccan living in Europe, or simply a health-conscious European who appreciates quality honey, you have probably noticed that the honey available in supermarkets bears little resemblance to real Moroccan honey.\n\n**Why Supermarket Honey is Not the Same**\nMost honey sold in European supermarkets is:\n- Blended from multiple countries\n- Heated to make it easier to bottle (destroying natural enzymes)\n- Sometimes adulterated with sugar syrup\n- Stored for months before reaching shelves\n\n**What Makes Real Moroccan Honey Different?**\nMoroccan honey from the Atlas Mountains is:\n- Harvested by hand from wild mountain flowers\n- Never heated or processed\n- Bottled immediately after extraction\n- Rich in natural enzymes, pollen, and propolis\n- Deeply aromatic with complex flavour profiles\n\n**How to Order from Miel du Maroc**\n\n1. **Browse our collection** — choose from 13 varieties including Oregano, Thyme, Nigella, Caper, and Wild Rosemary\n2. **Contact us via WhatsApp** — send us your order and we will give you a personalised quote including shipping\n3. **Pay via international transfer** — Western Union, MoneyGram, Ria, WorldRemit, or Wise\n4. **Receive your honey** — carefully packaged and delivered to your door in 7-14 business days\n\n**Which Honey Should I Choose?**\n- For immunity: Oregano or Nigella honey\n- For respiratory health: Thyme or Eucalyptus honey\n- For relaxation: Orange Blossom or Lavender honey\n- For energy: Jujube (Sidr) honey\n- For liver health: Wild Rosemary honey\n- For the rare and exceptional: Caper honey\n\nWe ship to France, Belgium, Netherlands, Germany, UK, Spain, Italy, Switzerland and all European countries.",
     content_fr: "Le vrai miel marocain est difficile à trouver en Europe. Découvrez comment commander directement depuis le Maroc: nos 13 variétés, notre processus de commande simple via WhatsApp, et pourquoi notre miel est différent de celui des supermarchés.",
     content_de: "Echter marokkanischer Honig ist in Europa schwer zu finden. Erfahren Sie, wie Sie direkt aus Marokko bestellen können.",
     content_nl: "Echte Marokkaanse honing is moeilijk te vinden in Europa. Leer hoe u direct uit Marokko kunt bestellen.",
@@ -483,30 +404,7 @@ We ship to France, Belgium, Netherlands, Germany, UK, Spain, Italy, Switzerland 
     excerpt_de: "Thymianhonig wird seit Jahrhunderten in der marokkanischen Medizin für die Atemwegsgesundheit verwendet.",
     excerpt_nl: "Tijmhoning wordt al eeuwen gebruikt in de Marokkaanse geneeskunde voor de luchtwegengezondheid.",
     excerpt_ar: "يُستخدم عسل الزعتر منذ قرون في الطب المغربي التقليدي لصحة الجهاز التنفسي.",
-    content: "Thyme honey is one of nature's most powerful healing gifts. Rich in antioxidants and antibacterial compounds, it has been a cornerstone of Moroccan traditional medicine for generations.
-
-The unique therapeutic properties of thyme honey come from thymol and carvacrol, two powerful compounds found in thyme flowers that bees collect from the sun-drenched hillsides of Morocco.
-
-**Respiratory Health Benefits**
-Thyme honey is particularly effective for respiratory conditions:
-- Soothes sore throats and reduces inflammation
-- Calms persistent coughs naturally
-- Helps clear congestion and blocked sinuses
-- Supports recovery from bronchitis
-
-**Wound Healing**
-Applied topically, thyme honey creates a moist healing environment that accelerates wound closure and prevents infection.
-
-**Antibacterial Action**
-Clinical studies have shown thyme honey to be effective against a range of bacteria including Staphylococcus aureus and E. coli.
-
-**How to Use Thyme Honey**
-- Take 1 tablespoon in the morning on an empty stomach
-- Mix with warm water and lemon for sore throats
-- Add to herbal tea with ginger for colds
-- Apply directly to minor cuts and burns
-
-Our thyme honey is harvested from wild thyme growing at altitude in the Atlas Mountains, giving it a superior concentration of beneficial compounds compared to cultivated thyme honey.",
+    content: "Thyme honey is one of nature's most powerful healing gifts. Rich in antioxidants and antibacterial compounds, it has been a cornerstone of Moroccan traditional medicine for generations.\n\nThe unique therapeutic properties of thyme honey come from thymol and carvacrol, two powerful compounds found in thyme flowers that bees collect from the sun-drenched hillsides of Morocco.\n\n**Respiratory Health Benefits**\nThyme honey is particularly effective for respiratory conditions:\n- Soothes sore throats and reduces inflammation\n- Calms persistent coughs naturally\n- Helps clear congestion and blocked sinuses\n- Supports recovery from bronchitis\n\n**Wound Healing**\nApplied topically, thyme honey creates a moist healing environment that accelerates wound closure and prevents infection.\n\n**Antibacterial Action**\nClinical studies have shown thyme honey to be effective against a range of bacteria including Staphylococcus aureus and E. coli.\n\n**How to Use Thyme Honey**\n- Take 1 tablespoon in the morning on an empty stomach\n- Mix with warm water and lemon for sore throats\n- Add to herbal tea with ginger for colds\n- Apply directly to minor cuts and burns\n\nOur thyme honey is harvested from wild thyme growing at altitude in the Atlas Mountains, giving it a superior concentration of beneficial compounds compared to cultivated thyme honey.",
     content_fr: "Le miel de thym des montagnes de l'Atlas est exceptionnel pour la santé respiratoire, la guérison des plaies et ses propriétés antibactériennes. Découvrez comment l'utiliser au quotidien.",
     content_de: "Thymianhonig aus dem Atlasgebirge ist außergewöhnlich für die Atemwegsgesundheit, Wundheilung und seine antibakteriellen Eigenschaften.",
     content_nl: "Tijmhoning uit het Atlasgebergte is uitzonderlijk voor de luchtwegengezondheid, wondgenezing en zijn antibacteriële eigenschappen.",
@@ -528,26 +426,7 @@ Our thyme honey is harvested from wild thyme growing at altitude in the Atlas Mo
     excerpt_de: "Seit Jahrtausenden praktizieren marokkanische Imker eine Imkerei in Harmonie mit der Natur.",
     excerpt_nl: "Al duizenden jaren beoefenen Marokkaanse imkers een bijenteelt in harmonie met de natuur.",
     excerpt_ar: "منذ آلاف السنين، يمارس مربو النحل المغاربة تربية النحل بتناغم مع الطبيعة. اكتشف التقاليد العريقة وراء كل برطمان.",
-    content: "Our family has been keeping bees in the Atlas Mountains for generations. The methods we use today are not very different from those used by our great-grandparents — and that is precisely what makes our honey special.
-
-**Traditional Hive Construction**
-Traditional Moroccan hives are made from natural materials — hollowed logs, clay pots, or woven reed baskets. These materials regulate temperature and humidity naturally, creating ideal conditions for the bees without synthetic materials.
-
-**The Harvest**
-Honey is harvested only once or twice a year, always leaving enough for the bees to survive winter. This patience is what produces concentrated, potent honey with exceptional flavour.
-
-The harvest follows natural cycles:
-- Spring honey from mountain wildflowers
-- Summer honey from aromatic herbs like oregano and thyme
-- Autumn honey from late-blooming plants
-
-**No Chemicals, No Shortcuts**
-We never use pesticides, antibiotics, or synthetic treatments. Our bees forage freely in unpolluted mountain meadows, far from agricultural chemicals.
-
-**Why This Matters for You**
-When you buy our honey, you are not just buying a food product. You are supporting a family tradition that has maintained biodiversity in the Atlas Mountains for generations, and receiving a product that cannot be replicated by industrial beekeeping.
-
-Every jar tells the story of a place, a season, and a plant. That is something no supermarket honey can offer.",
+    content: "Our family has been keeping bees in the Atlas Mountains for generations. The methods we use today are not very different from those used by our great-grandparents — and that is precisely what makes our honey special.\n\n**Traditional Hive Construction**\nTraditional Moroccan hives are made from natural materials — hollowed logs, clay pots, or woven reed baskets. These materials regulate temperature and humidity naturally, creating ideal conditions for the bees without synthetic materials.\n\n**The Harvest**\nHoney is harvested only once or twice a year, always leaving enough for the bees to survive winter. This patience is what produces concentrated, potent honey with exceptional flavour.\n\nThe harvest follows natural cycles:\n- Spring honey from mountain wildflowers\n- Summer honey from aromatic herbs like oregano and thyme\n- Autumn honey from late-blooming plants\n\n**No Chemicals, No Shortcuts**\nWe never use pesticides, antibiotics, or synthetic treatments. Our bees forage freely in unpolluted mountain meadows, far from agricultural chemicals.\n\n**Why This Matters for You**\nWhen you buy our honey, you are not just buying a food product. You are supporting a family tradition that has maintained biodiversity in the Atlas Mountains for generations, and receiving a product that cannot be replicated by industrial beekeeping.\n\nEvery jar tells the story of a place, a season, and a plant. That is something no supermarket honey can offer.",
     content_fr: "Notre famille élève des abeilles dans les montagnes de l'Atlas depuis des générations. Nos méthodes traditionnelles, sans produits chimiques ni raccourcis, produisent un miel que l'apiculture industrielle ne peut pas reproduire.",
     content_de: "Unsere Familie hält seit Generationen Bienen im Atlasgebirge. Unsere traditionellen Methoden ohne Chemikalien produzieren einen Honig, den die industrielle Imkerei nicht reproduzieren kann.",
     content_nl: "Onze familie houdt al generaties lang bijen in het Atlasgebergte. Onze traditionele methoden zonder chemicaliën produceren een honing die de industriële bijenteelt niet kan reproduceren.",

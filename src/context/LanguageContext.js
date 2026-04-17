@@ -137,7 +137,7 @@ export const useLanguage = () => {
   return context;
 };
 
-export { RTL_LANGUAGES };
+
 export const LANGUAGES = [
   { code: 'en', name: 'English', flag: '\ud83c\uddec\ud83c\udde7' },
   { code: 'fr', name: 'Fran\u00e7ais', flag: '\ud83c\uddeb\ud83c\uddf7' },
