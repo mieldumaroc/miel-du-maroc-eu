@@ -93,7 +93,7 @@ const ProductDetail = () => {
             className="space-y-8"
           >
             <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-3">{product.tag}</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-3">{t(`tags.${product.tag === 'Liver Health' ? 'liverHealth' : product.tag === 'General Health' ? 'generalHealth' : product.tag.toLowerCase()}`)}</p>
               <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight" data-testid="product-detail-name">
                 {productName}
               </h1>
