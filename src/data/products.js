@@ -343,7 +343,7 @@ export const BLOG_POSTS = [
     content_de: "Oregano-Honig aus dem Atlasgebirge Marokkos ist ein echtes therapeutisches Schatz mit 5 Hauptvorteilen: natürliches Antibiotikum, stärkt die Immunität, beruhigt den Hals, hilft der Verdauung und heilt die Haut.\n\nAnwendung: Ein Teelöffel täglich auf nüchternen Magen, mit warmem Wasser gemischt oder direkt auf die Haut aufgetragen.\n\nUnser Oregano-Honig wird einmal im Jahr von Hand geerntet, niemals erhitzt oder verarbeitet.",
     content_nl: "Oregano honing uit het Atlasgebergte van Marokko heeft 5 hoofdvoordelen: natuurlijk antibioticum, versterkt immuniteit, kalmeert de keel, helpt spijsvertering en geneest de huid.\n\nGebruik: één theelepel dagelijks op een lege maag, gemengd met warm water of direct op de huid aangebracht.\n\nOnze oregano honing wordt eenmaal per jaar met de hand geoogst, nooit verhit of bewerkt.",
     content_ar: "عسل الأوريغانو من جبال الأطلس المغربية له ٥ فوائد رئيسية: مضاد حيوي طبيعي، يعزز المناعة، يهدئ الحلق، يساعد الهضم ويعالج الجلد.\n\nطريقة الاستخدام: ملعقة صغيرة يومياً على الريق، مخلوطة بماء دافئ وليمون، أو تطبيقها مباشرة على الجلد.\n\nعسل الأوريغانو لدينا يُحصد مرة واحدة في السنة يدوياً من الأوريغانو البري الجبلي، ولا يُسخَّن أو يُعالَج أبداً.",
-    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
+    image: "/honey-images/final-origan.png",
     published_at: "2024-12-15T10:00:00Z"
   },
   {
@@ -365,7 +365,7 @@ export const BLOG_POSTS = [
     content_de: "Thymianhonig aus dem Atlasgebirge ist außergewöhnlich für die Atemwegsgesundheit, Wundheilung und antibakteriellen Eigenschaften.\n\nAtemwegsgesundheit: lindert Halsschmerzen, beruhigt anhaltenden Husten, hilft bei der Befreiung der Nasennebenhöhlen.\n\nAnwendung: ein Esslöffel morgens auf nüchternen Magen, mit warmem Wasser und Zitrone bei Halsschmerzen.",
     content_nl: "Tijmhoning uit het Atlasgebergte is uitzonderlijk voor de luchtwegengezondheid, wondgenezing en antibacteriële eigenschappen.\n\nLuchtweggezondheid: verzacht keelpijn, stilt aanhoudende hoest, helpt bij het vrijmaken van de neusbijholten.\n\nGebruik: een eetlepel 's ochtends op een lege maag, met warm water en citroen bij keelpijn.",
     content_ar: "عسل الزعتر من جبال الأطلس استثنائي لصحة الجهاز التنفسي والتئام الجروح وخصائصه المضادة للبكتيريا.\n\nصحة الجهاز التنفسي: يخفف التهاب الحلق، يهدئ السعال المستمر، يساعد على فتح الجيوب الأنفية.\n\nطريقة الاستخدام: ملعقة كبيرة في الصباح على الريق، مع ماء دافئ وليمون لالتهاب الحلق.",
-    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
+    image: "/honey-images/final-thym.png",
     published_at: "2024-12-10T10:00:00Z"
   },
   {
@@ -387,7 +387,7 @@ export const BLOG_POSTS = [
     content_de: "Unsere Familie hält seit Generationen Bienen im Atlasgebirge. Unsere traditionellen Methoden ohne Chemikalien produzieren einen Honig, den die industrielle Imkerei nicht reproduzieren kann.\n\nDie Ernte folgt natürlichen Zyklen: Frühlingshonig von Wildblumen, Sommerhonig von Kräutern wie Oregano und Thymian, Herbsthonig von wildem Rosmarin und Kaper.\n\nJedes Glas erzählt die Geschichte eines Ortes, einer Jahreszeit und einer Pflanze.",
     content_nl: "Onze familie houdt al generaties lang bijen in het Atlasgebergte. Onze traditionele methoden zonder chemicaliën produceren een honing die de industriële bijenteelt niet kan reproduceren.\n\nDe oogst volgt natuurlijke cycli: lentehoning van wilde bloemen, zomerhoning van kruiden zoals oregano en tijm, herfstgoning van wilde rozemarijn en kappers.\n\nElke pot vertelt het verhaal van een plek, een seizoen en een plant.",
     content_ar: "عائلتنا تربي النحل في جبال الأطلس منذ أجيال. أساليبنا التقليدية بدون مواد كيميائية تنتج عسلاً لا تستطيع تربية النحل الصناعية إنتاجه.\n\nالحصاد يتبع الدورات الطبيعية: عسل الربيع من الأزهار البرية، عسل الصيف من الأعشاب العطرية كالأوريغانو والزعتر، عسل الخريف من الرومان البري والكبار.\n\nكل برطمان يحكي قصة مكان وموسم ونبات. هذا ما لا يستطيع أي عسل صناعي تقديمه.",
-    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
+    image: "/honey-images/hero-bg.png",
     published_at: "2024-11-20T10:00:00Z"
   },
   {
@@ -409,7 +409,7 @@ export const BLOG_POSTS = [
     content_de: "Echter marokkanischer Honig ist in Europa schwer zu finden. Bestellen Sie direkt aus Marokko: 13 Sorten, einfache Bestellung per WhatsApp, Lieferung in 7-14 Tagen nach ganz Europa.\n\nWelcher Honig für was? Oregano für Immunität, Thymian für Atemwege, Orangenblüte zum Entspannen, Jujube für Energie, Rosmarin für die Leber, Kaper für das Seltene.",
     content_nl: "Echte Marokkaanse honing is moeilijk te vinden in Europa. Bestel direct uit Marokko: 13 soorten, eenvoudig bestellen via WhatsApp, levering in 7-14 dagen naar heel Europa.\n\nWelke honing waarvoor? Oregano voor immuniteit, tijm voor luchtwegen, sinaasappelbloesem voor ontspanning, jujube voor energie, rozemarijn voor de lever, kappers voor het zeldzame.",
     content_ar: "العسل المغربي الحقيقي نادر في أوروبا. اطلب مباشرة من المغرب: ١٣ نوعاً، طلب بسيط عبر واتساب، توصيل ٧-١٤ يوم لجميع دول أوروبا.\n\nأي عسل تختار؟ الأوريغانو للمناعة، الزعتر للجهاز التنفسي، زهر البرتقال للاسترخاء، السدر للطاقة، الرومان لصحة الكبد، الكبار للنادر الاستثنائي.",
-    image: "https://images.unsplash.com/photo-1568657704598-602700bd9694?w=800",
+    image: "/honey-images/honey-dipper.png",
     published_at: "2024-12-05T10:00:00Z"
   },
   {
@@ -431,7 +431,7 @@ export const BLOG_POSTS = [
     content_de: "Kapernhonig ist unsere seltenste und wertvollste Sorte. Die Kapernpflanze blüht nur kurz jedes Jahr in den trockenen Regionen Marokkos, was den Bienen wenig Zeit zum Sammeln gibt.\n\nSein einzigartiger Geschmack — erdig, leicht kräuterartig, weniger süß als die meisten Honige — macht ihn zu einem außergewöhnlichen gastronomischen Produkt. Er ist besonders reich an Antioxidantien und leberschützenden Stoffen.",
     content_nl: "Kapperhoning is onze zeldzaamste en meest waardevolle soort. De kapperplant bloeit slechts kort elk jaar in de droge gebieden van Marokko, wat de bijen weinig tijd geeft om nectar te verzamelen.\n\nZijn unieke smaak — aards, licht kruidig, minder zoet dan de meeste honingsoorten — maakt het een uitzonderlijk gastronomisch product. Het is bijzonder rijk aan antioxidanten en leverschermende stoffen.",
     content_ar: "عسل الكبار هو أندر وأثمن أنواعنا. نبات الكبار يزهر فقط لفترة قصيرة كل عام في المناطق الجافة الصخرية بالمغرب، مما يعطي النحل وقتاً قليلاً لجمع الرحيق.\n\nطعمه الفريد — ترابي، عشبي قليلاً، أقل حلاوة من معظم العسل — يجعله منتجاً استثنائياً. وهو غني جداً بمضادات الأكسدة والمواد الواقية للكبد.\n\nنظراً لندرته، يتوفر عسل الكبار لدينا بكميات محدودة كل عام.",
-    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
+    image: "/honey-images/final-capre.png",
     published_at: "2024-11-15T10:00:00Z"
   },
   {
@@ -453,7 +453,7 @@ export const BLOG_POSTS = [
     content_de: "Wilder Rosmarin-Honig aus den abgelegensten Tälern des Atlasgebirges wird aus wirklich wilden Pflanzen hergestellt und enthält höhere Konzentrationen an Rosmarinsäure.\n\nHauptvorteile: unterstützt die Leberfunktion, hilft bei der natürlichen Entgiftung, verbessert die Durchblutung des Gehirns, starke Anti-Aging-Eigenschaften.\n\nAnwendung: ein Teelöffel jeden Morgen vor dem Frühstück.",
     content_nl: "Wilde rozemarijnhoning uit de meest afgelegen valleien van het Atlasgebergte wordt gemaakt van echt wilde planten en bevat hogere concentraties rozemarijnzuur.\n\nHoofdeigenschappen: ondersteunt leverfunctie, helpt bij natuurlijke detox, verbetert bloeddoorstroming naar de hersenen, krachtige anti-verouderingseigenschappen.\n\nGebruik: één theelepel elke ochtend voor het ontbijt.",
     content_ar: "عسل إكليل الجبل البري من أنائي وديان جبال الأطلس غني بحمض الروزمارينيك الذي يمنحه خصائص استثنائية لصحة الكبد.\n\nالفوائد الرئيسية: يدعم وظيفة الكبد، يساعد التطهير الطبيعي، يحسن الدورة الدموية في الدماغ، خصائص قوية لمكافحة الشيخوخة.\n\nطريقة الاستخدام: ملعقة صغيرة كل صباح قبل الإفطار.",
-    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800",
+    image: "/honey-images/final-romarin.png",
     published_at: "2024-11-10T10:00:00Z"
   }
 ];
