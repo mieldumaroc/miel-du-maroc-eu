@@ -43,10 +43,10 @@ const HealthBenefits = () => {
           <table className="w-full" data-testid="benefits-table">
             <thead>
               <tr className="border-b border-[#E8E2D2]">
-                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('products.colHoney')}</th>
-                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('products.colCategory')}</th>
-                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('products.colBenefits')}</th>
-                <th className="px-6 py-4 text-left font-heading font-medium text-[#1A1713] text-sm tracking-wide">{t('products.colPrice')}</th>
+                <th className={`px-6 py-4 font-heading font-medium text-[#1A1713] text-sm tracking-wide ${language === 'ar' ? 'text-right' : 'text-left'}`}>{t('products.colHoney')}</th>
+                <th className={`px-6 py-4 font-heading font-medium text-[#1A1713] text-sm tracking-wide ${language === 'ar' ? 'text-right' : 'text-left'}`}>{t('products.colCategory')}</th>
+                <th className={`px-6 py-4 font-heading font-medium text-[#1A1713] text-sm tracking-wide ${language === 'ar' ? 'text-right' : 'text-left'}`}>{t('products.colBenefits')}</th>
+                <th className={`px-6 py-4 font-heading font-medium text-[#1A1713] text-sm tracking-wide ${language === 'ar' ? 'text-right' : 'text-left'}`}>{t('products.colPrice')}</th>
               </tr>
             </thead>
             <tbody>
@@ -66,10 +66,10 @@ const HealthBenefits = () => {
                   <td className="px-6 py-4">
                     <span className="text-xs uppercase tracking-wide text-[#D4AF37]">{t(`tags.${product.tag === 'Liver Health' ? 'liverHealth' : product.tag === 'General Health' ? 'generalHealth' : product.tag.toLowerCase()}`)}</span>
                   </td>
-                  <td className="px-6 py-4 text-[#5C5449] text-sm">
+                  <td className={`px-6 py-4 text-[#5C5449] text-sm ${language === 'ar' ? 'text-right' : 'text-left'}`}>
                     {getBenefits(product)?.slice(0, 2).join(', ')}
                   </td>
-                  <td className="px-6 py-4 font-medium text-[#1A1713] text-sm">{formatPriceWithMAD(product.price)}</td>
+                  <td className={`px-6 py-4 font-medium text-[#1A1713] text-sm ${language === 'ar' ? 'text-right' : 'text-left'}`}>{formatPriceWithMAD(product.price)}</td>
                 </motion.tr>
               ))}
             </tbody>
