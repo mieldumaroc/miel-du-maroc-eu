@@ -39,7 +39,7 @@ const Blog = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">Journal</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('blog.journal')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('blog.title')}
           </h1>
@@ -65,7 +65,9 @@ const Blog = () => {
                   />
                 </div>
                 <div className="md:col-span-2 flex flex-col justify-center space-y-3">
-                  <span className="text-xs uppercase tracking-[0.15em] text-[#D4AF37] font-medium">{post.category}</span>
+                  <span className="text-xs uppercase tracking-[0.15em] text-[#D4AF37] font-medium">
+                    {post.category === 'Health Benefits' ? t('blog.catHealth') : post.category === 'Traditional Uses' ? t('blog.catTraditional') : post.category === 'Ordering Guide' ? t('blog.catOrdering') : post.category === 'Product Spotlight' ? t('blog.catProduct') : post.category}
+                  </span>
                   <h2 className="font-heading text-2xl font-medium text-[#1A1713] group-hover:text-[#D4AF37] transition-colors">
                     {getTitle(post)}
                   </h2>
