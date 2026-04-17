@@ -4,9 +4,9 @@ import { useLanguage } from '../context/LanguageContext';
 
 const About = () => {
   useEffect(() => {
-    document.title = `A Propos | Miel du Maroc - Famille Apicultrice depuis 1995`;
+    document.title = `Miel Artisanal Maroc | Famille Apicultrice depuis 1995 | Atlas`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Notre famille recolte le miel pur dans les montagnes de l'Atlas depuis 1995.`);
+    if (m) m.setAttribute('content', `Famille apicultrice de Marrakech depuis 1995. Miel pur recolte a la main dans les montagnes de l'Atlas, livre directement en Europe.`);
   }, []);
 
   const { t } = useLanguage();

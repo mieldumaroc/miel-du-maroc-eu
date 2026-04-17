@@ -5,9 +5,9 @@ import { useLanguage } from '../context/LanguageContext';
 
 const Shipping = () => {
   useEffect(() => {
-    document.title = `Livraison en Europe | Miel du Maroc`;
+    document.title = `Livraison Miel Maroc France Belgique Pays-Bas Allemagne UK | 7-14 jours`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Livraison securisee du Maroc vers toute l'Europe en 7-14 jours.`);
+    if (m) m.setAttribute('content', `Livraison de miel pur du Maroc vers toute l'Europe en 7-14 jours. Paiement facile via Wise, Western Union, MoneyGram, Ria, WorldRemit.`);
   }, []);
 
   const { t } = useLanguage();

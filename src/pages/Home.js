@@ -8,9 +8,9 @@ import { PRODUCTS } from '../data/products';
 
 const Home = () => {
   useEffect(() => {
-    document.title = `Miel du Maroc | Miels Purs de l'Atlas`;
+    document.title = `Acheter Miel Pur du Maroc | Livraison Europe 7-14 jours`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Miels purs artisanaux du Maroc. 13 varietes rares livrees en Europe en 7-14 jours.`);
+    if (m) m.setAttribute('content', `Vrai miel pur artisanal des montagnes de l'Atlas. Origan, Thym, Nigelle, Capre, Romarin. Livre en France, Belgique, Pays-Bas, Allemagne, UK. Famille apicultrice depuis 1995.`);
   }, []);
 
   const { t } = useLanguage();

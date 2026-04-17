@@ -8,9 +8,9 @@ import { useLanguage } from '../context/LanguageContext';
 
 const Blog = () => {
   useEffect(() => {
-    document.title = `Blog | Miel du Maroc - Conseils et Bienfaits du Miel`;
+    document.title = `Bienfaits Miel Maroc | Origan Thym Nigelle Therapeutique | Blog`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Articles sur les bienfaits du miel marocain, les traditions apicoles et conseils d'utilisation.`);
+    if (m) m.setAttribute('content', `Articles sur les bienfaits du miel pur marocain: miel d'origan, thym, nigelle, romarin sauvage. Conseils pour acheter et utiliser le miel de l'Atlas.`);
   }, []);
 
   const { t, language } = useLanguage();

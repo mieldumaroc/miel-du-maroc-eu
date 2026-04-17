@@ -7,9 +7,9 @@ import { PRODUCTS } from '../data/products';
 
 const HealthBenefits = () => {
   useEffect(() => {
-    document.title = `Bienfaits du Miel Marocain | Miel du Maroc`;
+    document.title = `Bienfaits Miel Pur Maroc | Origan Thym Nigelle Therapeutique`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Decouvrez les bienfaits therapeutiques de chaque variete de miel: immunitaire, respiratoire, digestif.`);
+    if (m) m.setAttribute('content', `Decouvrez les bienfaits du vrai miel pur marocain: miel d'origan antibacterien, thym respiratoire, nigelle immunitaire, romarin foie, capre antioxydant.`);
   }, []);
 
   const { t, language, getProductName } = useLanguage();

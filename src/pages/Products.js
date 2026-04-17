@@ -8,9 +8,9 @@ import { PRODUCTS } from '../data/products';
 
 const Products = () => {
   useEffect(() => {
-    document.title = `Notre Collection de Miels | Miel du Maroc`;
+    document.title = `Acheter Miel Pur Maroc en Ligne | Origan Thym Nigelle Capre Romarin`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Decouvrez nos 13 varietes de miels purs du Maroc: Origan, Thym, Nigelle, Capre, Romarin et plus.`);
+    if (m) m.setAttribute('content', `Achetez nos 13 varietes de miel pur du Maroc: miel d'origan, thym, nigelle, capre, romarin sauvage, jujubier, eucalyptus. Livraison Europe.`);
   }, []);
 
   const { t, getProductName } = useLanguage();

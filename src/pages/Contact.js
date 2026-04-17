@@ -7,9 +7,9 @@ const WHATSAPP_NUMBER = "212676050868";
 
 const Contact = () => {
   useEffect(() => {
-    document.title = `Contact | Miel du Maroc - Commandez via WhatsApp`;
+    document.title = `Commander Miel Pur Maroc via WhatsApp | Livraison Europe`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Contactez-nous sur WhatsApp pour commander votre miel pur du Maroc.`);
+    if (m) m.setAttribute('content', `Commandez votre miel pur marocain directement via WhatsApp. Reponse rapide, livraison en Europe en 7-14 jours.`);
   }, []);
 
   const { t } = useLanguage();
