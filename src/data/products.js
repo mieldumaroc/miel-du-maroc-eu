@@ -20,7 +20,7 @@ export const PRODUCTS = [
     tag: "Immunity",
     color: "amber-700",
     image: "/honey-images/final-origan.png",
-    sizes: [{ size: "500g", price: 200 }, { size: "1kg", price: 400 }]
+    sizes: [{ size: "500g", price: 320 }, { size: "1kg", price: 600 }]
   },
   {
     id: "thym",
@@ -43,7 +43,7 @@ export const PRODUCTS = [
     tag: "Respiratory",
     color: "amber-800",
     image: "/honey-images/final-thym.png",
-    sizes: [{ size: "500g", price: 190 }, { size: "1kg", price: 380 }]
+    sizes: [{ size: "500g", price: 320 }, { size: "1kg", price: 600 }]
   },
   {
     id: "fenouil",
@@ -66,7 +66,7 @@ export const PRODUCTS = [
     tag: "Digestion",
     color: "yellow-600",
     image: "/honey-images/final-fenouil.png",
-    sizes: [{ size: "500g", price: 170 }, { size: "1kg", price: 340 }]
+    sizes: [{ size: "500g", price: 245 }, { size: "1kg", price: 450 }]
   },
   {
     id: "jujubier",
@@ -89,7 +89,7 @@ export const PRODUCTS = [
     tag: "Energy",
     color: "red-700",
     image: "/honey-images/final-jujubier.png",
-    sizes: [{ size: "500g", price: 200 }, { size: "1kg", price: 400 }]
+    sizes: [{ size: "500g", price: 345 }, { size: "1kg", price: 650 }]
   },
   {
     id: "caroubier",
@@ -112,7 +112,7 @@ export const PRODUCTS = [
     tag: "Digestion",
     color: "stone-800",
     image: "/honey-images/final-caroubier.png",
-    sizes: [{ size: "500g", price: 160 }, { size: "1kg", price: 320 }]
+    sizes: [{ size: "500g", price: 220 }, { size: "1kg", price: 400 }]
   },
   {
     id: "montagne",
@@ -135,7 +135,7 @@ export const PRODUCTS = [
     tag: "General Health",
     color: "green-700",
     image: "/honey-images/final-montagne.png",
-    sizes: [{ size: "500g", price: 200 }, { size: "1kg", price: 400 }]
+    sizes: [{ size: "500g", price: 320 }, { size: "1kg", price: 600 }]
   },
   {
     id: "prairie",
@@ -158,7 +158,7 @@ export const PRODUCTS = [
     tag: "Wellness",
     color: "lime-600",
     image: "/honey-images/final-prairie.png",
-    sizes: [{ size: "500g", price: 175 }, { size: "1kg", price: 350 }]
+    sizes: [{ size: "500g", price: 270 }, { size: "1kg", price: 500 }]
   },
   {
     id: "oranger",
@@ -181,7 +181,7 @@ export const PRODUCTS = [
     tag: "Calming",
     color: "orange-400",
     image: "/honey-images/final-oranger.png",
-    sizes: [{ size: "500g", price: 100 }, { size: "1kg", price: 200 }]
+    sizes: [{ size: "500g", price: 120 }, { size: "1kg", price: 200 }]
   },
   {
     id: "eucalyptus",
@@ -204,7 +204,7 @@ export const PRODUCTS = [
     tag: "Respiratory",
     color: "emerald-700",
     image: "/honey-images/final-eucalyptus.png",
-    sizes: [{ size: "500g", price: 100 }, { size: "1kg", price: 200 }]
+    sizes: [{ size: "500g", price: 145 }, { size: "1kg", price: 250 }]
   },
   {
     id: "daghmous",
@@ -227,7 +227,7 @@ export const PRODUCTS = [
     tag: "Powerful",
     color: "amber-900",
     image: "/honey-images/final-daghmous.png",
-    sizes: [{ size: "500g", price: 250 }, { size: "1kg", price: 500 }]
+    sizes: [{ size: "500g", price: 370 }, { size: "1kg", price: 700 }]
   },
   {
     id: "lavande",
@@ -273,7 +273,7 @@ export const PRODUCTS = [
     tag: "Warming",
     color: "amber-600",
     image: "/honey-images/final-euphorbe.png",
-    sizes: [{ size: "500g", price: 200 }, { size: "1kg", price: 400 }]
+    sizes: [{ size: "500g", price: 245 }, { size: "1kg", price: 450 }]
   },
   {
     id: "capre",
@@ -296,7 +296,7 @@ export const PRODUCTS = [
     tag: "Rare",
     color: "rose-700",
     image: "/honey-images/final-capre.png",
-    sizes: [{ size: "500g", price: 300 }, { size: "1kg", price: 600 }]
+    sizes: [{ size: "500g", price: 320 }, { size: "1kg", price: 600 }]
   },
   {
     id: "romarin",
@@ -319,7 +319,7 @@ export const PRODUCTS = [
     tag: "Liver Health",
     color: "teal-700",
     image: "/honey-images/final-romarin.png",
-    sizes: [{ size: "500g", price: 300 }, { size: "1kg", price: 600 }]
+    sizes: [{ size: "500g", price: 270 }, { size: "1kg", price: 500 }]
   }
 ];
 
