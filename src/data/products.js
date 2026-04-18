@@ -238,7 +238,7 @@ export const PRODUCTS = [
     name_fr: "Miel de Lavande",
     name_de: "Lavendel-Honig",
     name_nl: "Lavendelhoning",
-    price: 180,
+    price: 245,
     description: "A delicate and fragrant honey harvested from the wild lavender fields of the Atlas Mountains. Prized for its soothing aroma, floral sweetness, and calming properties.",
     description_fr: "Un miel delicat et parfume recolte dans les champs de lavande sauvage des montagnes de l'Atlas. Prise pour son arome apaisant et ses proprietes calmantes.",
     description_de: "Ein zarter und duftender Honig, geerntet von den wilden Lavendelfeldern des Atlasgebirges. Geschatzt fur sein beruhigendes Aroma.",
@@ -250,7 +250,7 @@ export const PRODUCTS = [
     tag: "Calming",
     color: "purple-600",
     image: "/honey-images/final-lavande.png",
-    sizes: [{ size: "500g", price: 180 }, { size: "1kg", price: 360 }]
+    sizes: [{ size: "500g", price: 245 }, { size: "1kg", price: 450 }]
   },
   {
     id: "euphorbe",
