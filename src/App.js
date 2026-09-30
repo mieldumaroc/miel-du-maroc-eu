@@ -19,6 +19,7 @@ import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
+import Cart from './pages/Cart';
 import './App.css';
 
 
@@ -60,6 +61,7 @@ function App() {
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/blog" element={<Blog />} />
                   <Route path="/blog/:slug" element={<BlogPost />} />
+                  <Route path="/cart" element={<Cart />} />
                 </Routes>
               </main>
               <Footer />
