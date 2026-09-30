@@ -1,4 +1,7 @@
 {
+  "redirects": [
+    { "source": "/blog/buy-moroccan-honey-europe", "destination": "/blog/buy-pure-honey-marrakech", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
