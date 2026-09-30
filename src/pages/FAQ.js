@@ -7,9 +7,9 @@ import { useLanguage } from '../context/LanguageContext';
 
 const FAQ = () => {
   useEffect(() => {
-    document.title = `Comment Acheter Miel Pur du Maroc en Europe | Questions Reponses`;
+    document.title = `Questions Fréquentes | Commande, Livraison à Marrakech, Paiement | Miel du Maroc`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Comment commander, payer et recevoir du miel pur marocain en Europe. Paiement, livraison, conservation du miel pur des montagnes de l'Atlas.`);
+    if (m) m.setAttribute('content', `Comment commander du miel pur et de l'huile d'olive, livraison à domicile à Marrakech, paiement à la livraison, conservation du miel.`);
   }, []);
 
   const { t, language } = useLanguage();
