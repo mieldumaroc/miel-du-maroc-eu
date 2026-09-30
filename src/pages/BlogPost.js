@@ -71,7 +71,7 @@ const BlogPost = () => {
           )}
 
           <div className="prose prose-stone max-w-none" data-testid="blog-post-content">
-            {getContent().split('\n').map((paragraph, index) => {
+            {getContent().split(/\\n|\n/).map((paragraph, index) => {
               if (!paragraph.trim()) return null;
               if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
                 return <h3 key={index} className="font-heading text-xl font-medium text-[#1A1713] mt-8 mb-3">{paragraph.replace(/\*\*/g, '')}</h3>;
