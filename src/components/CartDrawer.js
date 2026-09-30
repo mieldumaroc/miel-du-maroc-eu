@@ -20,17 +20,18 @@ const CartDrawer = () => {
 
   const buildWhatsAppMessage = () => {
     const text = {
-      fr: { hello: 'Bonjour, je voudrais commander :', total: 'Total', name: 'Nom :', address: 'Adresse de livraison (Marrakech) :', pay: 'Paiement à la livraison', thanks: 'Merci !' },
-      en: { hello: 'Hello, I would like to order:', total: 'Total', name: 'Name:', address: 'Delivery address (Marrakech):', pay: 'Cash on delivery', thanks: 'Thank you!' },
-      ar: { hello: 'مرحباً، أريد طلب:', total: 'المجموع', name: 'الاسم:', address: 'عنوان التوصيل (مراكش):', pay: 'الدفع عند الاستلام', thanks: 'شكراً!' },
+      fr: { hello: 'Bonjour, je voudrais commander :', total: 'Total', name: 'Nom :', address: 'Adresse de livraison (Marrakech) :', fee: 'frais de livraison', pay: 'Paiement à la livraison', thanks: 'Merci !' },
+      en: { hello: 'Hello, I would like to order:', total: 'Total', name: 'Name:', address: 'Delivery address (Marrakech):', fee: 'delivery fee', pay: 'Cash on delivery', thanks: 'Thank you!' },
+      ar: { hello: 'مرحباً، أريد طلب:', total: 'المجموع', name: 'الاسم:', address: 'عنوان التوصيل (مراكش):', fee: 'رسوم التوصيل', pay: 'الدفع عند الاستلام', thanks: 'شكراً!' },
     }[language] || null;
-    const L = text || { hello: 'Bonjour, je voudrais commander :', total: 'Total', name: 'Nom :', address: 'Adresse de livraison (Marrakech) :', pay: 'Paiement à la livraison', thanks: 'Merci !' };
+    const L = text || { hello: 'Bonjour, je voudrais commander :', total: 'Total', name: 'Nom :', address: 'Adresse de livraison (Marrakech) :', fee: 'frais de livraison', pay: 'Paiement à la livraison', thanks: 'Merci !' };
     let msg = L.hello + '\n\n';
     items.forEach((item, i) => {
       const lineTotal = item.price * item.quantity;
       msg += `${i + 1}. ${getItemName(item)} (${item.size}) x${item.quantity} — ${lineTotal} DH\n`;
     });
-    msg += `\n${L.total}: ${totalPriceMAD} DH (${L.pay})`;
+    msg += `\n${L.total}: ${totalPriceMAD} DH + ${L.fee}`;
+    msg += `\n(${L.pay})`;
     msg += `\n\n${L.name} \n${L.address} `;
     msg += `\n\n${L.thanks}`;
     return encodeURIComponent(msg);
@@ -152,11 +153,18 @@ const CartDrawer = () => {
             {/* Footer / Checkout */}
             {items.length > 0 && (
               <div className="border-t border-[#E8E2D2] px-6 py-5 space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm font-medium text-[#5C5449] uppercase tracking-wide">Total</span>
-                  <span className="font-heading text-2xl font-medium text-[#1A1713]" data-testid="cart-total">
-                    {formatCartTotal(totalPriceMAD)}
-                  </span>
+                <div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm font-medium text-[#5C5449] uppercase tracking-wide">
+                      {language === 'ar' ? 'المجموع' : 'Total'}
+                    </span>
+                    <span className="font-heading text-2xl font-medium text-[#1A1713]" data-testid="cart-total">
+                      {formatCartTotal(totalPriceMAD)}
+                    </span>
+                  </div>
+                  <p className="text-end text-sm text-[#5C5449] mt-1" data-testid="cart-delivery-fee">
+                    {language === 'fr' ? '+ frais de livraison' : language === 'ar' ? '+ رسوم التوصيل' : '+ delivery fee'}
+                  </p>
                 </div>
                 <button
                   onClick={handleCheckout}
