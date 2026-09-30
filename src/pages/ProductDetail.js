@@ -12,7 +12,7 @@ const WHATSAPP_LINK = "https://wa.me/212676050868?text=";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const { t, language, getProductName, getProductDescription, getProductBenefits } = useLanguage();
+  const { t, getProductName, getProductDescription, getProductBenefits, getTagLabel } = useLanguage();
   const { formatPriceWithMAD } = useCurrency();
   const { addItem, openCart } = useCart();
   const [product, setProduct] = useState(null);
@@ -24,9 +24,9 @@ const ProductDetail = () => {
     setProduct(found || null);
     setLoading(false);
     if (found) {
-      document.title = `${found.name} | Acheter Miel Pur du Maroc | Miel du Maroc`;
+      document.title = `${found.name_fr || found.name} | Livraison à Marrakech | Miel du Maroc`;
       const m = document.querySelector('meta[name="description"]');
-      if (m) m.setAttribute('content', `${found.description} Commander via WhatsApp, livraison Europe 7-14 jours.`);
+      if (m) m.setAttribute('content', `${found.description_fr || found.description} Commandez sur WhatsApp, livraison à domicile à Marrakech, paiement à la livraison.`);
     }
   }, [id]);
 
@@ -43,7 +43,7 @@ const ProductDetail = () => {
       <div className="min-h-screen pt-24 flex items-center justify-center">
         <div className="text-center space-y-4">
           <p className="text-[#5C5449]">
-            {language === 'ar' ? 'المنتج غير موجود.' : language === 'fr' ? 'Produit introuvable.' : 'Product not found.'}
+            {t('products.notFound')}
           </p>
           <Link to="/products" className="inline-flex items-center gap-2 text-[#D4AF37] hover:underline text-sm">
             <ArrowLeft size={16} />
@@ -57,7 +57,7 @@ const ProductDetail = () => {
   const selectedSizeData = product.sizes?.find(s => s.size === selectedSize) || product.sizes?.[0];
   const currentPrice = selectedSizeData?.price || product.price;
   const productName = getProductName(product);
-  const whatsappMessage = encodeURIComponent(`${t('products.orderWhatsApp')}: ${productName} (${selectedSize})`);
+  const whatsappMessage = encodeURIComponent(`${t('products.orderWhatsApp')}: ${productName} (${selectedSize}) — ${currentPrice} DH`);
 
   return (
     <div className="min-h-screen pt-24 pb-16" data-testid="product-detail-page">
@@ -101,7 +101,7 @@ const ProductDetail = () => {
             className="space-y-8"
           >
             <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-3">{t(`tags.${product.tag === 'Liver Health' ? 'liverHealth' : product.tag === 'General Health' ? 'generalHealth' : product.tag.toLowerCase()}`)}</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-3">{getTagLabel(product.tag)}</p>
               <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight" data-testid="product-detail-name">
                 {productName}
               </h1>
@@ -144,7 +144,7 @@ const ProductDetail = () => {
               <button
                 onClick={() => {
                   addItem(product, selectedSize, currentPrice);
-                  toast.success(`${productName} (${selectedSize}) ${language === 'ar' ? 'أضيف إلى السلة' : language === 'fr' ? 'ajouté au panier' : 'added to cart'}`);
+                  toast.success(`${productName} (${selectedSize}) ${t('products.addedToCart')}`);
                 }}
                 className="flex-1 bg-[#1A1713] text-[#FDFBF7] px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#D4AF37] hover:text-[#1A1713] transition-colors flex items-center justify-center gap-2"
                 data-testid="add-to-cart-button"
