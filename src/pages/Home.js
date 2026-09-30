@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Shield, Award, Users, ChevronRight, Banknote, Truck, MessageCircle } from 'lucide-react';
+import { ArrowRight, Shield, Award, Users, ChevronRight, Banknote, Truck, MessageCircle, Leaf } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import ProductCard from '../components/ProductCard';
 import { PRODUCTS } from '../data/products';
@@ -28,31 +28,74 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center" data-testid="hero-section">
-        <div className="absolute inset-0 z-0">
-          <img src="/honey-images/hero-bg.png" alt="Moroccan Honey" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1713]/80 via-[#1A1713]/50 to-transparent"></div>
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-32">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: 'easeOut' }} className="max-w-2xl space-y-8">
-            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} className="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-medium">
-              {t('hero.tagline')}
-            </motion.p>
-            <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-light text-white leading-tight tracking-tight">{t('hero.title')}</h1>
-            <p className="text-lg text-white/70 leading-relaxed max-w-lg">{t('hero.subtitle')}</p>
-            <div className="flex flex-wrap gap-4 pt-4">
-              <Link to="/products">
-                <button className="bg-[#D4AF37] text-[#1A1713] px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#B87333] hover:text-white transition-colors duration-300" data-testid="hero-cta-explore">
-                  {t('hero.cta')} <ArrowRight className="ml-2 inline" size={16} />
-                </button>
-              </Link>
-            </div>
-          </motion.div>
+      <section className="pt-28 lg:pt-32 pb-4 lg:pb-16 bg-[#FDFBF7]" data-testid="hero-section">
+        <div className="max-w-7xl mx-auto lg:px-12 lg:grid lg:grid-cols-[5fr_7fr] lg:gap-12 lg:items-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="max-w-3xl mx-auto px-6 lg:px-0 text-center lg:text-start"
+        >
+          <p className="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-medium mb-4">{t('hero.tagline')}</p>
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-[3.4rem] font-light text-[#1A1713] leading-tight tracking-tight">
+            {t('hero.title')}
+          </h1>
+          <p className="mt-5 text-base sm:text-lg text-[#5C5449] leading-relaxed max-w-2xl mx-auto lg:mx-0">{t('hero.subtitle')}</p>
+
+          <div className="mt-8 flex flex-col sm:flex-row lg:flex-col 2xl:flex-row gap-3 justify-center lg:justify-start lg:max-w-sm 2xl:max-w-none">
+            <Link
+              to="/products"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-[#1A1713] text-[#FDFBF7] px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#D4AF37] hover:text-[#1A1713] transition-colors duration-300"
+              data-testid="hero-cta-explore"
+            >
+              {t('hero.cta')} <ArrowRight size={16} className="rtl:rotate-180" />
+            </Link>
+            <a
+              href={`https://wa.me/212676050868?text=${encodeURIComponent(t('cart.msgHello'))}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-[#25D366] text-white px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#1DA851] transition-colors duration-300"
+              data-testid="hero-cta-whatsapp"
+            >
+              <MessageCircle size={18} /> {t('hero.whatsapp')}
+            </a>
+          </div>
+
+          <ul className="mt-6 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-[#5C5449]" data-testid="hero-badges">
+            <li className="flex items-center gap-2"><Truck size={16} className="text-[#D4AF37]" /> {t('hero.badgeDelivery')}</li>
+            <li className="flex items-center gap-2"><Banknote size={16} className="text-[#D4AF37]" /> {t('hero.badgeCash')}</li>
+            <li className="flex items-center gap-2"><Leaf size={16} className="text-[#D4AF37]" /> {t('hero.badgePure')}</li>
+          </ul>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="mt-8 lg:mt-0 sm:px-6 md:px-12 lg:px-0"
+        >
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/honey-images/hero-miel-du-maroc-800.webp 800w, /honey-images/hero-miel-du-maroc.webp 1376w"
+              sizes="(max-width: 1024px) 100vw, 700px"
+            />
+            <img
+              src="/honey-images/hero-miel-du-maroc.jpg"
+              alt={t('hero.imageAlt')}
+              width="1376"
+              height="768"
+              fetchpriority="high"
+              className="w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[4/3] object-cover object-[38%_78%] sm:object-[50%_80%] lg:object-[40%_75%]"
+              data-testid="hero-image"
+            />
+          </picture>
+        </motion.div>
         </div>
       </section>
 
       {/* Featured Products */}
-      <section className="py-24 lg:py-32" data-testid="featured-products-section">
+      <section className="pt-16 pb-24 lg:pt-16 lg:pb-32" data-testid="featured-products-section">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center mb-16">
             <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('hero.tagline')}</p>
