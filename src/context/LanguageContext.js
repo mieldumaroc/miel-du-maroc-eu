@@ -65,11 +65,19 @@ export const LANGUAGES = [
 ];
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(() => localStorage.getItem('mdm-lang') || 'fr');
+  const [language, setLanguage] = useState(() => {
+    const saved = localStorage.getItem('mdm-lang');
+    return translations[saved] ? saved : 'fr';
+  });
 
   useEffect(() => {
     localStorage.setItem('mdm-lang', language);
+    document.documentElement.lang = language;
   }, [language]);
+
+  const changeLanguage = (lang) => {
+    if (translations[lang]) setLanguage(lang);
+  };
 
   const t = (key) => {
     const keys = key.split('.');
@@ -77,13 +85,35 @@ export const LanguageProvider = ({ children }) => {
     for (const k of keys) {
       value = value?.[k];
     }
-    return value || key;
+    if (value) return value;
+    // Fall back to French, then English, before showing the raw key
+    for (const fallback of ['fr', 'en']) {
+      let v = translations[fallback];
+      for (const k of keys) v = v?.[k];
+      if (v) return v;
+    }
+    return key;
   };
 
   const getProductName = (product) => {
+    if (!product) return '';
     if (language === 'ar') return product.name_ar || product.name_fr || product.name;
     if (language === 'fr') return product.name_fr || product.name;
     return product.name;
+  };
+
+  const getProductDescription = (product) => {
+    if (!product) return '';
+    if (language === 'ar') return product.description_ar || product.description_fr || product.description;
+    if (language === 'fr') return product.description_fr || product.description;
+    return product.description;
+  };
+
+  const getProductBenefits = (product) => {
+    if (!product) return [];
+    if (language === 'ar') return product.health_benefits_ar || product.health_benefits_fr || product.health_benefits || [];
+    if (language === 'fr') return product.health_benefits_fr || product.health_benefits || [];
+    return product.health_benefits || [];
   };
 
   const setCurrencyFromLanguage = (lang) => {
@@ -91,7 +121,7 @@ export const LanguageProvider = ({ children }) => {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, getProductName, setCurrencyFromLanguage }}>
+    <LanguageContext.Provider value={{ language, setLanguage, changeLanguage, t, getProductName, getProductDescription, getProductBenefits, setCurrencyFromLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
