@@ -12,7 +12,7 @@ const HealthBenefits = () => {
     if (m) m.setAttribute('content', `Decouvrez les bienfaits du vrai miel pur marocain: miel d'origan antibacterien, thym respiratoire, nigelle immunitaire, romarin foie, capre antioxydant.`);
   }, []);
 
-  const { t, language, getProductName } = useLanguage();
+  const { t, language, getProductName, getTagLabel } = useLanguage();
   const { formatPriceWithMAD } = useCurrency();
 
   const getBenefits = (product) => {
@@ -50,7 +50,7 @@ const HealthBenefits = () => {
               </tr>
             </thead>
             <tbody>
-              {PRODUCTS.map((product, index) => (
+              {PRODUCTS.filter(p => p.category !== 'oil').map((product, index) => (
                 <motion.tr
                   key={product.id}
                   initial={{ opacity: 0, y: 10 }}
@@ -64,7 +64,7 @@ const HealthBenefits = () => {
                     </Link>
                   </td>
                   <td className="px-6 py-4">
-                    <span className="text-xs uppercase tracking-wide text-[#D4AF37]">{t(`tags.${product.tag === 'Liver Health' ? 'liverHealth' : product.tag === 'General Health' ? 'generalHealth' : product.tag.toLowerCase()}`)}</span>
+                    <span className="text-xs uppercase tracking-wide text-[#D4AF37]">{getTagLabel(product.tag)}</span>
                   </td>
                   <td className={`px-6 py-4 text-[#5C5449] text-sm ${language === 'ar' ? 'text-right' : 'text-left'}`}>
                     {getBenefits(product)?.slice(0, 2).join(', ')}
