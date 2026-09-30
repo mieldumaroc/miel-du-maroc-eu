@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#FBF8F0"/>
+      <stop offset="1" stop-color="#EFE8D6"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" x2="1">
+      <stop offset="0" stop-color="#5E6B1E"/>
+      <stop offset="0.35" stop-color="#9AA83A"/>
+      <stop offset="0.6" stop-color="#C2C95A"/>
+      <stop offset="1" stop-color="#6B7822"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" x2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" x2="1">
+      <stop offset="0" stop-color="#9C7B1E"/>
+      <stop offset="0.5" stop-color="#E3C45A"/>
+      <stop offset="1" stop-color="#9C7B1E"/>
+    </linearGradient>
+    <linearGradient id="olive" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8E9B34"/>
+      <stop offset="1" stop-color="#4E5A17"/>
+    </linearGradient>
+    <linearGradient id="oliveDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4B3A4F"/>
+      <stop offset="1" stop-color="#1F1622"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <!-- shadow -->
+  <ellipse cx="400" cy="708" rx="170" ry="20" fill="#1A1713" opacity="0.12"/>
+
+  <!-- olive branch behind -->
+  <g transform="translate(520 470) rotate(-28)">
+    <path d="M-10 0 C 60 -10 150 -40 230 -110" stroke="#6B5A3A" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <ellipse cx="40" cy="-30" rx="46" ry="12" fill="#7F8C3A" transform="rotate(-35 40 -30)"/>
+    <ellipse cx="70" cy="18" rx="44" ry="11" fill="#95A04A" transform="rotate(25 70 18)"/>
+    <ellipse cx="120" cy="-62" rx="48" ry="12" fill="#6E7B2C" transform="rotate(-55 120 -62)"/>
+    <ellipse cx="150" cy="-18" rx="44" ry="11" fill="#8C9842" transform="rotate(15 150 -18)"/>
+    <ellipse cx="200" cy="-110" rx="42" ry="11" fill="#7F8C3A" transform="rotate(-70 200 -110)"/>
+    <ellipse cx="95" cy="-12" rx="17" ry="23" fill="url(#olive)"/>
+    <ellipse cx="175" cy="-60" rx="17" ry="23" fill="url(#oliveDark)"/>
+  </g>
+  <g transform="translate(270 560) rotate(200)">
+    <path d="M0 0 C 50 -10 110 -30 160 -80" stroke="#6B5A3A" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <ellipse cx="40" cy="-22" rx="40" ry="10" fill="#8C9842" transform="rotate(-30 40 -22)"/>
+    <ellipse cx="70" cy="12" rx="38" ry="10" fill="#7F8C3A" transform="rotate(25 70 12)"/>
+    <ellipse cx="120" cy="-52" rx="40" ry="10" fill="#95A04A" transform="rotate(-50 120 -52)"/>
+    <ellipse cx="100" cy="-14" rx="15" ry="20" fill="url(#olive)"/>
+  </g>
+
+  <!-- bottle -->
+  <g>
+    <!-- cap -->
+    <rect x="368" y="110" width="64" height="62" rx="6" fill="url(#cap)"/>
+    <rect x="368" y="160" width="64" height="8" fill="#7A5E14" opacity="0.5"/>
+    <!-- neck -->
+    <path d="M374 172 H426 V230 C426 262 470 282 492 318 C504 338 508 356 508 380 V660 C508 684 492 700 468 700 H332 C308 700 292 684 292 660 V380 C292 356 296 338 308 318 C330 282 374 262 374 230 Z" fill="url(#glass)"/>
+    <!-- oil level line & shine -->
+    <rect x="318" y="330" width="26" height="340" rx="13" fill="url(#shine)"/>
+    <!-- label -->
+    <rect x="316" y="420" width="168" height="196" rx="6" fill="#FDFBF7"/>
+    <rect x="324" y="428" width="152" height="180" rx="4" fill="none" stroke="#D4AF37" stroke-width="2"/>
+    <g fill="#D4AF37">
+      <path d="M400 444 l12 7 v14 l-12 7 l-12 -7 v-14 z" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+      <circle cx="400" cy="458" r="4"/>
+    </g>
+    <text x="400" y="494" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" letter-spacing="2" fill="#1A1713">MIEL DU MAROC</text>
+    <text x="400" y="530" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#B08D2A">Huile</text>
+    <text x="400" y="560" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="27" fill="#B08D2A">d'Olive</text>
+    <text x="400" y="590" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.5" fill="#5C5449">100% PURE</text>
+  </g>
+</svg>
