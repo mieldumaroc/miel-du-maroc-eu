@@ -12,7 +12,7 @@ const WHATSAPP_LINK = "https://wa.me/212676050868?text=";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const { t, getProductName, getProductDescription, getProductBenefits } = useLanguage();
+  const { t, language, getProductName, getProductDescription, getProductBenefits } = useLanguage();
   const { formatPriceWithMAD } = useCurrency();
   const { addItem, openCart } = useCart();
   const [product, setProduct] = useState(null);
@@ -41,7 +41,15 @@ const ProductDetail = () => {
   if (!product) {
     return (
       <div className="min-h-screen pt-24 flex items-center justify-center">
-        <p className="text-[#5C5449]">Product not found.</p>
+        <div className="text-center space-y-4">
+          <p className="text-[#5C5449]">
+            {language === 'ar' ? 'المنتج غير موجود.' : language === 'fr' ? 'Produit introuvable.' : 'Product not found.'}
+          </p>
+          <Link to="/products" className="inline-flex items-center gap-2 text-[#D4AF37] hover:underline text-sm">
+            <ArrowLeft size={16} />
+            {t('common.viewAll')}
+          </Link>
+        </div>
       </div>
     );
   }
@@ -136,7 +144,7 @@ const ProductDetail = () => {
               <button
                 onClick={() => {
                   addItem(product, selectedSize, currentPrice);
-                  toast.success(`${productName} (${selectedSize}) added to cart`);
+                  toast.success(`${productName} (${selectedSize}) ${language === 'ar' ? 'أضيف إلى السلة' : language === 'fr' ? 'ajouté au panier' : 'added to cart'}`);
                 }}
                 className="flex-1 bg-[#1A1713] text-[#FDFBF7] px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#D4AF37] hover:text-[#1A1713] transition-colors flex items-center justify-center gap-2"
                 data-testid="add-to-cart-button"
