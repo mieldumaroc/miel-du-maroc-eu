@@ -7,9 +7,9 @@ const WHATSAPP_NUMBER = "212676050868";
 
 const Contact = () => {
   useEffect(() => {
-    document.title = `Commander Miel Pur Maroc via WhatsApp | Livraison Europe`;
+    document.title = `Commander Miel Pur et Huile d'Olive via WhatsApp | Livraison Marrakech`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Commandez votre miel pur marocain directement via WhatsApp. Reponse rapide, livraison en Europe en 7-14 jours.`);
+    if (m) m.setAttribute('content', `Commandez votre miel pur et votre huile d'olive via WhatsApp. Livraison à domicile à Marrakech par notre livreur, paiement à la livraison.`);
   }, []);
 
   const { t } = useLanguage();
