@@ -22,6 +22,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const found = PRODUCTS.find(p => p.id === id);
     setProduct(found || null);
+    if (found?.sizes?.length) setSelectedSize(found.sizes[0].size);
     setLoading(false);
     if (found) {
       document.title = `${found.name_fr || found.name} | Livraison à Marrakech | Miel du Maroc`;
@@ -56,6 +57,7 @@ const ProductDetail = () => {
 
   const selectedSizeData = product.sizes?.find(s => s.size === selectedSize) || product.sizes?.[0];
   const currentPrice = selectedSizeData?.price || product.price;
+  const currentImage = selectedSizeData?.image || product.image;
   const productName = getProductName(product);
   const whatsappMessage = encodeURIComponent(`${t('products.orderWhatsApp')}: ${productName} (${selectedSize}) — ${currentPrice} DH`);
 
@@ -76,9 +78,9 @@ const ProductDetail = () => {
             transition={{ duration: 0.8 }}
             className="bg-[#F7F4EB] aspect-square overflow-hidden"
           >
-            {product.image ? (
+            {currentImage ? (
               <img
-                src={product.image}
+                src={currentImage}
                 alt={productName}
                 className="w-full h-full object-cover"
                 data-testid="product-detail-image"
