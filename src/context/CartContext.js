@@ -35,7 +35,7 @@ export const CartProvider = ({ children }) => {
         size,
         price,
         quantity: 1,
-        image: product.image,
+        image: product.sizes?.find(sz => sz.size === size)?.image || product.image,
       }];
     });
   };
