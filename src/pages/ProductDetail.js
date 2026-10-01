@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Check, ShoppingBag } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, ShoppingBag } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { PRODUCTS } from '../data/products';
 import { useCurrency } from '../context/CurrencyContext';
@@ -14,7 +14,8 @@ const ProductDetail = () => {
   const { id } = useParams();
   const { t, getProductName, getProductDescription, getProductBenefits, getTagLabel } = useLanguage();
   const { formatPriceWithMAD } = useCurrency();
-  const { addItem, openCart } = useCart();
+  const { addItem, items } = useCart();
+  const cartCount = items.reduce((n, i) => n + i.quantity, 0);
   const [product, setProduct] = useState(null);
   const [selectedSize, setSelectedSize] = useState('500g');
   const [loading, setLoading] = useState(true);
@@ -59,7 +60,7 @@ const ProductDetail = () => {
   const currentPrice = selectedSizeData?.price || product.price;
   const currentImage = selectedSizeData?.image || product.image;
   const productName = getProductName(product);
-  const whatsappMessage = encodeURIComponent(`${t('products.orderWhatsApp')}: ${productName} (${selectedSize}) — ${currentPrice} DH`);
+  const questionMessage = encodeURIComponent(`${t('products.questionMsg')} ${productName}`);
 
   return (
     <div className="min-h-screen pt-24 pb-16" data-testid="product-detail-page">
@@ -141,28 +142,44 @@ const ProductDetail = () => {
               </p>
             </div>
 
-            {/* Add to Cart + WhatsApp */}
-            <div className="flex flex-col sm:flex-row gap-3">
+            {/* Add to cart (main action), then checkout once something is in the cart */}
+            <div className="space-y-3">
               <button
                 onClick={() => {
                   addItem(product, selectedSize, currentPrice);
                   toast.success(`${productName} (${selectedSize}) ${t('products.addedToCart')}`);
                 }}
-                className="flex-1 bg-[#1A1713] text-[#FDFBF7] px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#D4AF37] hover:text-[#1A1713] transition-colors flex items-center justify-center gap-2"
+                className="w-full bg-[#1A1713] text-[#FDFBF7] px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#D4AF37] hover:text-[#1A1713] transition-colors flex items-center justify-center gap-2"
                 data-testid="add-to-cart-button"
               >
                 <ShoppingBag size={16} />
                 {t('products.addToCart')}
               </button>
-              <a
-                href={`${WHATSAPP_LINK}${whatsappMessage}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 bg-[#25D366] text-white px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#1DA851] transition-colors text-center"
-                data-testid="whatsapp-order-button"
-              >
-                {t('products.inquire')}
-              </a>
+
+              {cartCount > 0 && (
+                <Link
+                  to="/cart"
+                  className="w-full border border-[#1A1713] text-[#1A1713] px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#1A1713] hover:text-[#FDFBF7] transition-colors flex items-center justify-center gap-2"
+                  data-testid="checkout-now-button"
+                >
+                  {t('products.checkoutNow')}
+                  <span className="normal-case tracking-normal font-normal text-xs opacity-80">({cartCount} {t('products.inCart')})</span>
+                  <ArrowRight size={16} className="rtl:rotate-180" />
+                </Link>
+              )}
+
+              <p className="text-sm text-[#5C5449] pt-1">
+                {t('products.question')}{' '}
+                <a
+                  href={`${WHATSAPP_LINK}${questionMessage}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#1DA851] font-medium underline underline-offset-4 hover:text-[#25D366]"
+                  data-testid="whatsapp-question-link"
+                >
+                  {t('products.askWhatsApp')}
+                </a>
+              </p>
             </div>
 
             {/* Health Benefits */}
