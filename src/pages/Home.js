@@ -86,7 +86,7 @@ const Home = () => {
               width="1376"
               height="768"
               fetchpriority="high"
-              className="w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[4/3] object-cover object-[38%_78%] sm:object-[50%_80%] lg:object-[40%_75%]"
+              className="w-full h-auto"
               data-testid="hero-image"
             />
           </picture>
