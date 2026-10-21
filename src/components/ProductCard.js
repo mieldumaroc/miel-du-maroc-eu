@@ -25,6 +25,8 @@ const ProductCard = ({ product, index = 0 }) => {
             <img
               src={product.image}
               alt={getProductName(product)}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
           ) : (
