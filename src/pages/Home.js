@@ -77,11 +77,11 @@ const Home = () => {
           <picture>
             <source
               type="image/webp"
-              srcSet="/honey-images/hero-miel-du-maroc-800.webp 800w, /honey-images/hero-miel-du-maroc.webp 1376w"
+              srcSet="/honey-images/hero-collection-800.webp 800w, /honey-images/hero-collection.webp 1376w"
               sizes="(max-width: 1024px) 100vw, 700px"
             />
             <img
-              src="/honey-images/hero-miel-du-maroc.jpg"
+              src="/honey-images/hero-collection.jpg"
               alt={t('hero.imageAlt')}
               width="1376"
               height="768"
