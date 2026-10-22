@@ -1,4 +1,12 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { PRODUCTS } from '../data/products';
+
+// Saved carts keep today's prices; sizes or honeys no longer on sale are dropped.
+const refresh = (list) => list.flatMap((i) => {
+  const p = PRODUCTS.find((x) => x.id === i.productId);
+  const size = p && p.available !== false && p.sizes?.find((s) => s.size === i.size);
+  return size ? [{ ...i, price: size.price, image: size.image || p.image }] : [];
+});
 
 const CartContext = createContext();
 
@@ -9,7 +17,7 @@ export const CartProvider = ({ children }) => {
   useEffect(() => {
     const saved = localStorage.getItem('mdm-cart');
     if (saved) {
-      try { setItems(JSON.parse(saved)); } catch { /* ignore */ }
+      try { setItems(refresh(JSON.parse(saved))); } catch { /* ignore */ }
     }
   }, []);
 
