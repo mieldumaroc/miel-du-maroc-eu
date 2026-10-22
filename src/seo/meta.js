@@ -23,19 +23,19 @@ export function staticPages(products) {
   const n = honeyCount(products);
   return {
     '/': {
-      fr: { title: "Miel Pur et Huile d'Olive au Maroc | Livraison à Marrakech | Miel du Maroc", description: "Vrai miel pur artisanal des montagnes de l'Atlas et huile d'olive pure, livrés chez vous à Marrakech. Commande sur WhatsApp, paiement à la livraison. Famille apicultrice depuis 1995." },
-      en: { title: 'Pure Honey & Olive Oil in Morocco | Delivery in Marrakech | Miel du Maroc', description: 'Real raw honey from the Atlas Mountains and pure olive oil, delivered to your door in Marrakech. Order on WhatsApp, pay cash on delivery. Beekeeping family since 1995.' },
-      ar: { title: 'عسل حر طبيعي وزيت زيتون في المغرب | التوصيل في مراكش | ميل دو ماروك', description: 'عسل حر طبيعي من جبال الأطلس وزيت زيتون طبيعي، يصلكم إلى باب المنزل في مراكش. اطلب عبر واتساب وادفع عند الاستلام. عائلة نحّالين منذ 1995.' },
+      fr: { title: "Miel Pur et Huile d'Olive | Livraison Marrakech et Tout le Maroc | Miel du Maroc", description: "Vrai miel pur artisanal des montagnes de l'Atlas et huile d'olive pure, livrés chez vous à Marrakech et partout au Maroc (Casablanca, Rabat, Agadir, Fès, Tanger…). Commande sur WhatsApp, paiement à la livraison. Famille apicultrice depuis 1995." },
+      en: { title: 'Pure Honey & Olive Oil | Delivery in Marrakech & All Morocco | Miel du Maroc', description: 'Real raw honey from the Atlas Mountains and pure olive oil, delivered to your door in Marrakech and all over Morocco (Casablanca, Rabat, Agadir, Fes, Tangier…). Order on WhatsApp, pay cash on delivery. Beekeeping family since 1995.' },
+      ar: { title: 'عسل حر طبيعي وزيت زيتون | التوصيل في مراكش وكل المغرب | ميل دو ماروك', description: 'عسل حر طبيعي من جبال الأطلس وزيت زيتون طبيعي، يصلكم إلى باب المنزل في مراكش وفي جميع مدن المغرب (الدار البيضاء، الرباط، أكادير، فاس، طنجة…). اطلب عبر واتساب وادفع عند الاستلام. عائلة نحّالين منذ 1995.' },
     },
     '/products': {
-      fr: { title: `Nos Miels Purs et Huile d'Olive | ${n} Variétés | Miel du Maroc`, description: `${n} variétés de miel pur du Maroc et huile d'olive pure (1 L et 5 L). Commande sur WhatsApp, livraison à domicile à Marrakech, paiement à la livraison.` },
-      en: { title: `Our Pure Honeys & Olive Oil | ${n} Varieties | Miel du Maroc`, description: `${n} varieties of pure Moroccan honey and pure olive oil (1 L and 5 L). Order on WhatsApp, home delivery in Marrakech, cash on delivery.` },
-      ar: { title: `أنواع العسل الحر وزيت الزيتون | ${n} نوعاً | ميل دو ماروك`, description: `${n} نوعاً من العسل المغربي الحر وزيت الزيتون الطبيعي (1 لتر و5 لتر). اطلب عبر واتساب، توصيل إلى المنزل في مراكش والدفع عند الاستلام.` },
+      fr: { title: `Nos Miels Purs et Huile d'Olive | ${n} Variétés | Miel du Maroc`, description: `${n} variétés de miel pur du Maroc et huile d'olive pure (1 L et 5 L). Commande sur WhatsApp, livraison à Marrakech et partout au Maroc, paiement à la livraison.` },
+      en: { title: `Our Pure Honeys & Olive Oil | ${n} Varieties | Miel du Maroc`, description: `${n} varieties of pure Moroccan honey and pure olive oil (1 L and 5 L). Order on WhatsApp, delivery in Marrakech and all over Morocco, cash on delivery.` },
+      ar: { title: `أنواع العسل الحر وزيت الزيتون | ${n} نوعاً | ميل دو ماروك`, description: `${n} نوعاً من العسل المغربي الحر وزيت الزيتون الطبيعي (1 لتر و5 لتر). اطلب عبر واتساب، التوصيل في مراكش وجميع أنحاء المغرب والدفع عند الاستلام.` },
     },
     '/about': {
-      fr: { title: 'Miel Artisanal du Maroc | Famille Apicultrice depuis 1995 | Atlas', description: "Famille apicultrice de Marrakech depuis 1995. Miel pur récolté à la main dans les montagnes de l'Atlas, livré directement chez vous à Marrakech." },
-      en: { title: 'Artisanal Moroccan Honey | Beekeeping Family since 1995 | Atlas', description: 'A Marrakech beekeeping family since 1995. Pure honey harvested by hand in the Atlas Mountains, delivered straight to your door in Marrakech.' },
-      ar: { title: 'عسل مغربي حرفي | عائلة نحّالين منذ 1995 | الأطلس', description: 'عائلة نحّالين من مراكش منذ 1995. عسل حر يُجنى يدوياً في جبال الأطلس ويصلكم مباشرة إلى منازلكم في مراكش.' },
+      fr: { title: 'Miel Artisanal du Maroc | Famille Apicultrice depuis 1995 | Atlas', description: "Famille apicultrice de Marrakech depuis 1995. Miel pur récolté à la main dans les montagnes de l'Atlas, livré chez vous à Marrakech et partout au Maroc." },
+      en: { title: 'Artisanal Moroccan Honey | Beekeeping Family since 1995 | Atlas', description: 'A Marrakech beekeeping family since 1995. Pure honey harvested by hand in the Atlas Mountains, delivered to your door in Marrakech and all over Morocco.' },
+      ar: { title: 'عسل مغربي حرفي | عائلة نحّالين منذ 1995 | الأطلس', description: 'عائلة نحّالين من مراكش منذ 1995. عسل حر يُجنى يدوياً في جبال الأطلس ويصلكم إلى منازلكم في مراكش وفي جميع أنحاء المغرب.' },
     },
     '/health-benefits': {
       fr: { title: 'Bienfaits du Miel Pur du Maroc | Origan, Thym, Nigelle', description: "Les bienfaits du vrai miel pur marocain : miel d'origan, thym pour la respiration, nigelle pour l'immunité, romarin pour le foie, câpre antioxydant." },
@@ -43,19 +43,19 @@ export function staticPages(products) {
       ar: { title: 'فوائد العسل المغربي الحر | الزعتر، الزعيترة، الحبة السوداء', description: 'فوائد العسل المغربي الحر: عسل الزعتر، الزعيترة للتنفس، الحبة السوداء للمناعة، إكليل الجبل للكبد، وعسل الكبار الغني بمضادات الأكسدة.' },
     },
     '/shipping': {
-      fr: { title: 'Livraison à Domicile à Marrakech | Paiement à la Livraison | Miel du Maroc', description: "Commandez votre miel pur et votre huile d'olive sur WhatsApp : notre livreur vous les apporte chez vous à Marrakech. Paiement en espèces à la livraison." },
-      en: { title: 'Home Delivery in Marrakech | Cash on Delivery | Miel du Maroc', description: 'Order your pure honey and olive oil on WhatsApp and our driver brings them to your door in Marrakech. Pay cash on delivery.' },
-      ar: { title: 'التوصيل إلى المنزل في مراكش | الدفع عند الاستلام | ميل دو ماروك', description: 'اطلب العسل الحر وزيت الزيتون عبر واتساب، ويوصلهما موصّلنا إلى باب منزلك في مراكش. الدفع نقداً عند الاستلام.' },
+      fr: { title: 'Livraison à Marrakech et Partout au Maroc | Paiement à la Livraison', description: "Commandez sur WhatsApp : notre livreur vous livre à Marrakech, et un transporteur partout ailleurs au Maroc. Frais confirmés sur WhatsApp, paiement à la livraison." },
+      en: { title: 'Delivery in Marrakech & All Over Morocco | Cash on Delivery', description: 'Order on WhatsApp: our own driver delivers in Marrakech, and a courier everywhere else in Morocco. Fees confirmed on WhatsApp, cash on delivery.' },
+      ar: { title: 'التوصيل في مراكش وجميع أنحاء المغرب | الدفع عند الاستلام', description: 'اطلب عبر واتساب: موصّلنا الخاص يوصل في مراكش، وشركة توصيل في باقي مدن المغرب. نؤكد الرسوم عبر واتساب، والدفع عند الاستلام.' },
     },
     '/faq': {
-      fr: { title: 'Questions Fréquentes | Commande, Livraison à Marrakech, Paiement | Miel du Maroc', description: "Comment commander du miel pur et de l'huile d'olive, livraison à domicile à Marrakech, paiement à la livraison, conservation du miel." },
-      en: { title: 'FAQ | Ordering, Delivery in Marrakech, Payment | Miel du Maroc', description: 'How to order pure honey and olive oil, home delivery in Marrakech, cash on delivery, and how to store honey.' },
-      ar: { title: 'الأسئلة الشائعة | الطلب، التوصيل في مراكش، الدفع | ميل دو ماروك', description: 'كيف تطلب العسل الحر وزيت الزيتون، التوصيل إلى المنزل في مراكش، الدفع عند الاستلام، وطريقة حفظ العسل.' },
+      fr: { title: 'Questions Fréquentes | Commande, Livraison au Maroc, Paiement | Miel du Maroc', description: "Comment commander du miel pur et de l'huile d'olive, livraison à Marrakech et partout au Maroc, paiement à la livraison, conservation du miel." },
+      en: { title: 'FAQ | Ordering, Delivery across Morocco, Payment | Miel du Maroc', description: 'How to order pure honey and olive oil, delivery in Marrakech and all over Morocco, cash on delivery, and how to store honey.' },
+      ar: { title: 'الأسئلة الشائعة | الطلب، التوصيل في المغرب، الدفع | ميل دو ماروك', description: 'كيف تطلب العسل الحر وزيت الزيتون، التوصيل في مراكش وجميع أنحاء المغرب، الدفع عند الاستلام، وطريقة حفظ العسل.' },
     },
     '/contact': {
-      fr: { title: "Commander Miel Pur et Huile d'Olive via WhatsApp | Livraison Marrakech", description: "Commandez votre miel pur et votre huile d'olive via WhatsApp. Livraison à domicile à Marrakech par notre livreur, paiement à la livraison." },
-      en: { title: 'Order Pure Honey & Olive Oil on WhatsApp | Delivery in Marrakech', description: 'Order your pure honey and olive oil on WhatsApp. Home delivery in Marrakech by our own driver, cash on delivery.' },
-      ar: { title: 'اطلب العسل الحر وزيت الزيتون عبر واتساب | التوصيل في مراكش', description: 'اطلب العسل الحر وزيت الزيتون عبر واتساب. توصيل إلى المنزل في مراكش عبر موصّلنا، والدفع عند الاستلام.' },
+      fr: { title: "Commander Miel Pur et Huile d'Olive via WhatsApp | Livraison au Maroc", description: "Commandez votre miel pur et votre huile d'olive via WhatsApp. Livraison à Marrakech et partout au Maroc, paiement à la livraison." },
+      en: { title: 'Order Pure Honey & Olive Oil on WhatsApp | Delivery across Morocco', description: 'Order your pure honey and olive oil on WhatsApp. Delivery in Marrakech and all over Morocco, cash on delivery.' },
+      ar: { title: 'اطلب العسل الحر وزيت الزيتون عبر واتساب | التوصيل في كل المغرب', description: 'اطلب العسل الحر وزيت الزيتون عبر واتساب. التوصيل في مراكش وجميع أنحاء المغرب، والدفع عند الاستلام.' },
     },
     '/blog': {
       fr: { title: 'Blog | Bienfaits et Conseils sur le Miel Pur du Maroc | Miel du Maroc', description: "Articles sur les bienfaits du miel pur marocain : origan, thym, nigelle, romarin. Conseils pour acheter et utiliser le miel de l'Atlas." },
@@ -85,9 +85,9 @@ const minPrice = (p) => Math.min(...(p.sizes || [{ price: p.price }]).map((s) =>
 export function productTitle(p, lang = 'fr') {
   const name = pName(p, lang);
   const from = minPrice(p);
-  if (lang === 'en') return `${/\bpure\b/i.test(name) ? name : `Pure ${name}`} – from ${from} DH | Delivery in Marrakech`;
-  if (lang === 'ar') return `${name} – ابتداءً من ${from} درهم | التوصيل في مراكش`;
-  return `${/\bpure?\b/i.test(name) ? name : `${name} pur`} – dès ${from} DH | Livraison Marrakech`;
+  if (lang === 'en') return `${/\bpure\b/i.test(name) ? name : `Pure ${name}`} – from ${from} DH | Delivery across Morocco`;
+  if (lang === 'ar') return `${name} – ابتداءً من ${from} درهم | التوصيل لكل المغرب`;
+  return `${/\bpure?\b/i.test(name) ? name : `${name} pur`} – dès ${from} DH | Livraison au Maroc`;
 }
 
 export function productDescription(p, lang = 'fr') {
@@ -95,14 +95,14 @@ export function productDescription(p, lang = 'fr') {
   const sizes = p.sizes || [];
   if (lang === 'en') {
     const prices = sizes.map((s) => `${fmtSize(s.size, 'en')}: ${s.price} DH`).join(', ');
-    return `${base} ${prices ? prices + '. ' : ''}Home delivery in Marrakech, cash on delivery.`;
+    return `${base} ${prices ? prices + '. ' : ''}Delivery in Marrakech and all over Morocco, cash on delivery.`;
   }
   if (lang === 'ar') {
     const prices = sizes.map((s) => `${fmtSize(s.size, 'ar')}: ${s.price} درهم`).join('، ');
-    return `${base} ${prices ? prices + '. ' : ''}توصيل إلى المنزل في مراكش والدفع عند الاستلام.`;
+    return `${base} ${prices ? prices + '. ' : ''}التوصيل في مراكش وجميع أنحاء المغرب والدفع عند الاستلام.`;
   }
   const prices = sizes.map((s) => `${fmtSize(s.size, 'fr')} : ${s.price} DH`).join(', ');
-  return `${base} ${prices ? prices + '. ' : ''}Livraison à domicile à Marrakech, paiement à la livraison.`;
+  return `${base} ${prices ? prices + '. ' : ''}Livraison à Marrakech et partout au Maroc, paiement à la livraison.`;
 }
 
 export function productJsonLd(p, lang = 'fr') {
