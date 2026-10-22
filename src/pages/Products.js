@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -25,12 +25,6 @@ const TAG_FILTERS = [
 ];
 
 const Products = () => {
-  useEffect(() => {
-    document.title = `Nos Miels Purs et Huile d'Olive | ${PRODUCTS.filter(p => p.category !== 'oil').length} Variétés | Miel du Maroc`;
-    const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `${PRODUCTS.filter(p => p.category !== 'oil').length} variétés de miel pur du Maroc et huile d'olive pure (1 L et 5 L). Commande sur WhatsApp, livraison à domicile à Marrakech, paiement à la livraison.`);
-  }, []);
-
   const { t, getProductName, getTagLabel } = useLanguage();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedKey, setSelectedKey] = useState('all');
@@ -57,7 +51,7 @@ const Products = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('products.collection')}</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('products.collection')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('products.title')}
           </h1>
