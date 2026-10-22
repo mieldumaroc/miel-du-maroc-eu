@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Package, Truck, Banknote, MapPin } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
-const WHATSAPP_NUMBER = '212676050868';
+const WHATSAPP_NUMBER = '212787177071';
 
 const Shipping = () => {
   useEffect(() => {
