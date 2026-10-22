@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from './LocalizedLink';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -24,6 +24,8 @@ const ProductCard = ({ product, index = 0 }) => {
           {product.image ? (
             <img
               src={product.image}
+              srcSet={product.image.includes('/v2/') ? `${product.image.replace('.webp', '-600.webp')} 600w, ${product.image} 1200w` : undefined}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
               alt={getProductName(product)}
               loading="lazy"
               decoding="async"
