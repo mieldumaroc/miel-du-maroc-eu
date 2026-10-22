@@ -51,7 +51,7 @@ const Home = () => {
               {t('hero.cta')} <ArrowRight size={16} className="rtl:rotate-180" />
             </Link>
             <a
-              href={`https://wa.me/212676050868?text=${encodeURIComponent(t('cart.msgHello'))}`}
+              href={`https://wa.me/212787177071?text=${encodeURIComponent(t('cart.msgHello'))}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-[#25D366] text-white px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#1DA851] transition-colors duration-300"
