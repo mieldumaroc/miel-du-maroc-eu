@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { withLang } from '../i18n/paths';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Minus, Plus, Trash2, ShoppingBag, ArrowRight } from 'lucide-react';
 import { useCart } from '../context/CartContext';
@@ -23,7 +24,7 @@ const CartDrawer = () => {
   // The drawer is a quick preview; the full checkout (customer details + WhatsApp) lives on /cart
   const handleCheckout = () => {
     closeCart();
-    navigate('/cart');
+    navigate(withLang('/cart', language));
   };
 
   return (
