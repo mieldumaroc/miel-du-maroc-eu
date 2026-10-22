@@ -10,7 +10,7 @@ import { useCurrency } from '../context/CurrencyContext';
 
 const CartDrawer = () => {
   const { items, isOpen, closeCart, updateQuantity, removeItem, clearCart, totalPriceMAD } = useCart();
-  const { language, t } = useLanguage();
+  const { language, t, sizeLabel } = useLanguage();
   const { formatPriceWithMAD, formatCartTotal } = useCurrency();
 
   const getItemName = (item) => {
@@ -89,7 +89,7 @@ const CartDrawer = () => {
                       {/* Details */}
                       <div className="flex-1 min-w-0">
                         <h4 className="font-heading font-medium text-[#1A1713] text-sm truncate">{getItemName(item)}</h4>
-                        <p className="text-xs text-[#5C5449] mt-0.5">{item.size}</p>
+                        <p className="text-xs text-[#5C5449] mt-0.5">{sizeLabel(item.size)}</p>
                         <p className="text-sm font-medium text-[#1A1713] mt-1">{formatPriceWithMAD(item.price)}</p>
 
                         {/* Quantity Controls */}
