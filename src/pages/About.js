@@ -28,8 +28,9 @@ const About = () => {
             className="overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1762893134168-840ba7ba2212?crop=entropy&cs=srgb&fm=jpg&w=800&q=80"
-              alt="Moroccan landscape"
+              src="/honey-images/v2/montagne-500g.webp"
+              alt={t('about.imageAlt')}
+              loading="lazy"
               className="w-full h-[500px] object-cover"
             />
           </motion.div>
