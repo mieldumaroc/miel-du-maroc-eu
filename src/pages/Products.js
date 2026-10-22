@@ -5,7 +5,8 @@ import { useLanguage } from '../context/LanguageContext';
 import ProductCard from '../components/ProductCard';
 import { PRODUCTS } from '../data/products';
 
-const HONEYS = PRODUCTS.filter(p => p.category !== 'oil');
+// Honeys in stock first, "coming soon" ones at the end.
+const HONEYS = PRODUCTS.filter(p => p.category !== 'oil').sort((a, b) => (a.available === false) - (b.available === false));
 const OILS = PRODUCTS.filter(p => p.category === 'oil');
 
 // Filter buttons: translation key -> tag value used in products.js
