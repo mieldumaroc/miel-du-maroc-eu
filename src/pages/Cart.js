@@ -52,7 +52,7 @@ const Field = ({ id, label, required, error, children }) => (
 
 const Cart = () => {
   const { items, updateQuantity, removeItem, clearCart, totalPriceMAD } = useCart();
-  const { t, getProductName } = useLanguage();
+  const { t, getProductName, sizeLabel } = useLanguage();
   const { formatPrice } = useCurrency();
 
   const [form, setForm] = useState(() => {
@@ -88,7 +88,7 @@ const Cart = () => {
   const buildMessage = () => {
     let msg = `${t('cart.msgHello')}\n\n`;
     items.forEach((item, i) => {
-      msg += `${i + 1}. ${itemName(item)} (${item.size}) x${item.quantity} — ${item.price * item.quantity} DH\n`;
+      msg += `${i + 1}. ${itemName(item)} (${sizeLabel(item.size)}) x${item.quantity} — ${item.price * item.quantity} DH\n`;
     });
     msg += `\n${t('cart.msgSubtotal')}: ${totalPriceMAD} DH + ${t('cart.msgFee')}`;
     msg += `\n(${t('cart.msgPay')})`;
@@ -168,7 +168,7 @@ const Cart = () => {
                       <Link to={`/products/${item.productId}`} className="font-heading font-semibold text-[#1A1713] hover:text-[#D4AF37] transition-colors">
                         {itemName(item)}
                       </Link>
-                      <p className="text-xs text-[#5C5449] mt-0.5">{item.size}</p>
+                      <p className="text-xs text-[#5C5449] mt-0.5">{sizeLabel(item.size)}</p>
                       <p className="md:hidden text-sm text-[#5C5449] mt-1">{formatPrice(item.price)}</p>
                     </div>
                   </div>
