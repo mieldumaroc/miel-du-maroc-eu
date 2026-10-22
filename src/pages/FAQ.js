@@ -6,12 +6,6 @@ import { useLanguage } from '../context/LanguageContext';
 
 
 const FAQ = () => {
-  useEffect(() => {
-    document.title = `Questions Fréquentes | Commande, Livraison à Marrakech, Paiement | Miel du Maroc`;
-    const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Comment commander du miel pur et de l'huile d'olive, livraison à domicile à Marrakech, paiement à la livraison, conservation du miel.`);
-  }, []);
-
   const { t, language } = useLanguage();
   const [faqs, setFaqs] = useState([]);
   const [openIndex, setOpenIndex] = useState(null);
@@ -39,7 +33,7 @@ const FAQ = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('faq.support')}</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('faq.support')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('faq.title')}
           </h1>
