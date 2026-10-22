@@ -18,7 +18,6 @@ const TAG_FILTERS = [
   { key: 'calming', tag: 'Calming' },
   { key: 'rare', tag: 'Rare' },
   { key: 'powerful', tag: 'Powerful' },
-  { key: 'liverHealth', tag: 'Liver Health' },
   { key: 'generalHealth', tag: 'General Health' },
   { key: 'wellness', tag: 'Wellness' },
   { key: 'warming', tag: 'Warming' },
