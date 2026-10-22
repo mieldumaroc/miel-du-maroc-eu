@@ -3,7 +3,7 @@ import React from 'react';
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/212676050868?text=Hello%2C+I+am+interested+in+ordering+Moroccan+honey"
+      href="https://wa.me/212787177071?text=Hello%2C+I+am+interested+in+ordering+Moroccan+honey"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center whatsapp-pulse"
