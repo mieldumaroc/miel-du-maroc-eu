@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import { LanguageProvider } from './context/LanguageContext';
@@ -10,17 +10,21 @@ import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import CartDrawer from './components/CartDrawer';
 import Home from './pages/Home';
-import Products from './pages/Products';
-import ProductDetail from './pages/ProductDetail';
-import About from './pages/About';
-import HealthBenefits from './pages/HealthBenefits';
-import Shipping from './pages/Shipping';
-import FAQ from './pages/FAQ';
-import Contact from './pages/Contact';
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
-import Cart from './pages/Cart';
 import './App.css';
+import { splitLang } from './i18n/paths';
+import { metaFor, langPath, SITE_URL, SEO_LANGS, OG_LOCALE } from './seo/meta';
+import { PRODUCTS, BLOG_POSTS } from './data/products';
+
+const Products = lazy(() => import('./pages/Products'));
+const ProductDetail = lazy(() => import('./pages/ProductDetail'));
+const About = lazy(() => import('./pages/About'));
+const HealthBenefits = lazy(() => import('./pages/HealthBenefits'));
+const Shipping = lazy(() => import('./pages/Shipping'));
+const FAQ = lazy(() => import('./pages/FAQ'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Blog = lazy(() => import('./pages/Blog'));
+const BlogPost = lazy(() => import('./pages/BlogPost'));
+const Cart = lazy(() => import('./pages/Cart'));
 
 
 function RTLHandler() {
@@ -36,42 +40,72 @@ function RTLHandler() {
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-  // Keep the canonical address in step with the page being shown, so Google
-  // never sees a product page pointing at the home page.
+  return null;
+}
+
+function setTag(selector, create, attr, value) {
+  let el = document.head.querySelector(selector);
+  if (!el) { el = create(); document.head.appendChild(el); }
+  el.setAttribute(attr, value);
+}
+
+// Title, description, canonical and language alternates for the page being shown,
+// in the visitor's language. The same values are written into the HTML at build time.
+function RouteSeo() {
+  const { pathname } = useLocation();
   useEffect(() => {
-    const url = 'https://www.mieldumaroc.com' + (pathname === '/' ? '/' : pathname.replace(/\/$/, ''));
-    const link = document.querySelector('link[rel="canonical"]');
-    if (link) link.setAttribute('href', url);
-    const og = document.querySelector('meta[property="og:url"]');
-    if (og) og.setAttribute('content', url);
+    const { lang, path: rawPath } = splitLang(pathname);
+    const path = rawPath !== '/' ? rawPath.replace(/\/$/, '') : '/';
+    const meta = metaFor(path, lang, PRODUCTS, BLOG_POSTS);
+    if (meta) {
+      document.title = meta.title;
+      setTag('meta[name="description"]:not([lang])', () => { const m = document.createElement('meta'); m.name = 'description'; return m; }, 'content', meta.description);
+      setTag('meta[property="og:title"]', () => document.createElement('meta'), 'content', meta.title);
+      setTag('meta[property="og:description"]', () => document.createElement('meta'), 'content', meta.description);
+    }
+    setTag('meta[name="robots"]', () => { const m = document.createElement('meta'); m.name = 'robots'; return m; }, 'content', meta && !meta.noindex ? 'index, follow' : 'noindex');
+    const url = SITE_URL + langPath(path, lang);
+    setTag('link[rel="canonical"]', () => { const l = document.createElement('link'); l.rel = 'canonical'; return l; }, 'href', url);
+    setTag('meta[property="og:url"]', () => document.createElement('meta'), 'content', url);
+    setTag('meta[property="og:locale"]', () => document.createElement('meta'), 'content', OG_LOCALE[lang]);
+    document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((l) => l.remove());
+    if (meta && !meta.noindex) {
+      [...SEO_LANGS, 'x-default'].forEach((hl) => {
+        const l = document.createElement('link');
+        l.rel = 'alternate'; l.hreflang = hl;
+        l.href = SITE_URL + langPath(path, hl === 'x-default' ? 'fr' : hl);
+        document.head.appendChild(l);
+      });
+    }
   }, [pathname]);
   return null;
 }
 
+const PAGE_ROUTES = [
+  ['', Home], ['products', Products], ['products/:id', ProductDetail], ['about', About],
+  ['health-benefits', HealthBenefits], ['shipping', Shipping], ['faq', FAQ], ['contact', Contact],
+  ['blog', Blog], ['blog/:slug', BlogPost], ['cart', Cart],
+];
+
 function App() {
   return (
+    <BrowserRouter>
     <LanguageProvider>
       <CurrencyProvider>
         <CartProvider>
-          <BrowserRouter>
             <ScrollToTop />
+            <RouteSeo />
         <RTLHandler />
             <div className="App min-h-screen" style={{ backgroundColor: '#FDFBF7' }}>
               <Header />
               <main>
+                <Suspense fallback={<div className="min-h-screen pt-24 flex items-center justify-center"><div className="w-8 h-8 border-2 border-[#D4AF37] border-t-transparent rounded-full animate-spin"></div></div>}>
                 <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/products" element={<Products />} />
-                  <Route path="/products/:id" element={<ProductDetail />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/health-benefits" element={<HealthBenefits />} />
-                  <Route path="/shipping" element={<Shipping />} />
-                  <Route path="/faq" element={<FAQ />} />
-                  <Route path="/contact" element={<Contact />} />
-                  <Route path="/blog" element={<Blog />} />
-                  <Route path="/blog/:slug" element={<BlogPost />} />
-                  <Route path="/cart" element={<Cart />} />
+                  {['', '/en', '/ar'].flatMap((prefix) => PAGE_ROUTES.map(([path, Page]) => (
+                    <Route key={`${prefix}/${path}`} path={`${prefix}/${path}` || '/'} element={<Page />} />
+                  )))}
                 </Routes>
+                </Suspense>
               </main>
               <Footer />
               <WhatsAppButton />
@@ -88,10 +122,10 @@ function App() {
               }}
             />
           </div>
-        </BrowserRouter>
       </CartProvider>
     </CurrencyProvider>
   </LanguageProvider>
+    </BrowserRouter>
   );
 }
 
