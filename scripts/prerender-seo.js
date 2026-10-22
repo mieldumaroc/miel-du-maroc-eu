@@ -71,7 +71,7 @@ for (const b of BLOG_POSTS) {
       '@context': 'https://schema.org', '@type': 'Article', headline: title,
       description: b.excerpt_fr || b.excerpt, image: SITE_URL + (b.image || DEFAULT_IMAGE),
       datePublished: b.published_at, author: { '@type': 'Organization', name: 'Miel du Maroc' },
-      publisher: { '@type': 'Organization', name: 'Miel du Maroc', logo: { '@type': 'ImageObject', url: `${SITE_URL}/honey-images/logo-miel-du-maroc-600.png` } },
+      publisher: { '@type': 'Organization', name: 'Miel du Maroc', logo: { '@type': 'ImageObject', url: `${SITE_URL}/honey-images/logo-mdm-600.png` } },
       mainEntityOfPage: `${SITE_URL}/blog/${b.slug}`,
     }],
   });
