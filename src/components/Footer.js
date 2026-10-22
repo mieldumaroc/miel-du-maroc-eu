@@ -75,7 +75,7 @@ const Footer = () => {
             </h4>
             <div className="space-y-4">
               <a
-                href="https://wa.me/212787177071?text=Hello%2C+I+am+interested+in+ordering+Moroccan+honey"
+                href={`https://wa.me/212787177071?text=${encodeURIComponent(t('cart.whatsappHello'))}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-stone-400 hover:text-[#25D366] transition-colors"
