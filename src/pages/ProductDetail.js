@@ -13,7 +13,7 @@ const WHATSAPP_LINK = "https://wa.me/212787177071?text=";
 
 const ProductDetail = () => {
   const { id } = useParams();
-  const { t, getProductName, getProductDescription, getProductBenefits, getTagLabel } = useLanguage();
+  const { t, getProductName, getProductDescription, getProductBenefits, getTagLabel, sizeLabel } = useLanguage();
   const { formatPriceWithMAD } = useCurrency();
   const { addItem, items } = useCart();
   const cartCount = items.reduce((n, i) => n + i.quantity, 0);
@@ -125,7 +125,7 @@ const ProductDetail = () => {
                     }`}
                     data-testid={`size-${size.size}`}
                   >
-                    {size.size} — {formatPriceWithMAD(size.price)}
+                    {sizeLabel(size.size)} — {formatPriceWithMAD(size.price)}
                   </button>
                 ))}
               </div>
@@ -143,7 +143,7 @@ const ProductDetail = () => {
               <button
                 onClick={() => {
                   addItem(product, selectedSize, currentPrice);
-                  toast.success(`${productName} (${selectedSize}) ${t('products.addedToCart')}`);
+                  toast.success(`${productName} (${sizeLabel(selectedSize)}) ${t('products.addedToCart')}`);
                 }}
                 className="w-full bg-[#1A1713] text-[#FDFBF7] px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#D4AF37] hover:text-[#1A1713] transition-colors flex items-center justify-center gap-2"
                 data-testid="add-to-cart-button"
