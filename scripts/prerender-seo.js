@@ -145,6 +145,26 @@ function render(pg, lang) {
   return html.replace('</head>', `${alternates}${ld}</head>`);
 }
 
+
+// IndexNow: on each production deploy on Vercel, tell Bing (and other IndexNow
+// search engines) about every page, so nobody has to submit addresses by hand.
+// The key file public/643f1ac492515c1841ac4d0fd952497e.txt proves the site is ours. Never blocks the build.
+const INDEXNOW_KEY = '643f1ac492515c1841ac4d0fd952497e';
+async function pingIndexNow(list) {
+  if (process.env.VERCEL_ENV !== 'production' || typeof fetch !== 'function') return;
+  try {
+    const res = await fetch('https://api.indexnow.org/indexnow', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify({ host: 'www.mieldumaroc.com', key: INDEXNOW_KEY, keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`, urlList: list }),
+      signal: AbortSignal.timeout(15000),
+    });
+    console.log(`IndexNow: sent ${list.length} addresses, answer ${res.status}.`);
+  } catch (e) {
+    console.log(`IndexNow: not sent (${e.message}). The sitemap still works.`);
+  }
+}
+
 let count = 0;
 for (const pg of basePages) {
   for (const lang of SEO_LANGS) {
@@ -174,3 +194,5 @@ fs.writeFileSync(path.join(BUILD, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${urls.join('\n')}\n</urlset>\n`);
 
 console.log(`SEO: wrote ${count} pages (${basePages.length} pages × ${SEO_LANGS.length} languages) and a sitemap with ${urls.length} addresses.`);
+
+pingIndexNow(basePages.flatMap((pg) => SEO_LANGS.map((l) => SITE_URL + langPath(pg.path, l))));
