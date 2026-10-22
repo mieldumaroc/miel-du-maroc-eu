@@ -1,17 +1,11 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import Link from '../components/LocalizedLink';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { useCurrency } from '../context/CurrencyContext';
 import { PRODUCTS } from '../data/products';
 
 const HealthBenefits = () => {
-  useEffect(() => {
-    document.title = `Bienfaits Miel Pur Maroc | Origan Thym Nigelle Therapeutique`;
-    const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Decouvrez les bienfaits du vrai miel pur marocain: miel d'origan antibacterien, thym respiratoire, nigelle immunitaire, romarin foie, capre antioxydant.`);
-  }, []);
-
   const { t, language, getProductName, getTagLabel } = useLanguage();
   const { formatPriceWithMAD } = useCurrency();
 
@@ -29,7 +23,7 @@ const HealthBenefits = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('products.wellness')}</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('products.wellness')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('benefits.title')}
           </h1>
@@ -64,7 +58,7 @@ const HealthBenefits = () => {
                     </Link>
                   </td>
                   <td className="px-6 py-4">
-                    <span className="text-xs uppercase tracking-wide text-[#D4AF37]">{getTagLabel(product.tag)}</span>
+                    <span className="text-xs uppercase tracking-wide text-[#85691A]">{getTagLabel(product.tag)}</span>
                   </td>
                   <td className={`px-6 py-4 text-[#5C5449] text-sm ${language === 'ar' ? 'text-right' : 'text-left'}`}>
                     {getBenefits(product)?.slice(0, 2).join(', ')}
