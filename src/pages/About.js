@@ -1,14 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
 const About = () => {
-  useEffect(() => {
-    document.title = `Miel Artisanal Maroc | Famille Apicultrice depuis 1995 | Atlas`;
-    const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Famille apicultrice de Marrakech depuis 1995. Miel pur recolte a la main dans les montagnes de l'Atlas, livré directement chez vous à Marrakech.`);
-  }, []);
-
   const { t } = useLanguage();
 
   return (
@@ -20,7 +14,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('about.subtitle')}</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('about.subtitle')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight">
             {t('about.title')}
           </h1>
