@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-5 lg:col-span-1">
             <div className="flex items-center">
-              <img src="/honey-images/miel-du-maroc-logo.png" alt="Miel du Maroc" className="h-16 object-contain rounded" />
+              <img src="/honey-images/logo-miel-du-maroc.png" alt="Miel du Maroc" width="305" height="200" loading="lazy" className="h-20 w-auto object-contain" />
             </div>
             <p className="text-stone-400 text-sm leading-relaxed">
               {t('footer.tagline')}
