@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import Link from '../components/LocalizedLink';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Check, ShoppingBag } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -7,7 +8,6 @@ import { PRODUCTS } from '../data/products';
 import { useCurrency } from '../context/CurrencyContext';
 import { useCart } from '../context/CartContext';
 import { toast } from 'sonner';
-import { productTitle, productDescription } from '../seo/productMeta';
 
 const WHATSAPP_LINK = "https://wa.me/212787177071?text=";
 
@@ -26,11 +26,6 @@ const ProductDetail = () => {
     setProduct(found || null);
     if (found?.sizes?.length) setSelectedSize(found.sizes[0].size);
     setLoading(false);
-    if (found) {
-      document.title = productTitle(found);
-      const m = document.querySelector('meta[name="description"]');
-      if (m) m.setAttribute('content', productDescription(found));
-    }
   }, [id]);
 
   if (loading) {
@@ -105,7 +100,7 @@ const ProductDetail = () => {
             className="space-y-8"
           >
             <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-3">{getTagLabel(product.tag)}</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-3">{getTagLabel(product.tag)}</p>
               <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight" data-testid="product-detail-name">
                 {productName}
               </h1>
