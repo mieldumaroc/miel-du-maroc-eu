@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -6,12 +6,6 @@ import { useLanguage } from '../context/LanguageContext';
 const WHATSAPP_NUMBER = "212787177071";
 
 const Contact = () => {
-  useEffect(() => {
-    document.title = `Commander Miel Pur et Huile d'Olive via WhatsApp | Livraison Marrakech`;
-    const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Commandez votre miel pur et votre huile d'olive via WhatsApp. Livraison à domicile à Marrakech par notre livreur, paiement à la livraison.`);
-  }, []);
-
   const { t } = useLanguage();
   const [message, setMessage] = useState('');
 
@@ -31,7 +25,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('products.contact_label')}</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('products.contact_label')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('contact.title')}
           </h1>
