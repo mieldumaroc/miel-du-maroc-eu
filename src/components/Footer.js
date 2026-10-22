@@ -32,7 +32,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-2 text-stone-400">
               <MapPin size={14} className="text-[#D4AF37]" />
-              <span className="text-xs tracking-wide uppercase">Marrakech, Morocco</span>
+              <span className="text-xs tracking-wide uppercase">{t('footer.location')}</span>
             </div>
           </div>
 
