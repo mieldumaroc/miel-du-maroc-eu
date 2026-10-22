@@ -121,7 +121,7 @@ const Home = () => {
         <section className="py-20 lg:py-24 bg-[#F4F2E6] border-y border-[#E3E0C8]" data-testid="olive-oil-home">
           <div className="max-w-6xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="aspect-square bg-[#FBF8F0] overflow-hidden">
-              <img src={oliveOil.image} alt={getProductName(oliveOil)} className="w-full h-full object-cover" />
+              <img src={oliveOil.image} alt={getProductName(oliveOil)} loading="lazy" className="w-full h-full object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="space-y-6">
               <p className="text-xs uppercase tracking-[0.2em] text-[#7A8A2E] font-medium">{t('products.oilLabel')}</p>
