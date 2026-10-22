@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import Link from './LocalizedLink';
+import { splitLang } from '../i18n/paths';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ShoppingBag } from 'lucide-react';
 import { useLanguage, LANGUAGES } from '../context/LanguageContext';
@@ -48,7 +50,7 @@ const Header = () => {
     { path: '/contact', label: t('nav.contact') },
   ];
 
-  const isActive = (path) => location.pathname === path;
+  const isActive = (path) => splitLang(location.pathname).path === path;
 
   return (
     <header
@@ -63,7 +65,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center" data-testid="logo-link">
-            <img src="/honey-images/logo-mdm-horizontal.png" alt="Miel du Maroc" width="335" height="128" className="h-11 md:h-14 w-auto object-contain" />
+            <img src="/honey-images/logo-mdm-horizontal.webp" alt="Miel du Maroc" width="335" height="128" className="h-11 md:h-14 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -89,6 +91,7 @@ const Header = () => {
             {/* Language Selector */}
             <Select value={language} onValueChange={handleLanguageChange}>
               <SelectTrigger
+                aria-label="Langue / Language"
                 className="w-[100px] h-9 text-xs border-[#E8E2D2] bg-transparent tracking-wide"
                 data-testid="language-selector"
               >
@@ -113,6 +116,7 @@ const Header = () => {
               onClick={openCart}
               className="relative p-2 text-[#5C5449] hover:text-[#D4AF37] transition-colors"
               data-testid="cart-button"
+              aria-label="Panier"
             >
               <ShoppingBag size={20} />
               {totalItems > 0 && (
@@ -127,6 +131,7 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 text-[#1A1713] hover:text-[#D4AF37] transition-colors"
               data-testid="mobile-menu-button"
+              aria-label="Menu"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
