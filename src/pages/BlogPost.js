@@ -1,6 +1,7 @@
 import { BLOG_POSTS } from '../data/products';
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import Link from '../components/LocalizedLink';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -57,7 +58,7 @@ const BlogPost = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-xs uppercase tracking-[0.15em] text-[#D4AF37] font-medium">
+          <span className="text-xs uppercase tracking-[0.15em] text-[#85691A] font-medium">
             {post.category === 'Health Benefits' ? t('blog.catHealth') : post.category === 'Traditional Uses' ? t('blog.catTraditional') : post.category === 'Ordering Guide' ? t('blog.catOrdering') : post.category === 'Product Spotlight' ? t('blog.catProduct') : post.category}
           </span>
           <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight mt-3 mb-8" data-testid="blog-post-title">
