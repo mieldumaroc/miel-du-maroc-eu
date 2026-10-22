@@ -81,6 +81,37 @@ function setMeta(html, attr, key, value) {
   return html.replace(re, `<meta ${attr}="${key}" content="${esc(value)}">`);
 }
 
+
+// Readable content inside #root for search engines and for the first moment
+// before the app starts; React replaces it as soon as it loads.
+const H1 = {
+  '/': { fr: "Des Montagnes de l'Atlas à Votre Table", en: 'From the Atlas Mountains to Your Table', ar: 'من جبال الأطلس إلى مائدتكم' },
+  '/products': { fr: 'Nos Miels Purs et Huile d’Olive', en: 'Our Pure Honeys and Olive Oil', ar: 'العسل الحر وزيت الزيتون' },
+  '/about': { fr: 'À Propos de Miel du Maroc', en: 'About Miel du Maroc', ar: 'من نحن' },
+  '/health-benefits': { fr: 'Les Miels du Maroc et leurs Usages', en: 'Moroccan Honeys and Their Uses', ar: 'أنواع العسل المغربي واستعمالاتها' },
+  '/shipping': { fr: 'Livraison partout au Maroc', en: 'Delivery across Morocco', ar: 'التوصيل لجميع أنحاء المغرب' },
+  '/faq': { fr: 'Questions Fréquentes', en: 'Frequently Asked Questions', ar: 'الأسئلة الشائعة' },
+  '/contact': { fr: 'Contactez-Nous', en: 'Contact Us', ar: 'اتصل بنا' },
+  '/blog': { fr: 'Notre Blog', en: 'Our Blog', ar: 'مدونتنا' },
+};
+const NAV = { fr: ['Accueil', 'Nos produits', 'Livraison', 'Contact'], en: ['Home', 'Our products', 'Delivery', 'Contact'], ar: ['الرئيسية', 'منتجاتنا', 'التوصيل', 'اتصل بنا'] };
+function rootContent(pg, lang, meta) {
+  let h1 = H1[pg.path] && H1[pg.path][lang];
+  let extra = '';
+  if (pg.product) {
+    const p = pg.product;
+    h1 = lang === 'ar' ? (p.name_ar || p.name_fr) : lang === 'en' ? p.name : (p.name_fr || p.name);
+    const unit = lang === 'ar' ? 'درهم' : 'DH';
+    extra = `<ul>${(p.sizes || []).map((s) => `<li>${esc(s.size)} — ${s.price} ${unit}</li>`).join('')}</ul>`;
+  } else if (pg.post) {
+    h1 = blogMeta(pg.post, lang).headline;
+  } else if (pg.path === '/products') {
+    extra = `<ul>${PRODUCTS.map((p) => `<li><a href="${langPath(`/products/${p.id}`, lang)}">${esc(lang === 'ar' ? (p.name_ar || p.name_fr) : lang === 'en' ? p.name : p.name_fr)}</a></li>`).join('')}</ul>`;
+  }
+  const links = ['/', '/products', '/shipping', '/contact'].map((l, i) => `<a href="${langPath(l, lang)}">${NAV[lang][i]}</a>`).join(' · ');
+  return `<div style="max-width:720px;margin:0 auto;padding:120px 24px 48px;font-family:Georgia,serif;color:#1A1713"><p>Miel du Maroc</p><h1>${esc(h1 || meta.title)}</h1><p>${esc(meta.description)}</p>${extra}<nav>${links}</nav></div>`;
+}
+
 const template = fs.readFileSync(path.join(BUILD, 'index.html'), 'utf8');
 
 function render(pg, lang) {
@@ -110,6 +141,7 @@ function render(pg, lang) {
   const alternates = [...SEO_LANGS.map((l) => [l, l]), ['x-default', 'fr']]
     .map(([hl, l]) => `<link rel="alternate" hreflang="${hl}" href="${SITE_URL}${langPath(pg.path, l)}">`).join('');
   const ld = jsonLdFor(pg, lang).map((j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('');
+  html = html.replace('<div id="root"></div>', `<div id="root">${rootContent(pg, lang, meta)}</div>`);
   return html.replace('</head>', `${alternates}${ld}</head>`);
 }
 
