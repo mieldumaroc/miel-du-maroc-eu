@@ -8,7 +8,7 @@ import { useCurrency } from '../context/CurrencyContext';
 import { useCart } from '../context/CartContext';
 import { toast } from 'sonner';
 
-const WHATSAPP_LINK = "https://wa.me/212676050868?text=";
+const WHATSAPP_LINK = "https://wa.me/212787177071?text=";
 
 const ProductDetail = () => {
   const { id } = useParams();
