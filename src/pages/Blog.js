@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/LocalizedLink';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -7,12 +7,6 @@ import { BLOG_POSTS } from '../data/products';
 
 
 const Blog = () => {
-  useEffect(() => {
-    document.title = `Bienfaits Miel Maroc | Origan Thym Nigelle Therapeutique | Blog`;
-    const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Articles sur les bienfaits du miel pur marocain: miel d'origan, thym, nigelle, romarin sauvage. Conseils pour acheter et utiliser le miel de l'Atlas.`);
-  }, []);
-
   const { t, language } = useLanguage();
   const [posts, setPosts] = useState([]);
 
@@ -39,7 +33,7 @@ const Blog = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('blog.journal')}</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('blog.journal')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('blog.title')}
           </h1>
@@ -65,7 +59,7 @@ const Blog = () => {
                   />
                 </div>
                 <div className="md:col-span-2 flex flex-col justify-center space-y-3">
-                  <span className="text-xs uppercase tracking-[0.15em] text-[#D4AF37] font-medium">
+                  <span className="text-xs uppercase tracking-[0.15em] text-[#85691A] font-medium">
                     {post.category === 'Health Benefits' ? t('blog.catHealth') : post.category === 'Traditional Uses' ? t('blog.catTraditional') : post.category === 'Ordering Guide' ? t('blog.catOrdering') : post.category === 'Product Spotlight' ? t('blog.catProduct') : post.category}
                   </span>
                   <h2 className="font-heading text-2xl font-medium text-[#1A1713] group-hover:text-[#D4AF37] transition-colors">
@@ -74,7 +68,7 @@ const Blog = () => {
                   <p className="text-[#5C5449] text-sm leading-relaxed">
                     {getExcerpt(post)}
                   </p>
-                  <span className="inline-flex items-center gap-2 text-xs uppercase tracking-wide text-[#D4AF37] font-medium">
+                  <span className="inline-flex items-center gap-2 text-xs uppercase tracking-wide text-[#85691A] font-medium">
                     {t('blog.readMore')} <ArrowRight size={14} />
                   </span>
                 </div>
