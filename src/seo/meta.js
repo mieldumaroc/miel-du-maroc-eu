@@ -126,7 +126,7 @@ export function productJsonLd(p, lang = 'fr') {
       name: `${name} ${fmtSize(s.size, lang)}`.trim(),
       price: String(s.price),
       priceCurrency: 'MAD',
-      availability: 'https://schema.org/InStock',
+      availability: p.available === false ? 'https://schema.org/OutOfStock' : 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
       url,
       seller: { '@type': 'Organization', name: 'Miel du Maroc' },
