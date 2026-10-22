@@ -6,7 +6,7 @@ import { useCart } from '../context/CartContext';
 import { useLanguage } from '../context/LanguageContext';
 import { useCurrency } from '../context/CurrencyContext';
 
-const WHATSAPP_NUMBER = '212676050868';
+const WHATSAPP_NUMBER = '212787177071';
 const CUSTOMER_KEY = 'mdm-customer';
 const EMPTY_FORM = { firstName: '', lastName: '', phone: '', address: '', note: '' };
 
