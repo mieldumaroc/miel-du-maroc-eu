@@ -26,9 +26,9 @@ const TAG_FILTERS = [
 
 const Products = () => {
   useEffect(() => {
-    document.title = `Miel Pur et Huile d'Olive à Marrakech | Livraison à Domicile | Miel du Maroc`;
+    document.title = `Nos Miels Purs et Huile d'Olive | ${PRODUCTS.filter(p => p.category !== 'oil').length} Variétés | Miel du Maroc`;
     const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `15 variétés de miel pur du Maroc et huile d'olive pure (1 L et 5 L). Commande sur WhatsApp, livraison à domicile à Marrakech, paiement à la livraison.`);
+    if (m) m.setAttribute('content', `${PRODUCTS.filter(p => p.category !== 'oil').length} variétés de miel pur du Maroc et huile d'olive pure (1 L et 5 L). Commande sur WhatsApp, livraison à domicile à Marrakech, paiement à la livraison.`);
   }, []);
 
   const { t, getProductName, getTagLabel } = useLanguage();
