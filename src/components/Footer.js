@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from './LocalizedLink';
 import { MapPin } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-5 lg:col-span-1">
             <div className="flex items-center">
-              <img src="/honey-images/logo-mdm.png" alt="Miel du Maroc" width="137" height="192" loading="lazy" className="h-24 w-auto object-contain" />
+              <img src="/honey-images/logo-mdm.webp" alt="Miel du Maroc" width="137" height="192" loading="lazy" className="h-24 w-auto object-contain" />
             </div>
             <p className="text-stone-400 text-sm leading-relaxed">
               {t('footer.tagline')}
@@ -95,13 +95,13 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-stone-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-stone-500 text-xs tracking-wide">{t('footer.copyright')}</p>
+            <p className="text-stone-400 text-xs tracking-wide">{t('footer.copyright')}</p>
             <div className="flex items-center gap-4">
-              <span className="text-xs text-stone-600 tracking-wide uppercase">100% Pure Honey</span>
-              <span className="text-xs text-stone-700">|</span>
-              <span className="text-xs text-stone-600 tracking-wide uppercase">Direct from Morocco</span>
-              <span className="text-xs text-stone-700">|</span>
-              <span className="text-xs text-stone-600 tracking-wide uppercase">Since 1995</span>
+              <span className="text-xs text-stone-400 tracking-wide uppercase">{t('footer.badge1')}</span>
+              <span className="text-xs text-stone-600">|</span>
+              <span className="text-xs text-stone-400 tracking-wide uppercase">{t('footer.badge2')}</span>
+              <span className="text-xs text-stone-600">|</span>
+              <span className="text-xs text-stone-400 tracking-wide uppercase">{t('footer.badge3')}</span>
             </div>
           </div>
         </div>
