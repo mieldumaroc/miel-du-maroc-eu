@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import Link from '../components/LocalizedLink';
 import { motion } from 'framer-motion';
 import { ArrowRight, Shield, Award, Users, ChevronRight, Banknote, Truck, MessageCircle, Leaf } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -8,12 +8,6 @@ import { PRODUCTS } from '../data/products';
 import { useCurrency } from '../context/CurrencyContext';
 
 const Home = () => {
-  useEffect(() => {
-    document.title = `Miel Pur et Huile d'Olive à Marrakech | Livraison à Domicile | Miel du Maroc`;
-    const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Vrai miel pur de l'Atlas et huile d'olive pure, livrés chez vous à Marrakech par notre livreur. Commande sur WhatsApp, paiement à la livraison. Famille apicultrice depuis 1995.`);
-  }, []);
-
   const { t, getProductName } = useLanguage();
   const { formatPrice } = useCurrency();
   const featuredProducts = PRODUCTS.filter(p => p.category !== 'oil').slice(0, 6);
@@ -36,7 +30,7 @@ const Home = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="max-w-3xl mx-auto px-6 lg:px-0 text-center lg:text-start"
         >
-          <p className="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-medium mb-4">{t('hero.tagline')}</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-[#85691A] font-medium mb-4">{t('hero.tagline')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-[3.4rem] font-light text-[#1A1713] leading-tight tracking-tight">
             {t('hero.title')}
           </h1>
@@ -98,7 +92,7 @@ const Home = () => {
       <section className="pt-16 pb-24 lg:pt-16 lg:pb-32" data-testid="featured-products-section">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center mb-16">
-            <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('hero.tagline')}</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('hero.tagline')}</p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight">{t('products.title')}</h2>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
@@ -148,7 +142,7 @@ const Home = () => {
       <section className="py-24 lg:py-32 bg-[#F7F4EB]" data-testid="why-us-section">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center mb-16">
-            <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('products.excellence')}</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('products.excellence')}</p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight">{t('whyUs.title')}</h2>
           </motion.div>
           <div className="grid sm:grid-cols-3 gap-8">
@@ -169,7 +163,7 @@ const Home = () => {
       <section className="py-24 lg:py-32" data-testid="how-to-order-section">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="text-center mb-16">
-            <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('payment.secure')}</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('payment.secure')}</p>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight">{t('payment.title')}</h2>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-[#F7F4EB] border border-[#E8E2D2] p-8 lg:p-12 mb-12">
