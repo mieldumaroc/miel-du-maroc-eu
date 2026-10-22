@@ -8,7 +8,7 @@ import { PRODUCTS } from '../data/products';
 import { useCurrency } from '../context/CurrencyContext';
 
 const Home = () => {
-  const { t, getProductName } = useLanguage();
+  const { t, getProductName, sizeLabel } = useLanguage();
   const { formatPrice } = useCurrency();
   const featuredProducts = PRODUCTS.filter(p => p.category !== 'oil').slice(0, 6);
   const oliveOil = PRODUCTS.find(p => p.category === 'oil');
@@ -124,7 +124,7 @@ const Home = () => {
               <div className="flex flex-wrap gap-3">
                 {oliveOil.sizes.map((s) => (
                   <span key={s.size} className="px-5 py-3 border border-[#D9D5B8] bg-[#FDFBF7] text-sm text-[#1A1713]">
-                    {s.size} — <span className="font-medium">{formatPrice(s.price)}</span>
+                    {sizeLabel(s.size)} — <span className="font-medium">{formatPrice(s.price)}</span>
                   </span>
                 ))}
               </div>
