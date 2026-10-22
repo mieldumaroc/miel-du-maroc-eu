@@ -7,6 +7,7 @@ import { PRODUCTS } from '../data/products';
 import { useCurrency } from '../context/CurrencyContext';
 import { useCart } from '../context/CartContext';
 import { toast } from 'sonner';
+import { productTitle, productDescription } from '../seo/productMeta';
 
 const WHATSAPP_LINK = "https://wa.me/212787177071?text=";
 
@@ -26,9 +27,9 @@ const ProductDetail = () => {
     if (found?.sizes?.length) setSelectedSize(found.sizes[0].size);
     setLoading(false);
     if (found) {
-      document.title = `${found.name_fr || found.name} | Livraison à Marrakech | Miel du Maroc`;
+      document.title = productTitle(found);
       const m = document.querySelector('meta[name="description"]');
-      if (m) m.setAttribute('content', `${found.description_fr || found.description} Commandez sur WhatsApp, livraison à domicile à Marrakech, paiement à la livraison.`);
+      if (m) m.setAttribute('content', productDescription(found));
     }
   }, [id]);
 
