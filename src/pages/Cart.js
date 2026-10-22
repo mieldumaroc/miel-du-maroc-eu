@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../components/LocalizedLink';
 import { Minus, Plus, Trash2, ShoppingBag, ArrowLeft, Banknote } from 'lucide-react';
 import { toast } from 'sonner';
 import { useCart } from '../context/CartContext';
@@ -64,7 +64,6 @@ const Cart = () => {
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    document.title = 'Panier | Miel du Maroc';
     window.scrollTo(0, 0);
   }, []);
 
