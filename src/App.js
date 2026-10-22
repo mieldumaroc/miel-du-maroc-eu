@@ -36,6 +36,15 @@ function RTLHandler() {
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  // Keep the canonical address in step with the page being shown, so Google
+  // never sees a product page pointing at the home page.
+  useEffect(() => {
+    const url = 'https://www.mieldumaroc.com' + (pathname === '/' ? '/' : pathname.replace(/\/$/, ''));
+    const link = document.querySelector('link[rel="canonical"]');
+    if (link) link.setAttribute('href', url);
+    const og = document.querySelector('meta[property="og:url"]');
+    if (og) og.setAttribute('content', url);
+  }, [pathname]);
   return null;
 }
 
