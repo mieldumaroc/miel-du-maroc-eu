@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '../components/LocalizedLink';
 import { motion } from 'framer-motion';
-import { ArrowRight, Shield, Award, Users, ChevronRight, Banknote, Truck, MessageCircle, Leaf, ShoppingBag } from 'lucide-react';
+import { ArrowRight, Shield, Award, Users, ChevronRight, Banknote, Truck, MessageCircle, Leaf } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import ProductCard from '../components/ProductCard';
 import { PRODUCTS } from '../data/products';
@@ -44,26 +44,7 @@ const Home = () => {
             >
               {t('hero.cta')} <ArrowRight size={16} className="rtl:rotate-180" />
             </Link>
-            <a
-              href={`https://wa.me/212787177071?text=${encodeURIComponent(t('cart.msgHello'))}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap bg-[#25D366] text-white px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#1DA851] transition-colors duration-300"
-              data-testid="hero-cta-whatsapp"
-            >
-              <MessageCircle size={18} /> {t('hero.whatsapp')}
-            </a>
           </div>
-
-          <a
-            href="https://wa.me/c/212787177071"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-[#1A7F45] underline underline-offset-4 hover:text-[#25D366]"
-            data-testid="hero-whatsapp-catalog"
-          >
-            <ShoppingBag size={16} /> {t('cart.whatsappCatalog')}
-          </a>
 
           <ul className="mt-6 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm text-[#5C5449]" data-testid="hero-badges">
             <li className="flex items-center gap-2"><Truck size={16} className="text-[#D4AF37]" /> {t('hero.badgeDelivery')}</li>
