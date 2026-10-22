@@ -10,7 +10,7 @@ import { useCurrency } from '../context/CurrencyContext';
 const Home = () => {
   const { t, getProductName, sizeLabel } = useLanguage();
   const { formatPrice } = useCurrency();
-  const featuredProducts = PRODUCTS.filter(p => p.category !== 'oil').slice(0, 6);
+  const featuredProducts = PRODUCTS.filter(p => p.category !== 'oil' && p.available !== false).slice(0, 6);
   const oliveOil = PRODUCTS.find(p => p.category === 'oil');
 
   const whyUsFeatures = [
