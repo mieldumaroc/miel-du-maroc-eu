@@ -8,7 +8,7 @@ import { useCurrency } from '../context/CurrencyContext';
 
 const WHATSAPP_NUMBER = '212787177071';
 const CUSTOMER_KEY = 'mdm-customer';
-const EMPTY_FORM = { firstName: '', lastName: '', phone: '', address: '', note: '' };
+const EMPTY_FORM = { firstName: '', lastName: '', phone: '', city: '', address: '', note: '' };
 
 const WhatsAppIcon = () => (
   <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true">
@@ -76,7 +76,7 @@ const Cart = () => {
 
   const validate = () => {
     const er = {};
-    ['firstName', 'lastName', 'phone', 'address'].forEach((k) => {
+    ['firstName', 'lastName', 'phone', 'city', 'address'].forEach((k) => {
       if (!form[k].trim()) er[k] = t('cart.required');
     });
     const digits = form.phone.replace(/\D/g, '');
@@ -94,6 +94,7 @@ const Cart = () => {
     msg += `\n(${t('cart.msgPay')})`;
     msg += `\n\n${t('cart.msgName')}: ${form.firstName.trim()} ${form.lastName.trim()}`;
     msg += `\n${t('cart.msgPhone')}: ${form.phone.trim()}`;
+    msg += `\n${t('cart.msgCity')}: ${form.city.trim()}`;
     msg += `\n${t('cart.msgAddress')}: ${form.address.trim()}`;
     if (form.note.trim()) msg += `\n${t('cart.msgNote')}: ${form.note.trim()}`;
     msg += `\n\n${t('cart.msgThanks')}`;
@@ -264,6 +265,14 @@ const Cart = () => {
             <Field id="phone" label={t('cart.phone')} required error={errors.phone}>
               <input id="phone" type="tel" dir="ltr" value={form.phone} onChange={update('phone')} autoComplete="tel"
                 placeholder={t('cart.phonePh')} className={`${inputClass('phone')} rtl:text-right`} data-invalid={!!errors.phone} data-testid="input-phone" />
+            </Field>
+
+            <Field id="city" label={t('cart.city')} required error={errors.city}>
+              <input id="city" value={form.city} onChange={update('city')} autoComplete="address-level2" list="mdm-cities"
+                placeholder={t('cart.cityPh')} className={inputClass('city')} data-invalid={!!errors.city} data-testid="input-city" />
+              <datalist id="mdm-cities">
+                {['Marrakech', 'Casablanca', 'Rabat', 'Salé', 'Agadir', 'Fès', 'Tanger', 'Meknès', 'Oujda', 'Kénitra', 'Tétouan', 'El Jadida', 'Safi', 'Essaouira', 'Ouarzazate', 'Béni Mellal', 'Nador', 'Laâyoune', 'Dakhla'].map((c) => <option key={c} value={c} />)}
+              </datalist>
             </Field>
 
             <Field id="address" label={t('cart.address')} required error={errors.address}>
