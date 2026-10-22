@@ -140,6 +140,21 @@ const ProductDetail = () => {
 
             {/* Add to cart (main action), then checkout once something is in the cart */}
             <div className="space-y-3">
+              {product.available === false ? (
+                <div className="space-y-3" data-testid="coming-soon-box">
+                  <p className="inline-block bg-[#1A1713] text-[#E9D9A6] text-xs font-medium tracking-wide uppercase px-3 py-1.5">{t('products.comingSoon')}</p>
+                  <p className="text-sm text-[#5C5449] leading-relaxed">{t('products.comingSoonText')}</p>
+                  <a
+                    href={`${WHATSAPP_LINK}${encodeURIComponent(`${t('products.notifyMsg')} ${productName}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-[#25D366] text-white px-8 py-4 text-sm font-medium tracking-wide uppercase hover:bg-[#1DA851] transition-colors flex items-center justify-center gap-2"
+                    data-testid="notify-me-button"
+                  >
+                    {t('products.notifyMe')}
+                  </a>
+                </div>
+              ) : (
               <button
                 onClick={() => {
                   addItem(product, selectedSize, currentPrice);
@@ -151,6 +166,7 @@ const ProductDetail = () => {
                 <ShoppingBag size={16} />
                 {t('products.addToCart')}
               </button>
+              )}
 
               {cartCount > 0 && (
                 <Link
