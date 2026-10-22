@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Package, Truck, Banknote, MapPin } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -6,12 +6,6 @@ import { useLanguage } from '../context/LanguageContext';
 const WHATSAPP_NUMBER = '212787177071';
 
 const Shipping = () => {
-  useEffect(() => {
-    document.title = `Livraison à Domicile à Marrakech | Paiement à la Livraison | Miel du Maroc`;
-    const m = document.querySelector('meta[name="description"]');
-    if (m) m.setAttribute('content', `Commandez votre miel pur et votre huile d'olive sur WhatsApp : notre livreur vous les apporte chez vous à Marrakech. Paiement en espèces à la livraison.`);
-  }, []);
-
   const { t } = useLanguage();
 
   const features = [
@@ -31,7 +25,7 @@ const Shipping = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <p className="text-xs uppercase tracking-[0.2em] text-[#D4AF37] font-medium mb-4">{t('products.delivery')}</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('products.delivery')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
             {t('shipping.title')}
           </h1>
