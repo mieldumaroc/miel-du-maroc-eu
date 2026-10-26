@@ -1,0 +1,16 @@
+Miel du Maroc - mise a jour du 26 octobre 2026
+
+Copiez ces 4 elements dans votre dossier miel-du-maroc (remplacer les fichiers) :
+  src
+  public
+  scripts
+  vercel.json
+
+Puis GitHub Desktop : Commit to main, puis Push origin.
+
+Contenu :
+- Huile d'olive dans la meme grille que les miels (plus de section separee)
+- Nouveau titre : Nos Miels & Huile d'Olive / Our Honeys & Olive Oil / عسلنا وزيت الزيتون
+- Sceau 100% pur garanti + ligne paiement/livraison
+- Romarin retire
+- Nouvelles photos : huile 1 L et 5 L, origan, eucalyptus, chardon, oranger
