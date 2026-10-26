@@ -7,7 +7,8 @@ import { useCurrency } from '../context/CurrencyContext';
 import PuritySeal from './PuritySeal';
 import TrustLine from './TrustLine';
 
-const ProductCard = ({ product, index = 0 }) => {
+const ProductCard = ({ product, index = 0, headingLevel = 'h3' }) => {
+  const Heading = headingLevel;
   const { getProductName, t } = useLanguage();
   const { formatPriceWithMAD } = useCurrency();
 
@@ -26,10 +27,12 @@ const ProductCard = ({ product, index = 0 }) => {
           {product.image ? (
             <img
               src={product.image}
-              srcSet={product.image.includes('/v2/') ? `${product.image.replace('.webp', '-600.webp')} 600w, ${product.image} 1200w` : undefined}
+              srcSet={product.image.includes('/v2/') ? `${product.image.replace('.webp', '-600.webp')} 600w, ${product.image.replace('.webp', '-900.webp')} 900w, ${product.image} 1200w` : undefined}
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
               alt={getProductName(product)}
-              loading="lazy"
+              loading={index < 3 ? undefined : 'lazy'}
+              width="1200"
+              height="1200"
               decoding="async"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
@@ -51,9 +54,9 @@ const ProductCard = ({ product, index = 0 }) => {
 
         {/* Info */}
         <div className="space-y-2">
-          <h3 className="font-heading text-lg font-medium text-[#1A1713] group-hover:text-[#D4AF37] transition-colors">
+          <Heading className="font-heading text-lg font-medium text-[#1A1713] group-hover:text-[#D4AF37] transition-colors">
             {getProductName(product)}
-          </h3>
+          </Heading>
           <div className="flex items-center justify-between">
             <p className="text-[#5C5449] text-sm">
               {t('products.from')} <span className="font-medium text-[#1A1713]">{formatPriceWithMAD(product.price)}</span>
