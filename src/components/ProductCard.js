@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useCurrency } from '../context/CurrencyContext';
+import PuritySeal from './PuritySeal';
+import TrustLine from './TrustLine';
 
 const ProductCard = ({ product, index = 0 }) => {
   const { getProductName, t } = useLanguage();
@@ -39,6 +41,7 @@ const ProductCard = ({ product, index = 0 }) => {
               </div>
             </div>
           )}
+          <PuritySeal />
           {product.available === false && (
             <span className="absolute top-3 left-3 rtl:left-auto rtl:right-3 bg-[#1A1713]/85 text-[#E9D9A6] text-xs font-medium tracking-wide uppercase px-3 py-1.5" data-testid={`coming-soon-${product.id}`}>
               {t('products.comingSoon')}
@@ -57,6 +60,7 @@ const ProductCard = ({ product, index = 0 }) => {
             </p>
             <ArrowRight size={16} className="text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity" />
           </div>
+          {product.available !== false && <TrustLine size="xs" />}
         </div>
       </Link>
     </motion.div>
