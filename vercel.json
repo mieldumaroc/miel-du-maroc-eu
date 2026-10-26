@@ -1,7 +1,11 @@
 {
   "redirects": [
     { "source": "/blog/buy-moroccan-honey-europe", "destination": "/blog/buy-pure-honey-marrakech", "permanent": true },
-    { "source": "/:lang(en|ar)/blog/buy-moroccan-honey-europe", "destination": "/:lang/blog/buy-pure-honey-marrakech", "permanent": true }
+    { "source": "/:lang(en|ar)/blog/buy-moroccan-honey-europe", "destination": "/:lang/blog/buy-pure-honey-marrakech", "permanent": true },
+    { "source": "/products/romarin", "destination": "/products", "permanent": true },
+    { "source": "/:lang(en|ar)/products/romarin", "destination": "/:lang/products", "permanent": true },
+    { "source": "/blog/wild-rosemary-honey-liver-health", "destination": "/blog", "permanent": true },
+    { "source": "/:lang(en|ar)/blog/wild-rosemary-honey-liver-health", "destination": "/:lang/blog", "permanent": true }
   ],
   "rewrites": [
     { "source": "/:lang(en|ar)", "destination": "/:lang/index.html" },
