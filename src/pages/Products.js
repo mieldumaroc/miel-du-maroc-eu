@@ -64,7 +64,7 @@ const Products = () => {
           <p className="text-[#5C5449] text-base max-w-xl mx-auto">
             {t('products.subtitle')}
           </p>
-          <p className="text-[#7A8A2E] text-sm max-w-xl mx-auto mt-2" data-testid="oil-subtitle">
+          <p className="text-[#5A6620] text-sm max-w-xl mx-auto mt-2" data-testid="oil-subtitle">
             {t('products.oilSubtitle')}
           </p>
         </motion.div>
@@ -107,7 +107,7 @@ const Products = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {gridItems.map((product, index) => (
               <div key={product.id} id={product.category === 'oil' ? 'huile-olive' : undefined} className="scroll-mt-28">
-                <ProductCard product={product} index={index} />
+                <ProductCard product={product} index={index} headingLevel="h2" />
               </div>
             ))}
           </div>
