@@ -106,10 +106,10 @@ const Home = () => {
         <section className="py-20 lg:py-24 bg-[#F4F2E6] border-y border-[#E3E0C8]" data-testid="olive-oil-home">
           <div className="max-w-6xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="aspect-square bg-[#FBF8F0] overflow-hidden">
-              <img src={oliveOil.image} alt={getProductName(oliveOil)} loading="lazy" className="w-full h-full object-cover" />
+              <img src={oliveOil.image} srcSet={`${oliveOil.image.replace('.webp', '-600.webp')} 600w, ${oliveOil.image.replace('.webp', '-900.webp')} 900w, ${oliveOil.image} 1200w`} sizes="(max-width: 1024px) 100vw, 600px" width="1200" height="1200" alt={getProductName(oliveOil)} loading="lazy" decoding="async" className="w-full h-full object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }} className="space-y-6">
-              <p className="text-xs uppercase tracking-[0.2em] text-[#7A8A2E] font-medium">{t('products.oilLabel')}</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-[#5A6620] font-medium">{t('products.oilLabel')}</p>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight">{t('products.oilTitle')}</h2>
               <p className="text-[#5C5449] leading-relaxed">{t('products.oilSubtitle')}</p>
               <div className="flex flex-wrap gap-3">
@@ -185,7 +185,7 @@ const Home = () => {
             ].map((item, index) => (
               <motion.div key={item.step} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1, duration: 0.6 }} className="relative bg-[#FDFBF7] border border-[#E8E2D2] p-8 text-center" data-testid={`order-step-${item.step}`}>
                 <div className="text-[#D4AF37] font-heading text-4xl font-light mb-4">0{item.step}</div>
-                <h4 className="font-heading font-medium text-[#1A1713] mb-2">{item.title}</h4>
+                <h3 className="font-heading font-medium text-[#1A1713] mb-2">{item.title}</h3>
                 <p className="text-[#5C5449] text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
             ))}
