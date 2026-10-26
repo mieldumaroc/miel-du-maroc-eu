@@ -38,9 +38,9 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading text-sm font-medium tracking-widest uppercase text-[#D4AF37] mb-6">
+            <h2 className="font-heading text-sm font-medium tracking-widest uppercase text-[#D4AF37] mb-6">
               {t('footer.quickLinks')}
-            </h4>
+            </h2>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.path}>
@@ -54,9 +54,9 @@ const Footer = () => {
 
           {/* Support */}
           <div>
-            <h4 className="font-heading text-sm font-medium tracking-widest uppercase text-[#D4AF37] mb-6">
+            <h2 className="font-heading text-sm font-medium tracking-widest uppercase text-[#D4AF37] mb-6">
               {t('footer.support')}
-            </h4>
+            </h2>
             <ul className="space-y-3">
               {supportLinks.map((link) => (
                 <li key={link.path}>
@@ -70,9 +70,9 @@ const Footer = () => {
 
           {/* Contact & Social */}
           <div>
-            <h4 className="font-heading text-sm font-medium tracking-widest uppercase text-[#D4AF37] mb-6">
+            <h2 className="font-heading text-sm font-medium tracking-widest uppercase text-[#D4AF37] mb-6">
               {t('footer.followUs')}
-            </h4>
+            </h2>
             <div className="space-y-4">
               <a
                 href={`https://wa.me/212787177071?text=${encodeURIComponent(t('cart.whatsappHello'))}`}
