@@ -67,24 +67,36 @@ const BlogPost = () => {
 
           {post.image && (
             <div className="overflow-hidden bg-[#F7F4EB] mb-12 aspect-video">
-              <img src={post.image} alt={getTitle()} className="w-full h-full object-cover" />
+              <img src={post.image} alt={getTitle()} width="1200" height="675" fetchpriority="high" className="w-full h-full object-cover" />
             </div>
           )}
 
           <div className="prose prose-stone max-w-none" data-testid="blog-post-content">
-            {getContent().split(/\\n|\n/).map((paragraph, index) => {
-              if (!paragraph.trim()) return null;
-              if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-                return <h3 key={index} className="font-heading text-xl font-medium text-[#1A1713] mt-8 mb-3">{paragraph.replace(/\*\*/g, '')}</h3>;
-              }
-              if (paragraph.startsWith('- ')) {
-                return <li key={index} className="text-[#5C5449] text-sm leading-relaxed ml-4 mb-1">{paragraph.slice(2)}</li>;
-              }
-              if (paragraph.match(/^\d+\./)) {
-                return <li key={index} className="text-[#5C5449] text-sm leading-relaxed ml-4 mb-1 list-decimal">{paragraph.replace(/^\d+\.\s*/, '')}</li>;
-              }
-              return <p key={index} className="text-[#5C5449] text-sm leading-relaxed mb-4">{paragraph.replace(/\*\*(.*?)\*\*/g, '$1')}</p>;
-            })}
+            {(() => {
+              // Group consecutive "- " and "1. " lines into real <ul>/<ol> lists
+              const blocks = [];
+              getContent().split(/\\n|\n/).forEach((paragraph) => {
+                if (!paragraph.trim()) return;
+                const kind = paragraph.startsWith('- ') ? 'ul' : /^\d+\./.test(paragraph) ? 'ol' : null;
+                const last = blocks[blocks.length - 1];
+                if (kind && last && last.kind === kind) last.items.push(paragraph);
+                else blocks.push({ kind, items: [paragraph] });
+              });
+              const clean = (t) => t.replace(/\*\*(.*?)\*\*/g, '$1');
+              return blocks.map((block, index) => {
+                if (block.kind === 'ul') {
+                  return <ul key={index} className="list-disc ms-6 mb-4 space-y-1">{block.items.map((item, i) => <li key={i} className="text-[#5C5449] text-sm leading-relaxed">{clean(item.slice(2))}</li>)}</ul>;
+                }
+                if (block.kind === 'ol') {
+                  return <ol key={index} className="list-decimal ms-6 mb-4 space-y-1">{block.items.map((item, i) => <li key={i} className="text-[#5C5449] text-sm leading-relaxed">{clean(item.replace(/^\d+\.\s*/, ''))}</li>)}</ol>;
+                }
+                const paragraph = block.items[0];
+                if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
+                  return <h2 key={index} className="font-heading text-xl font-medium text-[#1A1713] mt-8 mb-3">{paragraph.replace(/\*\*/g, '')}</h2>;
+                }
+                return <p key={index} className="text-[#5C5449] text-sm leading-relaxed mb-4">{clean(paragraph)}</p>;
+              });
+            })()}
           </div>
         </motion.article>
       </div>
