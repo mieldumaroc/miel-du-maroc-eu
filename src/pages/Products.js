@@ -40,6 +40,12 @@ const Products = () => {
   const filteredHoneys = HONEYS.filter(p => (!activeTag || p.tag === activeTag) && matchesSearch(p));
   // Olive oil stays visible unless a honey-only category filter is chosen
   const filteredOils = activeTag ? [] : OILS.filter(matchesSearch);
+  // One grid: honeys in stock, then olive oil, then "coming soon" honeys
+  const gridItems = [
+    ...filteredHoneys.filter(p => p.available !== false),
+    ...filteredOils,
+    ...filteredHoneys.filter(p => p.available === false),
+  ];
 
   return (
     <div className="min-h-screen pt-24 pb-16" data-testid="products-page">
@@ -53,10 +59,13 @@ const Products = () => {
         >
           <p className="text-xs uppercase tracking-[0.2em] text-[#85691A] font-medium mb-4">{t('products.collection')}</p>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-light text-[#1A1713] tracking-tight mb-4">
-            {t('products.title')}
+            {t('products.pageTitle')}
           </h1>
           <p className="text-[#5C5449] text-base max-w-xl mx-auto">
             {t('products.subtitle')}
+          </p>
+          <p className="text-[#7A8A2E] text-sm max-w-xl mx-auto mt-2" data-testid="oil-subtitle">
+            {t('products.oilSubtitle')}
           </p>
         </motion.div>
 
@@ -94,46 +103,21 @@ const Products = () => {
 
       {/* Honey Grid */}
       <section className="max-w-7xl mx-auto px-6 md:px-12">
-        {filteredHoneys.length > 0 ? (
+        {gridItems.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-            {filteredHoneys.map((product, index) => (
-              <ProductCard key={product.id} product={product} index={index} />
+            {gridItems.map((product, index) => (
+              <div key={product.id} id={product.category === 'oil' ? 'huile-olive' : undefined} className="scroll-mt-28">
+                <ProductCard product={product} index={index} />
+              </div>
             ))}
           </div>
-        ) : filteredOils.length === 0 ? (
+        ) : (
           <div className="text-center py-16">
             <p className="text-[#5C5449] text-base">{t('products.noResults')}</p>
           </div>
-        ) : null}
+        )}
       </section>
 
-      {/* Olive Oil Section */}
-      {filteredOils.length > 0 && (
-        <section id="huile-olive" className="mt-24 py-20 bg-[#F4F2E6] border-y border-[#E3E0C8]" data-testid="olive-oil-section">
-          <div className="max-w-7xl mx-auto px-6 md:px-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-12"
-            >
-              <p className="text-xs uppercase tracking-[0.2em] text-[#7A8A2E] font-medium mb-4">{t('products.oilLabel')}</p>
-              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-light text-[#1A1713] tracking-tight mb-4">
-                {t('products.oilTitle')}
-              </h2>
-              <p className="text-[#5C5449] text-base max-w-xl mx-auto">{t('products.oilSubtitle')}</p>
-            </motion.div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 justify-items-center">
-              {filteredOils.map((product, index) => (
-                <div key={product.id} className="w-full sm:col-start-1 sm:col-span-2 lg:col-start-2 lg:col-span-1 max-w-sm">
-                  <ProductCard product={product} index={index} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
     </div>
   );
 };
