@@ -86,7 +86,7 @@ function setMeta(html, attr, key, value) {
 // before the app starts; React replaces it as soon as it loads.
 const H1 = {
   '/': { fr: "Des Montagnes de l'Atlas à Votre Table", en: 'From the Atlas Mountains to Your Table', ar: 'من جبال الأطلس إلى مائدتكم' },
-  '/products': { fr: 'Nos Miels Purs et Huile d’Olive', en: 'Our Pure Honeys and Olive Oil', ar: 'العسل الحر وزيت الزيتون' },
+  '/products': { fr: 'Nos Miels & Huile d’Olive', en: 'Our Honeys & Olive Oil', ar: 'عسلنا وزيت الزيتون' },
   '/about': { fr: 'À Propos de Miel du Maroc', en: 'About Miel du Maroc', ar: 'من نحن' },
   '/health-benefits': { fr: 'Les Miels du Maroc et leurs Usages', en: 'Moroccan Honeys and Their Uses', ar: 'أنواع العسل المغربي واستعمالاتها' },
   '/shipping': { fr: 'Livraison partout au Maroc', en: 'Delivery across Morocco', ar: 'التوصيل لجميع أنحاء المغرب' },
