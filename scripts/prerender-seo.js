@@ -50,7 +50,11 @@ function shareImage(pg) {
     const jpg = path.join(ROOT, 'public/honey-images/share', `${pg.product.id}.jpg`);
     return fs.existsSync(jpg) ? `/honey-images/share/${pg.product.id}.jpg` : pg.product.image;
   }
-  if (pg.post) return pg.post.image || DEFAULT_IMAGE;
+  if (pg.post) {
+    const base = (pg.post.image || '').split('/').pop().replace(/\.\w+$/, '');
+    const jpg = path.join(ROOT, 'public/honey-images/share', `blog-${base}.jpg`);
+    return fs.existsSync(jpg) ? `/honey-images/share/blog-${base}.jpg` : (pg.post.image || DEFAULT_IMAGE);
+  }
   return DEFAULT_IMAGE;
 }
 
@@ -133,6 +137,8 @@ function render(pg, lang) {
   html = setMeta(html, 'name', 'twitter:description', meta.description);
   html = setMeta(html, 'name', 'twitter:image', image);
   // The French-only Arabic description/keywords in the template are not needed on per-language pages.
+  // The French keyword list only belongs on the French pages.
+  if (lang !== 'fr') html = html.replace(/<meta name="keywords"(?! lang)[^>]*>/, '');
   html = html.replace(/<meta[^>]*name="(description|keywords)"[^>]*lang="ar"[^>]*>/g, '').replace(/<meta[^>]*lang="ar"[^>]*name="(description|keywords)"[^>]*>/g, '');
   for (const block of ['store', 'faq']) {
     const keep = (pg.keep || []).includes(block) && (block !== 'faq' || lang === 'fr');
@@ -141,6 +147,13 @@ function render(pg, lang) {
   const alternates = [...SEO_LANGS.map((l) => [l, l]), ['x-default', 'fr']]
     .map(([hl, l]) => `<link rel="alternate" hreflang="${hl}" href="${SITE_URL}${langPath(pg.path, l)}">`).join('');
   const ld = jsonLdFor(pg, lang).map((j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, '\\u003c')}</script>`).join('');
+  // The hero image is only on the home page; product pages load their own photo first instead.
+  if (pg.path !== '/') {
+    const img = pg.product && pg.product.image && pg.product.image.includes('/v2/') ? pg.product.image : null;
+    html = html.replace(/<link rel="preload" as="image"[^>]*>/, img
+      ? `<link rel="preload" as="image" type="image/webp" href="${img}" imagesrcset="${img.replace('.webp', '-600.webp')} 600w, ${img.replace('.webp', '-900.webp')} 900w, ${img} 1200w" imagesizes="(max-width: 1024px) 100vw, 600px">`
+      : '');
+  }
   html = html.replace('<div id="root"></div>', `<div id="root">${rootContent(pg, lang, meta)}</div>`);
   return html.replace('</head>', `${alternates}${ld}</head>`);
 }
