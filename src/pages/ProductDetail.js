@@ -92,7 +92,7 @@ const ProductDetail = () => {
                 </div>
               </div>
             )}
-            {currentImage && <PuritySeal className="w-20 sm:w-24 !top-4 !right-4 rtl:!right-auto rtl:!left-4" />}
+            {currentImage && <PuritySeal oil={product.category === 'oil'} className="w-20 sm:w-24 !top-4 !right-4 rtl:!right-auto rtl:!left-4" />}
           </motion.div>
 
           {/* Details */}
