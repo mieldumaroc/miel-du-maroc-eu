@@ -41,7 +41,7 @@ const ProductCard = ({ product, index = 0 }) => {
               </div>
             </div>
           )}
-          <PuritySeal />
+          <PuritySeal oil={product.category === 'oil'} />
           {product.available === false && (
             <span className="absolute top-3 left-3 rtl:left-auto rtl:right-3 bg-[#1A1713]/85 text-[#E9D9A6] text-xs font-medium tracking-wide uppercase px-3 py-1.5" data-testid={`coming-soon-${product.id}`}>
               {t('products.comingSoon')}
