@@ -38,9 +38,9 @@ export function staticPages(products) {
       ar: { title: 'عسل مغربي حرفي | عائلة نحّالين منذ 1995 | الأطلس', description: 'عائلة نحّالين من مراكش منذ 1995. عسل حر يُجنى يدوياً في جبال الأطلس ويصلكم إلى منازلكم في مراكش وفي جميع أنحاء المغرب.' },
     },
     '/health-benefits': {
-      fr: { title: 'Bienfaits du Miel Pur du Maroc | Origan, Thym, Nigelle', description: "Les bienfaits du vrai miel pur marocain : miel d'origan, thym pour la respiration, nigelle pour l'immunité, romarin pour le foie, câpre antioxydant." },
-      en: { title: 'Benefits of Pure Moroccan Honey | Miel du Maroc', description: 'Discover our Moroccan honeys and their traditional uses: oregano, thyme, nigella, rosemary, caper and more, from the Atlas Mountains.' },
-      ar: { title: 'فوائد العسل المغربي الحر | الزعتر، الزعيترة، الحبة السوداء', description: 'فوائد العسل المغربي الحر: عسل الزعتر، الزعيترة للتنفس، الحبة السوداء للمناعة، إكليل الجبل للكبد، وعسل الكبار الغني بمضادات الأكسدة.' },
+      fr: { title: 'Bienfaits du Miel Pur du Maroc | Origan, Thym, Nigelle', description: "Nos miels purs du Maroc et leurs usages traditionnels : origan, thym, nigelle, câpre, jujubier et plus, récoltés dans les montagnes de l'Atlas." },
+      en: { title: 'Benefits of Pure Moroccan Honey | Miel du Maroc', description: 'Discover our Moroccan honeys and their traditional uses: oregano, thyme, nigella, caper, sidr and more, from the Atlas Mountains.' },
+      ar: { title: 'فوائد العسل المغربي الحر | الزعتر، الزعيترة، الحبة السوداء', description: 'عسلنا المغربي الحر واستعمالاته التقليدية: الزعتر، الزعيترة، الحبة السوداء، الكبار، السدر وغيرها، من جبال الأطلس.' },
     },
     '/shipping': {
       fr: { title: 'Livraison partout au Maroc | Miel du Maroc', description: "Notre livreur à Marrakech, un transporteur partout ailleurs au Maroc. Frais confirmés sur WhatsApp, paiement à la livraison." },
@@ -58,9 +58,9 @@ export function staticPages(products) {
       ar: { title: 'اتصل بنا واطلب | ميل دو ماروك', description: 'اطلب العسل الحر وزيت الزيتون عبر واتساب. التوصيل في مراكش وجميع أنحاء المغرب، والدفع عند الاستلام.' },
     },
     '/blog': {
-      fr: { title: 'Blog : Conseils sur le Miel Pur | Miel du Maroc', description: "Articles sur les bienfaits du miel pur marocain : origan, thym, nigelle, romarin. Conseils pour acheter et utiliser le miel de l'Atlas." },
-      en: { title: 'Blog: Tips on Pure Moroccan Honey | Miel du Maroc', description: 'Articles on the benefits of pure Moroccan honey: oregano, thyme, nigella, rosemary. Tips for buying and using Atlas honey.' },
-      ar: { title: 'المدونة | فوائد ونصائح حول العسل المغربي الحر | ميل دو ماروك', description: 'مقالات عن فوائد العسل المغربي الحر: الزعتر، الزعيترة، الحبة السوداء، إكليل الجبل. نصائح لشراء واستعمال عسل الأطلس.' },
+      fr: { title: 'Blog : Conseils sur le Miel Pur | Miel du Maroc', description: "Articles sur les bienfaits du miel pur marocain : origan, thym, nigelle, câpre. Conseils pour acheter et utiliser le miel de l'Atlas." },
+      en: { title: 'Blog: Tips on Pure Moroccan Honey | Miel du Maroc', description: 'Articles on the benefits of pure Moroccan honey: oregano, thyme, nigella, caper. Tips for buying and using Atlas honey.' },
+      ar: { title: 'المدونة | فوائد ونصائح حول العسل المغربي الحر | ميل دو ماروك', description: 'مقالات عن فوائد العسل المغربي الحر: الزعتر، الزعيترة، الحبة السوداء، الكبار. نصائح لشراء واستعمال عسل الأطلس.' },
     },
     '/cart': {
       fr: { title: 'Panier | Miel du Maroc', description: 'Votre panier Miel du Maroc.', noindex: true },
