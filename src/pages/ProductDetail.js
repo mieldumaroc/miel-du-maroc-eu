@@ -80,6 +80,11 @@ const ProductDetail = () => {
             {currentImage ? (
               <img
                 src={currentImage}
+                srcSet={currentImage.includes('/v2/') ? `${currentImage.replace('.webp', '-600.webp')} 600w, ${currentImage.replace('.webp', '-900.webp')} 900w, ${currentImage} 1200w` : undefined}
+                sizes="(max-width: 1024px) 100vw, 600px"
+                width="1200"
+                height="1200"
+                fetchpriority="high"
                 alt={productName}
                 className="w-full h-full object-cover"
                 data-testid="product-detail-image"
@@ -190,7 +195,7 @@ const ProductDetail = () => {
                   href={`${WHATSAPP_LINK}${questionMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#1DA851] font-medium underline underline-offset-4 hover:text-[#25D366]"
+                  className="text-[#137A3A] font-medium underline underline-offset-4 hover:text-[#25D366]"
                   data-testid="whatsapp-question-link"
                 >
                   {t('products.askWhatsApp')}
