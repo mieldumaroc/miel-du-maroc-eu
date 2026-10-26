@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import PuritySeal from '../components/PuritySeal';
+import TrustLine from '../components/TrustLine';
 import { useParams } from 'react-router-dom';
 import Link from '../components/LocalizedLink';
 import { motion } from 'framer-motion';
@@ -73,7 +75,7 @@ const ProductDetail = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-[#F7F4EB] aspect-square overflow-hidden"
+            className="relative bg-[#F7F4EB] aspect-square overflow-hidden"
           >
             {currentImage ? (
               <img
@@ -90,6 +92,7 @@ const ProductDetail = () => {
                 </div>
               </div>
             )}
+            {currentImage && <PuritySeal className="w-20 sm:w-24 !top-4 !right-4 rtl:!right-auto rtl:!left-4" />}
           </motion.div>
 
           {/* Details */}
@@ -136,6 +139,7 @@ const ProductDetail = () => {
               <p className="text-3xl font-light tracking-wide text-[#1A1713]" data-testid="product-detail-price">
                 {formatPriceWithMAD(currentPrice)}
               </p>
+              {product.available !== false && <div className="mt-3"><TrustLine /></div>}
             </div>
 
             {/* Add to cart (main action), then checkout once something is in the cart */}
