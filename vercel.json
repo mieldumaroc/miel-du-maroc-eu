@@ -1,21 +1,92 @@
 {
   "redirects": [
-    { "source": "/blog/buy-moroccan-honey-europe", "destination": "/blog/buy-pure-honey-marrakech", "permanent": true },
-    { "source": "/:lang(en|ar)/blog/buy-moroccan-honey-europe", "destination": "/:lang/blog/buy-pure-honey-marrakech", "permanent": true },
-    { "source": "/products/romarin", "destination": "/products", "permanent": true },
-    { "source": "/:lang(en|ar)/products/romarin", "destination": "/:lang/products", "permanent": true },
-    { "source": "/blog/wild-rosemary-honey-liver-health", "destination": "/blog", "permanent": true },
-    { "source": "/:lang(en|ar)/blog/wild-rosemary-honey-liver-health", "destination": "/:lang/blog", "permanent": true }
+    {
+      "source": "/blog/buy-moroccan-honey-europe",
+      "destination": "/blog/buy-pure-honey-marrakech",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(en|ar)/blog/buy-moroccan-honey-europe",
+      "destination": "/:lang/blog/buy-pure-honey-marrakech",
+      "permanent": true
+    },
+    {
+      "source": "/products/romarin",
+      "destination": "/products",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(en|ar)/products/romarin",
+      "destination": "/:lang/products",
+      "permanent": true
+    },
+    {
+      "source": "/blog/wild-rosemary-honey-liver-health",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(en|ar)/blog/wild-rosemary-honey-liver-health",
+      "destination": "/:lang/blog",
+      "permanent": true
+    }
   ],
   "rewrites": [
-    { "source": "/:lang(en|ar)", "destination": "/:lang/index.html" },
-    { "source": "/:lang(en|ar)/products/:id", "destination": "/:lang/products/:id/index.html" },
-    { "source": "/:lang(en|ar)/blog/:slug", "destination": "/:lang/blog/:slug/index.html" },
-    { "source": "/:lang(en|ar)/:page(products|about|health-benefits|shipping|faq|contact|blog)", "destination": "/:lang/:page/index.html" },
-    { "source": "/:lang(en|ar)/(.*)", "destination": "/index.html" },
-    { "source": "/products/:id", "destination": "/products/:id/index.html" },
-    { "source": "/blog/:slug", "destination": "/blog/:slug/index.html" },
-    { "source": "/:page(products|about|health-benefits|shipping|faq|contact|blog)", "destination": "/:page/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/:lang(en|ar)",
+      "destination": "/:lang/index.html"
+    },
+    {
+      "source": "/:lang(en|ar)/products/:id",
+      "destination": "/:lang/products/:id/index.html"
+    },
+    {
+      "source": "/:lang(en|ar)/blog/:slug",
+      "destination": "/:lang/blog/:slug/index.html"
+    },
+    {
+      "source": "/:lang(en|ar)/:page(products|about|health-benefits|shipping|faq|contact|blog)",
+      "destination": "/:lang/:page/index.html"
+    },
+    {
+      "source": "/:lang(en|ar)/(.*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/products/:id",
+      "destination": "/products/:id/index.html"
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/blog/:slug/index.html"
+    },
+    {
+      "source": "/:page(products|about|health-benefits|shipping|faq|contact|blog)",
+      "destination": "/:page/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/honey-images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/static/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
   ]
 }
